@@ -1,0 +1,91 @@
+/*
+Color Palette:
+- #000000 - black
+- #380356 - dark purple
+- #520a7c - purple
+- #a200ff - light purple
+- #dfa8ff - very light purple (background/gradient)
+- #9d7ab0 - greyish purple
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Poppins',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: black;
+    color:white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+} 
+
+.highlight {
+    color: #dfa8ff;
+    font-weight: 600;
+}
+
+/* Intro */
+#intro .container {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 600;
+    flex-flow: column wrap;
+}
+
+#intro .container .static-text {
+    font-size: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -25px;
+
+}
+
+.container3,
+.container2,
+.container4 {
+    display: inline flex;
+    flex-flow: row wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+    justify-content: center;
+}
+
+#intro .highlight {
+    margin-left: 25px;
+}
+
+#intro .simple-text {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+/* About Me */
+
+
+
+/* Portfolio */
+
+
+
+/* Proficiencies */
+
+
+
+/* Connect */
+.github {
+    background-color: white;
+}
+
+
