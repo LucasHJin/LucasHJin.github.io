@@ -98,6 +98,7 @@ html, body {
     overflow: hidden;
     width: 3vw;
     height: 3vw;
+    transition: all 1s;
 }
 
 .github-img:hover,
@@ -108,6 +109,7 @@ html, body {
     -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     background-color: white;
+    transition: all 1s;
 }
 
 
@@ -200,6 +202,7 @@ html, body {
     transition: 0.3s;
     border-radius: 10px;
     border: 2px solid white;
+    transition: all 1s;
 }
 
 #about-me .right-side .resume-button:hover {
@@ -210,6 +213,7 @@ html, body {
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     cursor: pointer;
     border: 2px solid #bfa0d0;
+    transition: all 1s;
 }
 
 /* Portfolio */
@@ -261,6 +265,7 @@ html, body {
     border-radius: 10px;
     margin: 10px;
     border: 2px solid white;
+    transition: all 1s;
 }
 
 #portfolio a {
@@ -276,6 +281,7 @@ html, body {
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     cursor: pointer;
     border: 2px solid #bfa0d0;
+    transition: all 1s;
 }
 
 #portfolio .project:hover img {
@@ -335,6 +341,7 @@ html, body {
     margin-bottom: 50px;
     border-radius: 10px;
     border: 2px solid white;
+    transition: all 1s;
 }
 
 #proficiencies .skill:hover {
@@ -345,6 +352,7 @@ html, body {
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     cursor: pointer;
     border: 2px solid #bfa0d0;
+    transition: all 1s;
 }
 
 #proficiencies .skill:hover img {
@@ -449,6 +457,7 @@ html, body {
     font-size: 26px;
     border-radius: 15px;
     border: 2px solid transparent;
+    transition: all 1s;
 }
 
 #connect ul li .top {
@@ -458,6 +467,7 @@ html, body {
 
 #connect ul li ul.dropdown li {
     display: flex;
+    transition: all 1s;
 }
 
 #connect ul li ul.dropdown {
@@ -474,6 +484,7 @@ html, body {
     -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
     -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    transition: all 1s;
 }
 
 #connect ul li:hover ul.dropdown {
