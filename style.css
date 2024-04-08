@@ -203,29 +203,75 @@ html, body {
 #about-me .right-side .resume-button:hover {
     background-color: white;
     color: #9d7ab0;
-    border: 1px #9d7ab0;
     -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
     -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     cursor: pointer;
     border: 2px solid #bfa0d0;
 }
+
 /* Portfolio */
 #portfolio {
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
     margin-top: 300px;
+    margin-bottom: 300px;
 }
 
 #portfolio .project img {
     object-fit: cover;
-    width: 20vw;
+    width: 300px;
     height: auto;
     border-radius: 20px;
+    border: 1px solid transparent;
 }
 
+#portfolio .project p {
+    width: 300px;
+}
+
+#portfolio .project {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    background-color: #9d7ab0;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid transparent;
+}
+
+#portfolio .project:hover {
+    background-color: white;
+    color: #9d7ab0;
+    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
+    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    cursor: pointer;
+    border: 2px solid #bfa0d0;
+}
+
+#portfolio .project:hover img {
+    cursor: pointer;
+    border: 1px solid #bfa0d0;
+}
+
+#portfolio .project .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#portfolio .project .des {
+    font-size: 15px;
+}
+
+#portfolio .highlight2 {
+    color: #360d4e;
+    font-weight: 600;
+}
 
 
 /* Proficiencies */
