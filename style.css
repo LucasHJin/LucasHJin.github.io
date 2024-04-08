@@ -494,3 +494,41 @@ html, body {
 #footer p {
     font-size: 12px;
 }
+
+/* Credit */
+.attribution a {
+    color: white;
+}
+
+.attribution img {
+    background-color: white;
+    width: 10vw;
+    height: auto;
+}
+
+.back-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.title-att {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #dfa8ff;
+}
+
+.back {
+    background-color: #bfa0d0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 50px;
+    color: white;
+}
+
