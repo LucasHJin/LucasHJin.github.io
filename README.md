@@ -5,3 +5,4 @@ Credit:
 - Library for typing animation: https://github.com/mattboldt/typed.js/
 - Github icon: https://www.flaticon.com/free-icons/github
 - Gmail icon: https://www.flaticon.com/free-icons/gmail
+- Linkedin icon: https://www.flaticon.com/search?word=linkedin

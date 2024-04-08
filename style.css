@@ -47,7 +47,6 @@ html, body {
     display: flex;
     flex-flow: row wrap;
     margin-top: -25px;
-
 }
 
 .container3,
@@ -68,6 +67,47 @@ html, body {
     font-size: 35px;
     text-align: center;
 }
+
+#intro .links {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+#intro .links .gmail {
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+#intro .links .github-img,
+#intro .links .gmail-img,
+#intro .links .linkedin-img {
+    width: 3vw;
+    height: auto;
+    background-color: #bfa0d0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#intro .links img {
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+    width: 3vw;
+    height: 3vw;
+}
+
+#intro .links img:hover {
+    border: 2px solid #ffffff;
+    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
+    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+}
+
 
 #intro .scroll-arrow {
     position: absolute;
@@ -111,17 +151,78 @@ html, body {
 #about-me {
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 225px;
+    margin-right: 225px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 #about-me .left-side img {
-    max-height: 550px;
-    width: auto;
+    width: 24vw;
+    height: auto;
+    border-radius: 30px;
+    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
+    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    flex: 1;
+    margin-right: 20px;
 }
 
+#about-me .right-side {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 600px;
+}
 
+#about-me .right-side .title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #dfa8ff;
+    margin-bottom: 10px;
+}
+
+#about-me .right-side .text {
+    font-size: 20px;
+}
+
+#about-me .right-side .resume-button {
+    width: 60%;
+    margin-top: 40px;
+    background-color: #9d7ab0;
+    font-weight: 600;
+    border: 1px white;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 22px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+#about-me .right-side .resume-button:hover {
+    background-color: white;
+    color: #9d7ab0;
+    border: 1px #9d7ab0;
+    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
+    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    cursor: pointer;
+}
 /* Portfolio */
+#portfolio {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+
+#portfolio .project img {
+    object-fit: cover;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 20px;
+}
 
 
 
@@ -130,8 +231,4 @@ html, body {
 
 
 /* Connect */
-.github {
-    background-color: white;
-}
-
 
