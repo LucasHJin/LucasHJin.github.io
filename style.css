@@ -237,6 +237,10 @@ html, body {
     margin-bottom: 300px;
 }
 
+#portfolio .delaytwo {
+    display: flex;
+}
+
 #portfolio .project img {
     object-fit: cover;
     width: 300px;
@@ -621,3 +625,40 @@ html, body {
     left: 0;
     z-index: 9;
 }
+
+
+/* Transitions */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+/* If the user doesn't want to see transitions */
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none
+    }
+}
+
+.delay:nth-child(2) {
+    transition-delay: 150ms;
+}
+.delay:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.delaytwo:nth-child(2) {
+    transition-delay: 150ms;
+}
+.delaytwo:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+

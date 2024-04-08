@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script defer src="app.js"></script>
 
     <link rel="icon" type="image/png" href="./static/web-icon.png">
   </head>
@@ -35,16 +36,16 @@
 
     <div id="intro">
         <div class="container">
-            <div class="container2"><span class="text auto-type"></span></div>
-            <div class="container3"><span class="text static-text">I'm <span class="highlight">Lucas!</span></span></div>
-            <div class="container4"><p class="text simple-text">Hoping to make a difference in the world with technology.</p></div>
+            <div class="container2 hidden"><span class="text auto-type"></span></div>
+            <div class="container3 hidden"><span class="text static-text">I'm <span class="highlight">Lucas!</span></span></div>
+            <div class="container4 hidden"><p class="text simple-text">Hoping to make a difference in the world with technology.</p></div>
             <div class="links">
-                <a href="https://github.com/LucasHJin" target="_blank" class="github"><img src="./static/github.png" class="github-img"/></a>
-                <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail"><img src="./static/gmail.png" class="gmail-img"/></a>
-                <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin"><img src="./static/linkedin.png" class="linkedin-img"></a>
+                <a href="https://github.com/LucasHJin" target="_blank" class="github hidden delay"><img src="./static/github.png" class="github-img"/></a>
+                <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail hidden delay"><img src="./static/gmail.png" class="gmail-img"/></a>
+                <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin hidden delay"><img src="./static/linkedin.png" class="linkedin-img"></a>
             </div>
         </div>
-        <div class="scroll-arrow">
+        <div class="scroll-arrow hidden">
             <span></span>
             <span></span>
             <span></span>
@@ -52,12 +53,12 @@
     </div>
 
     <div id="about-me">
-        <div class="left-side">
+        <div class="left-side hidden">
             <img src="./static/self-photo.png">
         </div>
         <div class="right-side">
-            <p class="title">About Me!</p>
-          <p class="text">
+            <p class="title hidden">About Me!</p>
+          <p class="text hidden">
             Hello to all! My name is Lucas J. and I am a student in the <span class="highlight">IB Diploma
             Programme</span> at Merivale High School. Aside from participating in Mock
             Trial where I am on the <span class="highlight">1st Place</span> Canadian team and working out, my
@@ -66,35 +67,41 @@
             fascination regarding the limitless possibilities of technological
             development!
           </p>
-          <a href="./static/Resume_Website.pdf" target="_blank"><button class="resume-button">Learn More About Me!</button></a>
+          <a href="./static/Resume_Website.pdf" target="_blank"><button class="resume-button hidden">Learn More About Me!</button></a>
         </div>
     </div>
 
     <div id="portfolio">
-      <p class="title-total">Portfolio</p>
+      <p class="title-total hidden">Portfolio</p>
       <div class="projects">
-          <a href="https://github.com/LucasHJin/competitive-programming-solutions" target="_blank"><div class="project">
-              <img src="./static/atcoder.png">
-              <p class="title">Competitive Programming Problems</p>
-              <p class="des">A collection of all the <span class="highlight2">competitive programming problems</span> I have solved. It covers a wide variety of <span class="highlight2">DSA</span> problems, ranging from DP to graph theory. It contains problems from various sources including <span class="highlight2">AtCoder, CSES, DMOJ and CodeForces</span> and most are solved with <span class="highlight2">C++</span>.</p>
-          </div></a>
-          <a href="https://devpost.com/software/studiessphere" target="_blank"><div class="project">
-              <img src="./static/StudySphereLogo.jpeg">
-              <p class="title">StudySphere</p>
-              <p class="des">Made for <span class="highlight2">UOttaHack 6</span>, StudySphere helps students study with peers. It provides the ability to ask questions, answer questions and search for them, essentially acting like a <span class="highlight2">Reddit/Discord</span> for studying. The front end is made up of <span class="highlight2">HTML, CSS and JavaScript</span> and the back end was made with <span class="highlight2">Flask, Python and SQLAlchemy.</span></p>
-          </div></a>
-          <a href="https://github.com/LucasHJin/Zenith-App" target="_blank"><div class="project">
-              <img src="./static/zenith-logo.jpg">
-              <p class="title">Zenith: Workout App</p>
-              <p class="des">Made as a passion project, Zenith App is an <span class="highlight2">IOS-only app</span> to track and visualize progress in the gym. It allows users to put in their sets, reps and comments for an exercise, watch tutorials for unknown exercises and much more. It is made with <span class="highlight2">Swift and SwiftUI</span> and uses <span class="highlight2">Firebase</span> for <span class="highlight2">user authentication</span> and a <span class="highlight2">document database</span>.</p>
-          </div></a>
+          <div class="hidden delaytwo">
+            <a href="https://github.com/LucasHJin/competitive-programming-solutions" target="_blank"><div class="project">
+                <img src="./static/atcoder.png">
+                <p class="title">Competitive Programming Problems</p>
+                <p class="des">A collection of all the <span class="highlight2">competitive programming problems</span> I have solved. It covers a wide variety of <span class="highlight2">DSA</span> problems, ranging from DP to graph theory. It contains problems from various sources including <span class="highlight2">AtCoder, CSES, DMOJ and CodeForces</span> and most are solved with <span class="highlight2">C++</span>.</p>
+            </div></a>
+          </div>
+          <div class="hidden delaytwo">
+            <a href="https://devpost.com/software/studiessphere" target="_blank"><div class="project">
+                <img src="./static/StudySphereLogo.jpeg">
+                <p class="title">StudySphere</p>
+                <p class="des">Made for <span class="highlight2">UOttaHack 6</span>, StudySphere helps students study with peers. It provides the ability to ask questions, answer questions and search for them, essentially acting like a <span class="highlight2">Reddit/Discord</span> for studying. The front end is made up of <span class="highlight2">HTML, CSS and JavaScript</span> and the back end was made with <span class="highlight2">Flask, Python and SQLAlchemy.</span></p>
+            </div></a>
+          </div>
+          <div class="hidden delaytwo">
+            <a href="https://github.com/LucasHJin/Zenith-App" target="_blank"><div class="project">
+                <img src="./static/zenith-logo.jpg">
+                <p class="title">Zenith: Workout App</p>
+                <p class="des">Made as a passion project, Zenith App is an <span class="highlight2">IOS-only app</span> to track and visualize progress in the gym. It allows users to put in their sets, reps and comments for an exercise, watch tutorials for unknown exercises and much more. It is made with <span class="highlight2">Swift and SwiftUI</span> and uses <span class="highlight2">Firebase</span> for <span class="highlight2">user authentication</span> and a <span class="highlight2">document database</span>.</p>
+            </div></a>
+          </div>
       </div>
     </div>
 
     <div id="proficiencies">
-      <p class="title-total">Proficiencies</p>
+      <p class="title-total hidden">Proficiencies</p>
       <div class="skills">
-        <a href="https://www.python.org/" target="_blank">
+        <a href="https://www.python.org/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -107,7 +114,7 @@
             <p class="bottom">Python is one of the first languages I learned. Because of its simplicity and it being a high-level language, it is also the one I am most proficient with.</p>
           </div>
         </a>
-        <a href="https://isocpp.org/" target="_blank">
+        <a href="https://isocpp.org/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -120,7 +127,7 @@
             <p class="bottom">C++ is another one of my primary languages. I use it primarily for competitive programming as it is a high-performance language and so, can compile and run programmes faster than other languages.</p>
           </div>
         </a>
-        <a href="https://github.com/" target="_blank">
+        <a href="https://github.com/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -136,7 +143,7 @@
             <p class="bottom">I am very familiar with using Git and Github to collaborate with others and save my work. I use Github as the online developer platform to share my work with others.</p>
           </div>
         </a>
-        <a href="https://firebase.google.com/" target="_blank">
+        <a href="https://firebase.google.com/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -149,7 +156,7 @@
             <p class="bottom">I used this document(non-relational) database for some of my IOS apps. I understand the way it functions compared to a relational database but have only used it with Swift so far.</p>
           </div>
         </a>
-        <a href="https://developer.apple.com/swift/" target="_blank">
+        <a href="https://developer.apple.com/swift/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -162,7 +169,7 @@
             <p class="bottom">I began learning Swift in 2023 and have experimented with it, creating various IOS apps such as Zenith. I am not fluent with it yet, but I am able to write simple apps and grasp the basic concepts.</p>
           </div>
         </a>
-        <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">
+        <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -175,7 +182,7 @@
             <p class="bottom">I have started learning to use Flask as a backend framework (i.e StudySphere). I am not completely fluent with it yet but will likely continue to use it.</p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="hidden">
           <div class="skill"> 
             <div class="up">
               <div class="left">
@@ -188,7 +195,7 @@
             <p class="bottom">I have a passable understanding of the uses of HTML to structure a web page and its content. I am currently learning more about it in the online course: "The Odin Project".</p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="hidden">
           <div class="skill"> 
             <div class="up">
               <div class="left">
@@ -201,7 +208,7 @@
             <p class="bottom">I similarly have a passable understanding of the uses of CSS and how to use flex to make responsive web pages. I am currently learning more about it in the online course: "The Odin Project".</p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank">
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -214,7 +221,7 @@
             <p class="bottom">I currently possess a very primary understanding of Javascript. However, I am learning more about it in the online course: "The Odin Project".</p>
           </div>
         </a>
-        <a href="https://www.java.com/en/" target="_blank">
+        <a href="https://www.java.com/en/" target="_blank" class="hidden">
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -231,14 +238,14 @@
     </div>
 
     <div id="connect">
-      <p class="title-total">Connect With Me!</p>
+      <p class="title-total hidden">Connect With Me!</p>
       <div class="bottom">
         <div class="socials">
-          <a href="https://github.com/LucasHJin" target="_blank" class="github"><img src="./static/github.png" class="github-img"/></a>
-          <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail"><img src="./static/gmail.png" class="gmail-img"/></a>
-          <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin"><img src="./static/linkedin.png" class="linkedin-img"></a>
+          <a href="https://github.com/LucasHJin" target="_blank" class="github hidden"><img src="./static/github.png" class="github-img"/></a>
+          <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail hidden"><img src="./static/gmail.png" class="gmail-img"/></a>
+          <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin hidden"><img src="./static/linkedin.png" class="linkedin-img"></a>
         </div>
-        <div class="cca">
+        <div class="cca hidden">
           <ul>
             <li>
               <a href="#" class="top">Competitive Programming Accounts ▼</a>

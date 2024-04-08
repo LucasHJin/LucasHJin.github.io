@@ -19,3 +19,4 @@ Credit:
 - Javascript icon: https://www.flaticon.com/free-icons/javascript
 - Tutorial on changing icon of webpage: https://www.youtube.com/watch?v=E3DlMZElmPM
 - Information on attribution: https://www.linkedin.com/advice/1/how-do-you-correctly-attribute-external-icons-images
+- Gaining understanding of scroll animations: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scroll-driven_animations, https://www.youtube.com/watch?v=T33NN_pPeNI
