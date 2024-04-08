@@ -17,3 +17,5 @@ Credit:
 - HTML icon: https://www.flaticon.com/free-icons/html
 - CSS icon: https://www.flaticon.com/free-icons/css3
 - Javascript icon: https://www.flaticon.com/free-icons/javascript
+- Tutorial on changing icon of webpage: https://www.youtube.com/watch?v=E3DlMZElmPM
+- Information on attribution: https://www.linkedin.com/advice/1/how-do-you-correctly-attribute-external-icons-images
