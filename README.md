@@ -8,3 +8,12 @@ Credit:
 - Linkedin icon: https://www.flaticon.com/search?word=linkedin
 - Atcoder icon: https://atcoder.jp/
 - Dumbbell icon: https://www.vecteezy.com/vector-art/12804770-dumbbell-outline-icon
+- Python icon: https://www.flaticon.com/free-icons/python
+- C++ icon: https://www.flaticon.com/free-icons/coding
+- Git icon: https://www.flaticon.com/free-icons/git
+- Swift icon: https://www.flaticon.com/free-icons/swift
+- Java icon: https://www.flaticon.com/free-icons/java
+- Firebase icon: https://firebase.google.com/brand-guidelines
+- HTML icon: https://www.flaticon.com/free-icons/html
+- CSS icon: https://www.flaticon.com/free-icons/css3
+- Javascript icon: https://www.flaticon.com/free-icons/javascript

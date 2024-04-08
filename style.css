@@ -213,6 +213,19 @@ html, body {
 /* Portfolio */
 #portfolio {
     display: flex;
+    flex-flow: column;
+}
+
+#portfolio .title-total {
+    font-size: 40px;
+    font-weight: 700;
+    color: #dfa8ff;
+    margin: auto;
+    margin-bottom: -250px;
+}
+
+#portfolio .projects {
+    display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
     margin-right: 150px;
@@ -240,7 +253,12 @@ html, body {
     background-color: #9d7ab0;
     border-radius: 10px;
     margin: 10px;
-    border: 2px solid transparent;
+    border: 2px solid white;
+}
+
+#portfolio a {
+    text-decoration: none;
+    display: flex;
 }
 
 #portfolio .project:hover {
@@ -272,7 +290,6 @@ html, body {
     color: #360d4e;
     font-weight: 600;
 }
-
 
 /* Proficiencies */
 
