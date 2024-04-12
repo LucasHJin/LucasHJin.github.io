@@ -12,6 +12,7 @@ Color Palette:
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 html, body {
@@ -31,7 +32,7 @@ html, body {
 
 /* Intro */
 #intro {
-    margin-top: -10px;
+    margin-top: -5vh;
 }
 
 #intro .container {
@@ -42,30 +43,39 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     flex-flow: column wrap;
+}
+
+#intro .container2 {
+    margin-bottom: 4vh;
 }
 
 #intro .container .static-text {
     font-size: 90px;
     display: flex;
     flex-flow: row wrap;
-    margin-top: -25px;
+    margin-top: -5vh;
 }
 
-.container3,
+#intro .highlight{
+    text-align: center;
+    line-height: 1;
+}
+
 .container2,
+.container3,
 .container4 {
     display: inline flex;
     flex-flow: row wrap;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     justify-content: center;
 }
 
 #intro .highlight {
-    margin-left: 25px;
+    color: #dfa8ff
 }
 
 #intro .simple-text {
@@ -76,14 +86,14 @@ html, body {
 #intro .links {
     display: flex;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 3vh;
 }
 
 #intro .links .gmail {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 3vw;
+    margin-left: 3vw;
 
 }
 
@@ -115,9 +125,10 @@ html, body {
 
 #intro .scroll-arrow {
     position: absolute;
-    top: 85%;
+    top: 85vh;
     left: 50%;
     transform: translate(-50%, -50%);
+    flex: 1 1 auto;
 }
 
 .scroll-arrow span {
@@ -155,10 +166,10 @@ html, body {
 #about-me {
     display: flex;
     justify-content: space-between;
-    margin-left: 225px;
-    margin-right: 225px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
     padding-top: 20px;
 }
 
@@ -192,10 +203,10 @@ html, body {
 
 #about-me .right-side .resume-button {
     width: 60%;
-    margin-top: 50px;
+    margin-top: 6.5vh;
     background-color: #9d7ab0;
     font-weight: 600;
-    color: white;
+    color: #520a7c;
     padding: 16px 20px;
     text-align: center;
     font-size: 22px;
@@ -207,7 +218,6 @@ html, body {
 
 #about-me .right-side .resume-button:hover {
     background-color: white;
-    color: #9d7ab0;
     -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
     -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
     box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
@@ -235,10 +245,10 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-top: 300px;
-    margin-bottom: 300px;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 38vh;
+    margin-bottom: 38vh;
 }
 
 #portfolio .delaytwo {
@@ -247,14 +257,17 @@ html, body {
 
 #portfolio .project img {
     object-fit: cover;
-    width: 300px;
+    width: 22vw;
+    min-width: 20vw;
     height: auto;
     border-radius: 20px;
     border: 1px solid transparent;
 }
 
 #portfolio .project p {
-    width: 300px;
+    width: 22vw;
+    min-width: 20vw;
+    color: #520a7c;
 }
 
 #portfolio .project {
@@ -266,6 +279,10 @@ html, body {
     margin: 10px;
     border: 2px solid white;
     transition: all 1s;
+    color: #520a7c;
+    min-height: 50vh;
+    height: auto;
+    flex: 1 1 auto;
 }
 
 #portfolio a {
@@ -292,7 +309,7 @@ html, body {
 #portfolio .project .title {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 #portfolio .project .des {
@@ -309,8 +326,8 @@ html, body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 #proficiencies .title-total {
@@ -335,9 +352,10 @@ html, body {
     display: flex;
     flex-flow: column;
     background-color: #9d7ab0;
-    width: 600px;
+    width: 35vw;
+    flex: 1 1 auto;
     padding: 10px;
-    margin: 6px;
+    margin: 1vw;
     margin-bottom: 50px;
     border-radius: 10px;
     border: 2px solid white;
@@ -393,14 +411,14 @@ html, body {
 
 /* Connect */
 #connect {
-    margin-top: 250px;
-    margin-bottom: 100px;
+    margin-top: 32.5vh;
+    margin-bottom: 15vh;
 }
 
 #connect .bottom {
     display: flex;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 24vw;
+    margin-right: 24vw;
 }
 
 #connect .title-total {
@@ -425,7 +443,8 @@ html, body {
     overflow: hidden;
     width: 8.4vw;
     height: 8.4vw;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    margin-right: 3vw;
 }
 
 #connect .socials img:hover{
@@ -454,7 +473,7 @@ html, body {
     color: #520a7c;
     text-decoration: none;
     text-align: center;
-    font-size: 26px;
+    font-size: 1.5em;
     border-radius: 15px;
     border: 2px solid transparent;
     transition: all 1s;
