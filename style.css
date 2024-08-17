@@ -2,9 +2,9 @@
 Color Palette:
 - #000000 - black
 - #380356 - dark purple
-- #520a7c - purple
+- #a445b7 - purple
 - #a200ff - light purple
-- #dfa8ff - very light purple (background/gradient)
+- #a445b7 - very light purple (background/gradient)
 - #9d7ab0 - greyish purple
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -17,8 +17,8 @@ Color Palette:
 
 html, body {
     font-family: 'Poppins',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color: black;
-    color:white;
+    background-color: #ededed;
+    color: black;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -26,7 +26,7 @@ html, body {
 } 
 
 .highlight {
-    color: #dfa8ff;
+    color: #a445b7;
     font-weight: 600;
 }
 
@@ -38,8 +38,8 @@ html, body {
 #intro .container {
     width: 100%;
     height: 100vh;
-    background: black;
-    color: white;
+    background: #ededed;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@ html, body {
 #intro .highlight{
     text-align: center;
     line-height: 1;
+    color: #360d4e;
 }
 
 .container2,
@@ -72,10 +73,6 @@ html, body {
     margin-left: 10vw;
     margin-right: 10vw;
     justify-content: center;
-}
-
-#intro .highlight {
-    color: #dfa8ff
 }
 
 #intro .simple-text {
@@ -100,10 +97,10 @@ html, body {
 .github-img,
 .gmail-img,
 .linkedin-img {
-    background-color: #bfa0d0;
+    background-color: rgba(223, 204, 240, 0.5);
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     cursor: pointer;
     overflow: hidden;
     width: 3vw;
@@ -114,10 +111,10 @@ html, body {
 .github-img:hover,
 .gmail-img:hover,
 .linkedin-img:hover {
-    border: 2px solid #bfa0d0;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    /*border: 2px solid #bfa0d0;*/
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     background-color: white;
     transition: all 1s;
 }
@@ -135,8 +132,8 @@ html, body {
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #9d7ab0;
-    border-right: 5px solid #9d7ab0;
+    border-bottom: 5px solid rgba(223, 204, 240, 0.75);
+    border-right: 5px solid rgba(223, 204, 240, 0.75);
     transform: rotate(45deg);
     margin: -17px;
     animation: scroll 2s infinite;
@@ -164,6 +161,10 @@ html, body {
 
 @media only screen and (max-width: 425px)
 {
+    #intro {
+        margin-top: 1vh;
+    }
+
     #intro .container {
         font-size: 27px;
     }
@@ -207,13 +208,13 @@ html, body {
         height: auto;
         padding: 1vw;
         border-radius: 30px;
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     .github-img:hover,
     .gmail-img:hover,
     .linkedin-img:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 }
 
@@ -240,9 +241,9 @@ html, body {
     width: 24vw;
     height: auto;
     border-radius: 30px;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    -webkit-box-shadow:0px 0px 32px 2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 0px 32px 2px rgba(0,0,0,0.31);
+    box-shadow: 0px 0px 32px 2px rgba(0,0,0,0.31);
     flex: 1;
     margin-right: 20px;
 }
@@ -256,7 +257,7 @@ html, body {
 #about-me .right-side .title {
     font-size: 40px;
     font-weight: 700;
-    color: #dfa8ff;
+    color: #360d4e;
     margin-bottom: 10px;
 }
 
@@ -267,25 +268,26 @@ html, body {
 #about-me .right-side .resume-button {
     width: 27vw;
     margin-top: 6.5vh;
-    background-color: #9d7ab0;
+    background-color: rgba(223, 204, 240, 0.5);
     font-weight: 600;
-    color: #520a7c;
+    color: #a445b7;
     padding: 2vh 1vw;
     text-align: center;
     font-size: 22px;
     transition: 0.3s;
     border-radius: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
+    border: 0px;
     transition: all 1s;
 }
 
 #about-me .right-side .resume-button:hover {
     background-color: white;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     cursor: pointer;
-    border: 2px solid #bfa0d0;
+    /*border: 2px solid #bfa0d0;*/
     transition: all 1s;
 }
 
@@ -314,7 +316,7 @@ html, body {
     }
     
     #about-me .right-side .title {
-        font-size: 40px;
+        font-size: 30px;
         margin-bottom: 2vh;
     }
 
@@ -364,9 +366,9 @@ html, body {
         width: 20vw;
         height: auto;
         border-radius: 30px;
-        -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-        -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-        box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+        -webkit-box-shadow:0px 0px 14px 1px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
         margin-right: 20px;
     }
 
@@ -411,6 +413,12 @@ html, body {
         font-size: 15px;
         margin-top: 3vh;
         text-align: center; 
+    }
+
+    #about-me .right-side .img-1 {
+        -webkit-box-shadow:0px 0px 14px 1px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
+        box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
     }
 }
 
@@ -467,11 +475,11 @@ html, body {
         font-size: 45px;
         text-align: center; 
         border-radius: 30px;
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     #about-me .right-side .resume-button:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 }
 
@@ -487,7 +495,7 @@ html, body {
 #portfolio .title-total {
     font-size: 40px;
     font-weight: 700;
-    color: #dfa8ff;
+    color: #360d4e;
     margin: 0 auto;
 }
 
@@ -512,7 +520,8 @@ html, body {
     width: 350px;
     height: auto;
     border-radius: 20px;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
+    border: 1px solid white;
 }
 
 #portfolio .project p {
@@ -520,19 +529,19 @@ html, body {
     max-width: 450px;
     width: 350px;
 
-    color: #520a7c;
+    color: #a445b7;
 }
 
 #portfolio .project {
     display: flex;
     flex-flow: column wrap;
     padding: 20px;
-    background-color: #9d7ab0;
+    background-color: rgba(223, 204, 240, 0.5);
     border-radius: 10px;
     margin: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     transition: all 1s;
-    color: #520a7c;
+    color: #a445b7;
     min-height: 30vh;
     height: auto;
     flex: 1 1 0;
@@ -549,17 +558,18 @@ html, body {
 #portfolio .project:hover {
     background-color: white;
     color: #9d7ab0;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     cursor: pointer;
-    border: 2px solid #bfa0d0;
+    /*border: 2px solid #bfa0d0;*/
     transition: all 1s;
 }
 
 #portfolio .project:hover img {
     cursor: pointer;
     border: 1px solid #bfa0d0;
+    transition: all 1s;
 }
 
 #portfolio .project .title {
@@ -605,11 +615,11 @@ html, body {
 
     #portfolio .project {
         border-radius: 30px;
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     #portfolio .project:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 }
 
@@ -661,6 +671,10 @@ html, body {
         width: 220px;
     }
 
+    #portfolio .title-total {
+        font-size: 30px;
+    }
+
     #portfolio .project .title {
         font-size: 15px;
     }
@@ -685,7 +699,7 @@ html, body {
 #proficiencies .title-total {
     font-size: 40px;
     font-weight: 700;
-    color: #dfa8ff;
+    color: #360d4e;
     text-align: center;
     margin-bottom: 2vh;
 }
@@ -694,7 +708,7 @@ html, body {
     object-fit: cover;
     width: 40px;
     height: auto;
-    background-color: #520a7c;
+    background-color: #a445b7;
     padding: 4px;
     border-radius: 4px;
     border: 1px solid white;
@@ -703,7 +717,7 @@ html, body {
 #proficiencies .skill {
     display: flex;
     flex-flow: column;
-    background-color: #9d7ab0;
+    background-color: rgba(223, 204, 240, 0.5);
     width: 33vw;
     flex: 1 1 auto;
     padding: 10px;
@@ -711,27 +725,29 @@ html, body {
     margin-right: 0vw;
     margin-bottom: 2vh;
     border-radius: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     transition: all 1s;
 }
 
 #proficiencies .skill:hover {
     background-color: white;
     color: #9d7ab0;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(88, 35, 124, 0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     cursor: pointer;
-    border: 2px solid #bfa0d0;
+    /*border: 2px solid #bfa0d0;*/
     transition: all 1s;
 }
 
 #proficiencies .skill:hover img {
+    /*border: 1px solid #bfa0d0;*/
     border: 1px solid #bfa0d0;
+    transition: all 1s;
 }
 
 #proficiencies .skill:hover .stars {
-    color: #520a7c;
+    color: #a445b7;
 }
 
 #proficiencies .title {
@@ -745,7 +761,7 @@ html, body {
 }
 
 #proficiencies p {
-    color: #520a7c;
+    color: #a445b7;
 }
 
 #proficiencies .up {
@@ -792,11 +808,11 @@ html, body {
     #proficiencies .skill {
         width: 43vw;
         border-radius: 30px;
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     #proficiencies .skill:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 
     #proficiencies img {
@@ -859,7 +875,7 @@ html, body {
 #connect .title-total {
     font-size: 40px;
     font-weight: 700;
-    color: #dfa8ff;
+    color: #360d4e;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -870,10 +886,10 @@ html, body {
 }
 
 #connect .socials img {
-    background-color: #bfa0d0;
+    background-color: rgba(223, 204, 240, 0.5);
     padding: 15px;
     border-radius: 15px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     cursor: pointer;
     overflow: hidden;
     width: 8.4vw;
@@ -883,16 +899,16 @@ html, body {
 }
 
 #connect .socials img:hover{
-    border: 2px solid #bfa0d0;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    /*border: 2px solid #bfa0d0;*/
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     background-color: white;
 }
 
 #connect ul {
     list-style: none;
-    background-color: #bfa0d0;
+    background-color: rgba(223, 204, 240, 0.5);
     border-radius: 15px;
 }
 
@@ -905,17 +921,17 @@ html, body {
     display: flex;
     flex: 1;
     padding: 30px 40px;
-    color: #520a7c;
+    color: #a445b7;
     text-decoration: none;
     text-align: center;
     font-size: 25px;
     border-radius: 15px;
-    border: 2px solid transparent;
+    /*border: 2px solid transparent;*/
     transition: all 1s;
 }
 
 #connect ul li .top {
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 
 
@@ -934,10 +950,10 @@ html, body {
 
 #connect ul li a:hover {
     background-color: white;
-    border: 2px solid #bfa0d0;
-    -webkit-box-shadow:0px 0px 47px 8px rgba(83,7,133,0.9);
-    -moz-box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
-    box-shadow: 0px 0px 47px 8px rgba(83,7,133,0.9);
+    /*border: 2px solid #bfa0d0;*/
+    -webkit-box-shadow:0px 0px 93px 12px rgba(229,221,239,0.46);
+    -moz-box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
+    box-shadow: 0px 0px 93px 12px rgba(229,221,239,0.46);
     transition: all 1s;
 }
 
@@ -975,25 +991,25 @@ html, body {
     }
 
     #connect ul li .top {
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     #connect ul li a {
         border-radius: 30px;
-        border: 6px solid transparent;
+        /*border: 6px solid transparent;*/
     }
 
     #connect ul li a:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 
     #connect .socials img {
         border-radius: 30px;
-        border: 6px solid white;
+        /*border: 6px solid white;*/
     }
 
     #connect .socials img:hover {
-        border: 6px solid #bfa0d0;
+        /*border: 6px solid #bfa0d0;*/
     }
 }
 
@@ -1058,11 +1074,11 @@ html, body {
     align-items: center;
     justify-content: center;
     padding: 8px;
-    background-color: #807088;
+    background-color: #e5ddef;
 }
 
 #footer a {
-    color: white;
+    color: black;
     font-size: 12px;
 }
 
@@ -1093,14 +1109,14 @@ html, body {
     padding: 20px;
     font-size: 40px;
     font-weight: 700;
-    color: #dfa8ff;
+    color: #a445b7;
 }
 
 .back {
     background-color: #bfa0d0;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     cursor: pointer;
     overflow: hidden;
     margin-bottom: 50px;
@@ -1109,7 +1125,7 @@ html, body {
 
 /* Navigation */
 #navbar svg {
-    fill: white;
+    fill: #a445b7;
 }
 
 #navbar .links-container {
@@ -1121,7 +1137,7 @@ html, body {
     left: -100%;
     z-index: 10;
     width: 250px;
-    background-color: rgb(31, 7, 36);
+    background-color: #e5ddef;
     transition: 400ms ease-in;
 }
 
@@ -1134,7 +1150,7 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: #a445b7;
     font-size: 18px;
     font-weight: bold;
 }

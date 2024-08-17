@@ -9,20 +9,38 @@
     <script src="script.js"></script>
     <script defer src="app.js"></script>
 
-    <link rel="icon" type="image/png" href="./static/web-icon.png">
+    <link rel="icon" type="image/png" href="./static/web-icon.png" />
   </head>
   <body>
     <nav id="navbar">
-      <input type="checkbox" id="sidebar-active">
+      <input type="checkbox" id="sidebar-active" />
       <label for="sidebar-active" class="open-sidebar">
-        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          viewBox="0 -960 960 960"
+          width="32"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
       </label>
 
       <label id="overlay" for="sidebar-active"></label>
 
       <div class="links-container">
         <label for="sidebar-active" class="close-sidebar">
-          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            viewBox="0 -960 960 960"
+            width="32"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
         </label>
 
         <a href="#intro" class="home">Lucas Jin</a>
@@ -33,92 +51,196 @@
       </div>
     </nav>
 
-
     <div id="intro">
-        <div class="container">
-            <div class="container2 hidden"><span class="text auto-type"></span></div>
-            <div class="container3 hidden"><p class="text static-text highlight">I'm Lucas!</p></div>
-            <div class="container4 hidden"><p class="text simple-text">Hoping to make a difference in the world with technology.</p></div>
-            <div class="links">
-                <a href="https://github.com/LucasHJin" target="_blank" class="github hidden delay"><img src="./static/github.png" class="github-img"/></a>
-                <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail hidden delay"><img src="./static/gmail.png" class="gmail-img"/></a>
-                <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin hidden delay"><img src="./static/linkedin.png" class="linkedin-img"></a>
-            </div>
+      <div class="container">
+        <div class="container2 hidden">
+          <span class="text auto-type"></span>
         </div>
-        <div class="scroll-arrow hidden">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="container3 hidden">
+          <p class="text static-text highlight">I'm Lucas!</p>
         </div>
+        <div class="container4 hidden">
+          <p class="text simple-text">
+            Hoping to make a difference in the world with technology.
+          </p>
+        </div>
+        <div class="links">
+          <a
+            href="https://github.com/LucasHJin"
+            target="_blank"
+            class="github hidden delay"
+            ><img src="./static/github.png" class="github-img"
+          /></a>
+          <a
+            href="mailto:kblazer20@gmail.com"
+            target="_blank"
+            class="gmail hidden delay"
+            ><img src="./static/gmail.png" class="gmail-img"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/lucas--jin/"
+            target="_blank"
+            class="linkedin hidden delay"
+            ><img src="./static/linkedin.png" class="linkedin-img"
+          /></a>
+        </div>
+      </div>
+      <div class="scroll-arrow hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
 
     <div id="about-me">
-        <div class="left-side hidden">
-            <img src="./static/self-photo.png" class="img-1">
+      <div class="left-side hidden">
+        <img src="./static/self-photo.png" class="img-1" />
+      </div>
+      <div class="right-side">
+        <p class="title hidden">About Me!</p>
+        <div class="right-side-2">
+          <img src="./static/self-photo.png" class="img-2" />
+          <p class="text hidden">
+            I’m Lucas, a student in the IBDP at Merivale High School. Other than
+            <a href="https://github.com/Spark-Youth-Robotics-Club-8729" class="highlight" target="_blank">robotics</a>
+            and working out, I am particularly passionate about AI/ML and
+            hackathons. With this site, I hope to share a portion of this
+            passion with you. So, whether you are a recruiter, a friend or just
+            bored, I welcome you to take a look around!
+          </p>
         </div>
-        <div class="right-side">
-            <p class="title hidden">About Me!</p>
-          <div class="right-side-2">
-            <img src="./static/self-photo.png" class="img-2">
-            <p class="text hidden">
-            Hello to all! My name is Lucas J. and I am a student in the <span class="highlight">IB Diploma
-            Programme</span> at Merivale High School. Aside from participating in Mock
-            Trial where I am on the <span class="highlight">1st Place</span> Canadian team and working out, my
-            passions lie in technology and software. In this site, I hope to share
-            my learning in various aspects of technology and convey a portion of my
-            fascination regarding the limitless possibilities of technological
-            development!
-            </p>
-          </div>
-          <a href="./static/Lucas_Resume.pdf" target="_blank"><button class="resume-button hidden">Learn More About Me!</button></a>
-        </div>
+        <a href="./static/Lucas_Resume.pdf" target="_blank"
+          ><button class="resume-button hidden">Learn More About Me!</button></a
+        >
+      </div>
     </div>
 
     <div id="portfolio">
       <p class="title-total hidden">Portfolio</p>
       <div class="projects">
-          <div class="hidden delaytwo">
-            <a href="https://github.com/LucasHJin/competitive-programming-solutions" target="_blank"><div class="project">
-                <img src="./static/atcoder.png">
-                <p class="title">Competitive Programming Problems</p>
-                <p class="des">A collection of all the <span class="highlight2">competitive programming problems</span> I have solved. It covers a wide variety of <span class="highlight2">DSA</span> problems, ranging from DP to graph theory. It contains problems from various sources including <span class="highlight2">AtCoder, CSES, DMOJ and CodeForces</span> and most are solved with <span class="highlight2">C++</span>.</p>
-            </div></a>
-          </div>
-          <div class="hidden delaytwo">
-            <a href="https://github.com/LucasHJin/ConvoAI" target="_blank"><div class="project">
-                <img src="./static/Convo.png">
-                <p class="title">ConvoAI</p>
-                <p class="des">Designed for improved <span class="highlight2">programming interview</span> performance, ConvoAI is the extra boost you need to land your job! Using <span class="highlight2">Google's speech recognition model</span> along with <span class="highlight2">OpenAI's machine learning models</span>, it recognizes when a question is asked and generates a response rapidly. It can even <span class="highlight2">personalize responses</span> based on your resume. Alongside these external pieces, it is made with <span class="highlight2">HTML, CSS and JavaScript</span> as well as <span class="highlight2">Python and Flask</span>.</p> 
-            </div></a>
-          </div>
-          <div class="hidden delaytwo">
-            <a href="https://devpost.com/software/studiessphere" target="_blank"><div class="project">
-                <img src="./static/StudySphereLogo.jpeg">
-                <p class="title">StudySphere</p>
-                <p class="des">Made for <span class="highlight2">UOttaHack 6</span>, StudySphere helps students study with peers. It provides the ability to ask questions, answer questions and search for them, essentially acting like a <span class="highlight2">Reddit/Discord</span> for studying. The front end is made up of <span class="highlight2">HTML, CSS and JavaScript</span> and the back end was made with <span class="highlight2">Flask, Python and SQLAlchemy.</span></p>
-            </div></a>
-          </div>
-          <div class="hidden delaytwo">
-            <a href="https://github.com/LucasHJin/Zenith-App" target="_blank"><div class="project">
-                <img src="./static/zenith-logo.jpg">
-                <p class="title">Zenith: Workout App</p>
-                <p class="des">Made as a passion project, Zenith App is an <span class="highlight2">IOS-only app</span> to track and visualize progress in the gym. It allows users to put in their sets, reps and comments for an exercise, watch tutorials for unknown exercises and much more. It is made with <span class="highlight2">Swift and SwiftUI</span> and uses <span class="highlight2">Firebase</span> for <span class="highlight2">user authentication</span> and a <span class="highlight2">document database</span>.</p>
-            </div></a>
-          </div>
-          <div class="hidden delaytwo">
-            <a href="https://github.com/Spark-Youth-Robotics-Club-8729" target="_blank"><div class="project">
-                <img src="./static/syrc.jpeg">
-                <p class="title">Sparking H2O - FRC Team 8729</p>
-                <p class="des">During the 2023-2024 season, I was a core programmer for <span class="highlight2">FRC team 8729</span>, working on implementing robot vision and <span class="highlight2">april tag recognition</span> with <span class="highlight2">command based programming</span>. During the 2024-2025 season, I will be a <span class="highlight2">software lead</span>, teaching new software members both command based programming and electrical.</p> 
-            </div></a>
-          </div>
-          <div class="hidden delaytwo">
-            <a href="https://github.com/LucasHJin/Letum" target="_blank"><div class="project">
-                <img src="./static/letum.webp">
-                <p class="title">Letum</p>
-                <p class="des">Letum is an old-school style text RPG, made with <span class="highlight2">OOP concepts</span> as well as an <span class="highlight2">AI Language Model</span>. Made with <span class="highlight2">Python</span>, it allows the player to experience the wonder and amazement they had when they were a child, with captivating dialogue made with the aid of the <span class="highlight2">Chatterbot library</span> and the option to fight against various hordes of enemies and monsters.</p>
-            </div></a>
-          </div>
+        <div class="hidden delaytwo">
+          <a
+            href="https://github.com/LucasHJin/competitive-programming-solutions"
+            target="_blank"
+            ><div class="project">
+              <img src="./static/atcoder.png" />
+              <p class="title">Competitive Programming Problems</p>
+              <p class="des">
+                A collection of all the
+                <span class="highlight2">competitive programming problems</span>
+                I have solved. It covers a wide variety of
+                <span class="highlight2">DSA</span> problems, ranging from DP to
+                graph theory. It contains problems from various sources
+                including
+                <span class="highlight2"
+                  >AtCoder, CSES, DMOJ and CodeForces</span
+                >
+                and most are solved with <span class="highlight2">C++</span>.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="hidden delaytwo">
+          <a href="https://github.com/LucasHJin/ConvoAI" target="_blank"
+            ><div class="project">
+              <img src="./static/Convo.png" />
+              <p class="title">ConvoAI</p>
+              <p class="des">
+                Designed for improved
+                <span class="highlight2">programming interview</span>
+                performance, ConvoAI is the extra boost you need to land your
+                job! Using
+                <span class="highlight2"
+                  >Google's speech recognition model</span
+                >
+                along with
+                <span class="highlight2">OpenAI's machine learning models</span
+                >, it recognizes when a question is asked and generates a
+                response rapidly. It can even
+                <span class="highlight2">personalize responses</span> based on
+                your resume. Alongside these external pieces, it is made with
+                <span class="highlight2">HTML, CSS and JavaScript</span> as well
+                as <span class="highlight2">Python and Flask</span>.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="hidden delaytwo">
+          <a href="https://devpost.com/software/studiessphere" target="_blank"
+            ><div class="project">
+              <img src="./static/StudySphereLogo.jpeg" />
+              <p class="title">StudySphere</p>
+              <p class="des">
+                Made for <span class="highlight2">UOttaHack 6</span>,
+                StudySphere helps students study with peers. It provides the
+                ability to ask questions, answer questions and search for them,
+                essentially acting like a
+                <span class="highlight2">Reddit/Discord</span> for studying. The
+                front end is made up of
+                <span class="highlight2">HTML, CSS and JavaScript</span> and the
+                back end was made with
+                <span class="highlight2">Flask, Python and SQLAlchemy.</span>
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="hidden delaytwo">
+          <a href="https://github.com/LucasHJin/Zenith-App" target="_blank"
+            ><div class="project">
+              <img src="./static/zenith-logo.jpg" />
+              <p class="title">Zenith: Workout App</p>
+              <p class="des">
+                Made as a passion project, Zenith App is an
+                <span class="highlight2">IOS-only app</span> to track and
+                visualize progress in the gym. It allows users to put in their
+                sets, reps and comments for an exercise, watch tutorials for
+                unknown exercises and much more. It is made with
+                <span class="highlight2">Swift and SwiftUI</span> and uses
+                <span class="highlight2">Firebase</span> for
+                <span class="highlight2">user authentication</span> and a
+                <span class="highlight2">document database</span>.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="hidden delaytwo">
+          <a
+            href="https://github.com/Spark-Youth-Robotics-Club-8729"
+            target="_blank"
+            ><div class="project">
+              <img src="./static/syrc.jpeg" />
+              <p class="title">Sparking H2O - FRC Team 8729</p>
+              <p class="des">
+                During the 2023-2024 season, I was a core programmer for
+                <span class="highlight2">FRC team 8729</span>, working on
+                implementing robot vision and
+                <span class="highlight2">april tag recognition</span> with
+                <span class="highlight2">command based programming</span>.
+                During the 2024-2025 season, I will be a
+                <span class="highlight2">software lead</span>, teaching new
+                software members both command based programming and electrical.
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="hidden delaytwo">
+          <a href="https://github.com/LucasHJin/Letum" target="_blank"
+            ><div class="project">
+              <img src="./static/letum.webp" />
+              <p class="title">Letum</p>
+              <p class="des">
+                Letum is an old-school style text RPG, made with
+                <span class="highlight2">OOP concepts</span> as well as an
+                <span class="highlight2">AI Language Model</span>. Made with
+                <span class="highlight2">Python</span>, it allows the player to
+                experience the wonder and amazement they had when they were a
+                child, with captivating dialogue made with the aid of the
+                <span class="highlight2">Chatterbot library</span> and the
+                option to fight against various hordes of enemies and monsters.
+              </p>
+            </div></a
+          >
+        </div>
       </div>
     </div>
 
@@ -133,9 +255,13 @@
                 <p class="subtitle">Programming Language</p>
                 <p class="stars">★★★★★</p>
               </div>
-              <div class="right"><img src="./static/python.png"></div>
+              <div class="right"><img src="./static/python.png" /></div>
             </div>
-            <p class="bottom">Python is one of the first languages I learned. Because of its simplicity and it being a high-level language, it is also the one I am most proficient with.</p>
+            <p class="bottom">
+              Python is one of the first languages I learned. Because of its
+              simplicity and it being a high-level language, it is also the one
+              I am most proficient with.
+            </p>
           </div>
         </a>
         <a href="https://isocpp.org/" target="_blank" class="hidden">
@@ -146,9 +272,13 @@
                 <p class="subtitle">Programming Language</p>
                 <p class="stars">★★★★☆</p>
               </div>
-              <div class="right"><img src="./static/c++.png"></div>
+              <div class="right"><img src="./static/c++.png" /></div>
             </div>
-            <p class="bottom">C++ is another one of my primary languages. I use it primarily for competitive programming as it is a high-performance language and so, can compile and run programmes faster than other languages.</p>
+            <p class="bottom">
+              C++ is another one of my primary languages. I use it primarily for
+              competitive programming as it is a high-performance language and
+              so, can compile and run programmes faster than other languages.
+            </p>
           </div>
         </a>
         <a href="https://github.com/" target="_blank" class="hidden">
@@ -156,15 +286,21 @@
             <div class="up">
               <div class="left">
                 <p class="title">Git & Github</p>
-                <p class="subtitle">Version Control System/Developer Platform</p>
+                <p class="subtitle">
+                  Version Control System/Developer Platform
+                </p>
                 <p class="stars">★★★★☆</p>
               </div>
               <div class="right">
-                <img src="./static/git.png" class="one">
-                <img src="./static/github.png" class="two">
+                <img src="./static/git.png" class="one" />
+                <img src="./static/github.png" class="two" />
               </div>
             </div>
-            <p class="bottom">I am very familiar with using Git and Github to collaborate with others and save my work. I use Github as the online developer platform to share my work with others.</p>
+            <p class="bottom">
+              I am very familiar with using Git and Github to collaborate with
+              others and save my work. I use Github as the online developer
+              platform to share my work with others.
+            </p>
           </div>
         </a>
         <a href="https://firebase.google.com/" target="_blank" class="hidden">
@@ -175,12 +311,22 @@
                 <p class="subtitle">Database</p>
                 <p class="stars">★★★☆☆</p>
               </div>
-              <div class="right"><img src="./static/firebase-logo-vertical.png"></div>
+              <div class="right">
+                <img src="./static/firebase-logo-vertical.png" />
+              </div>
             </div>
-            <p class="bottom">I used this document(non-relational) database for some of my IOS apps. I understand the way it functions compared to a relational database but have only used it with Swift so far.</p>
+            <p class="bottom">
+              I used this document(non-relational) database for some of my IOS
+              apps. I understand the way it functions compared to a relational
+              database but have only used it with Swift so far.
+            </p>
           </div>
         </a>
-        <a href="https://developer.apple.com/swift/" target="_blank" class="hidden">
+        <a
+          href="https://developer.apple.com/swift/"
+          target="_blank"
+          class="hidden"
+        >
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -188,12 +334,21 @@
                 <p class="subtitle">Programming Language</p>
                 <p class="stars">★★☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/swift.png"></div>
+              <div class="right"><img src="./static/swift.png" /></div>
             </div>
-            <p class="bottom">I began learning Swift in 2023 and have experimented with it, creating various IOS apps such as Zenith. I am not fluent with it yet, but I am able to write simple apps and grasp the basic concepts.</p>
+            <p class="bottom">
+              I began learning Swift in 2023 and have experimented with it,
+              creating various IOS apps such as Zenith. I am not fluent with it
+              yet, but I am able to write simple apps and grasp the basic
+              concepts.
+            </p>
           </div>
         </a>
-        <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank" class="hidden">
+        <a
+          href="https://flask.palletsprojects.com/en/3.0.x/"
+          target="_blank"
+          class="hidden"
+        >
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -201,38 +356,64 @@
                 <p class="subtitle">Python Web Framework</p>
                 <p class="stars">★★☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/flask-logo-icon.webp"></div>
+              <div class="right">
+                <img src="./static/flask-logo-icon.webp" />
+              </div>
             </div>
-            <p class="bottom">I have started learning to use Flask as a backend framework (i.e StudySphere). I am not completely fluent with it yet but will likely continue to use it.</p>
+            <p class="bottom">
+              I have started learning to use Flask as a backend framework (i.e
+              StudySphere). I am not completely fluent with it yet but will
+              likely continue to use it.
+            </p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="hidden">
-          <div class="skill"> 
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          class="hidden"
+        >
+          <div class="skill">
             <div class="up">
               <div class="left">
                 <p class="title">HTML</p>
                 <p class="subtitle">Markup Language</p>
                 <p class="stars">★★☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/html.png"></div>
+              <div class="right"><img src="./static/html.png" /></div>
             </div>
-            <p class="bottom">I have a passable understanding of the uses of HTML to structure a web page and its content. I am currently learning more about it in the online course: "The Odin Project".</p>
+            <p class="bottom">
+              I have a passable understanding of the uses of HTML to structure a
+              web page and its content. I am currently learning more about it in
+              the online course: "The Odin Project".
+            </p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="hidden">
-          <div class="skill"> 
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+          class="hidden"
+        >
+          <div class="skill">
             <div class="up">
               <div class="left">
                 <p class="title">CSS</p>
                 <p class="subtitle">Style Sheet Language</p>
                 <p class="stars">★★☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/css.png"></div>
+              <div class="right"><img src="./static/css.png" /></div>
             </div>
-            <p class="bottom">I similarly have a passable understanding of the uses of CSS and how to use flex to make responsive web pages. I am currently learning more about it in the online course: "The Odin Project".</p>
+            <p class="bottom">
+              I similarly have a passable understanding of the uses of CSS and
+              how to use flex to make responsive web pages. I am currently
+              learning more about it in the online course: "The Odin Project".
+            </p>
           </div>
         </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" target="_blank" class="hidden">
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript"
+          target="_blank"
+          class="hidden"
+        >
           <div class="skill">
             <div class="up">
               <div class="left">
@@ -240,9 +421,13 @@
                 <p class="subtitle">Programming Language</p>
                 <p class="stars">★☆☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/js.png"></div>
+              <div class="right"><img src="./static/js.png" /></div>
             </div>
-            <p class="bottom">I currently possess a very primary understanding of Javascript. However, I am learning more about it in the online course: "The Odin Project".</p>
+            <p class="bottom">
+              I currently possess a very primary understanding of Javascript.
+              However, I am learning more about it in the online course: "The
+              Odin Project".
+            </p>
           </div>
         </a>
         <a href="https://www.java.com/en/" target="_blank" class="hidden">
@@ -253,9 +438,15 @@
                 <p class="subtitle">Programming Language</p>
                 <p class="stars">★☆☆☆☆</p>
               </div>
-              <div class="right"><img src="./static/java.png"></div>
+              <div class="right"><img src="./static/java.png" /></div>
             </div>
-            <p class="bottom">I use Java as a core software programmer of First Robotics Competition Team 8729 (Sparkling H2O). However, I have a limited understanding of the language as the coding being done with it involves more of importing libraries and calling pre-written functions.</p>
+            <p class="bottom">
+              I use Java as a core software programmer of First Robotics
+              Competition Team 8729 (Sparkling H2O). However, I have a limited
+              understanding of the language as the coding being done with it
+              involves more of importing libraries and calling pre-written
+              functions.
+            </p>
           </div>
         </a>
       </div>
@@ -265,19 +456,64 @@
       <p class="title-total hidden">Connect With Me!</p>
       <div class="bottom">
         <div class="socials">
-          <a href="https://github.com/LucasHJin" target="_blank" class="github hidden"><img src="./static/github.png" class="github-img"/></a>
-          <a href="mailto:kblazer20@gmail.com" target="_blank" class="gmail hidden"><img src="./static/gmail.png" class="gmail-img"/></a>
-          <a href="https://www.linkedin.com/in/lucas--jin/" target="_blank" class="linkedin hidden"><img src="./static/linkedin.png" class="linkedin-img"></a>
+          <a
+            href="https://github.com/LucasHJin"
+            target="_blank"
+            class="github hidden"
+            ><img src="./static/github.png" class="github-img"
+          /></a>
+          <a
+            href="mailto:kblazer20@gmail.com"
+            target="_blank"
+            class="gmail hidden"
+            ><img src="./static/gmail.png" class="gmail-img"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/lucas--jin/"
+            target="_blank"
+            class="linkedin hidden"
+            ><img src="./static/linkedin.png" class="linkedin-img"
+          /></a>
         </div>
         <div class="cca hidden">
           <ul>
             <li>
-              <a href="#connect" class="top">Competitive Programming Accounts ▼</a>
+              <a href="#connect" class="top"
+                >Competitive Programming Accounts ▼</a
+              >
               <ul class="dropdown">
-                <li><a href="https://atcoder.jp/users/lsun48" target="_blank" class="link">AtCoder</a></li>
-                <li><a href="https://dmoj.ca/user/fraud" target="_blank" class="link">DMOJ</a></li>
-                <li><a href="https://cses.fi/user/235275/" target="_blank" class="link">CSES</a></li>
-                <li><a href="https://github.com/LucasHJin/competitive-programming-solutions" target="_blank" class="link">Github</a></li>
+                <li>
+                  <a
+                    href="https://atcoder.jp/users/lsun48"
+                    target="_blank"
+                    class="link"
+                    >AtCoder</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://dmoj.ca/user/fraud"
+                    target="_blank"
+                    class="link"
+                    >DMOJ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://cses.fi/user/235275/"
+                    target="_blank"
+                    class="link"
+                    >CSES</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/LucasHJin/competitive-programming-solutions"
+                    target="_blank"
+                    class="link"
+                    >Github</a
+                  >
+                </li>
               </ul>
             </li>
           </ul>
