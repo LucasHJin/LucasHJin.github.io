@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./globals.css"; // Applies global css to everything
 
 export default function RootLayout({ children }) {
   return (
