@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
               <li><Link href="/">lucas jin</Link></li>
               <li><Link href="/">about</Link></li>
               <li><Link href="/projects">projects</Link></li>
-              <li><Link href="/zettelkasten">zettlekasten</Link></li>
+              <li><Link href="/zettelkasten">zettelkasten</Link></li>
             </ul>
           </nav>
         </header>
