@@ -5,16 +5,17 @@
 
 /* Light mode */
 :root {
-  --background: #fff9fe;
-  --background-rgb: rgb(255,249,254);
-  --foreground: #453e43;
-  --foreground-rgb: rgb(69,62,67);
-  --foreground-rgb: rgba(69,62,67,0.7);
-  --accent: #d194c9;
-  --mutedaccent: #6b5868;
+  --background: rgb(255, 240, 253);
+  --background-darker: #dacdd8;
+  --background-darker-borders: rgba(202, 194, 201, 0.8);
+  --foreground-normal: rgba(71, 60, 68, 0.75);
+  --foreground-special: rgb(71, 60, 68);
+  --accent: rgb(219, 146, 209);
+  --mutedaccent-rgb: rgba(255, 193, 247, 0.8);
 }
 
 /* Dark mode */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #453e43;
@@ -24,6 +25,7 @@
     --foreground-rgb-text: rgba(255,249,254,0.7);
   }
 }
+*/
 
 body {
   background: var(--background);
@@ -32,8 +34,6 @@ body {
   font-weight: 350;
   font-size: 16.5px;
   line-height: 1.6;
-  background-image: radial-gradient(var(--mutedaccent) 1px, transparent 0);
-  background-size: 2vw 2vw;
 }
 
 .bold {
