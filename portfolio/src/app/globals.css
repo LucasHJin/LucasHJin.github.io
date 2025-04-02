@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* Following this: 
+    https://gist.github.com/basham/2175a16ab7c60ce8e001
+*/
+
 /* Light mode */
 :root {
   --background: rgb(255, 240, 253);
@@ -32,9 +36,9 @@ body {
   color: var(--foreground-rgb-text);
   font-family: 'Inter','Poppins',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-weight: 350;
-  font-size: 16.5px;
+  font-size: 100%;
   line-height: 1.6;
-  padding: 10vh 8.5vw; 
+  padding: 4% 12%; 
   box-sizing: border-box;
 }
 

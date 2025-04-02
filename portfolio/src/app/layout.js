@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css"; // Applies global css to everything
+import "./styling/layout.css"
 import Link from "next/link";
 
 // add a middle underline appear
@@ -9,12 +10,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <nav>
+          <nav className="header">
             <ul>
-              <li><Link href="/">lucas jin</Link></li>
-              <li><Link href="/">about</Link></li>
-              <li><Link href="/projects">projects</Link></li>
-              <li><Link href="/zettelkasten">zettelkasten</Link></li>
+              <li className="name"><Link href="/">lucas jin</Link></li>
+              <div className="navs">
+                <li className="nav"><Link href="/">about</Link></li>
+                <li className="nav"><Link href="/projects">projects</Link></li>
+                <li className="nav"><Link href="/zettelkasten">zettelkasten</Link></li>
+              </div>
             </ul>
           </nav>
         </header>
@@ -22,9 +25,12 @@ export default function RootLayout({ children }) {
         <footer>
         <nav>
             <ul>
-              <li><Link href="/">insta</Link></li>
-              <li><Link href="/">email</Link></li>
-              <li><Link href="/">linkedin</Link></li>
+              <li><Link href="/">webring</Link></li>
+              <div className="socials">
+                <li><Link href="/" className="nav">insta</Link></li>
+                <li><Link href="/" className="nav">email</Link></li>
+                <li><Link href="/" className="nav">linkedin</Link></li>
+              </div>
             </ul>
           </nav>
         </footer>

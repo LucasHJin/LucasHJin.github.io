@@ -1,0 +1,26 @@
+header nav ul, footer nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+header .name a {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+header .navs, footer .socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header .nav {
+    padding-left: 2vw;
+}
+
+footer .nav {
+    padding-left: 0.5vw;
+}
+
