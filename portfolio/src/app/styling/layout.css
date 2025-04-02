@@ -31,7 +31,7 @@ nav a {
 
 
 
-/* ANIMATION*/
+/* ANIMATION */
 .link-major {
     display: inline-block;
     position: relative;
@@ -46,7 +46,7 @@ nav a {
     bottom: 0em; 
     width: 0;
     height: 0.1em;
-    background-color: var(--foreground-normal);
+    background-color: var(--muted-accent);
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -54,4 +54,16 @@ nav a {
 .link-major:hover::after { 
     width: 80%;
     left: 10%;
+}
+
+
+/* CURRENT PAGE UNDERLINE */
+.current-page::after {
+    content: "";
+    position: absolute;
+    left: 10%; 
+    bottom: 0em;
+    width: 80%;
+    height: 0.1em;
+    background-color: var(--muted-accent);
 }

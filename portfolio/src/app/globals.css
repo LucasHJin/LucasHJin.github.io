@@ -15,7 +15,7 @@
   --foreground-normal: rgba(71, 60, 68, 0.75);
   --foreground-special: rgb(71, 60, 68);
   --accent: rgb(219, 146, 209);
-  --mutedaccent-rgb: rgba(255, 193, 247, 0.8);
+  --muted-accent: rgba(255, 193, 247, 0.8);
 }
 
 /* Dark mode */

@@ -1,3 +1,6 @@
+'use client';
+import { useEffect } from "react";
+import { usePathname } from 'next/navigation'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css"; // Applies global css to everything
 import "./styling/layout.css"
@@ -6,6 +9,21 @@ import Link from "next/link";
 // add a middle underline appear (on selected)
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname()
+
+  useEffect(() => {
+    console.log('a');
+    const links = document.querySelectorAll(".link-major.nav a");
+
+    links.forEach(link => link.classList.remove("current-page"));
+
+    links.forEach(link => {
+      if (window.location.pathname == link.getAttribute("href")) {
+        link.classList.add("current-page");
+      }
+    });
+  }, [pathname]);
+
   return (
     <html lang="en">
       <body>
