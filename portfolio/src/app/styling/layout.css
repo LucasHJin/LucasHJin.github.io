@@ -25,10 +25,13 @@ footer .nav {
 }
 
 nav a {
-    color: var(--foreground-special)
+    color: var(--foreground-special);
 }
 
-
+footer .copyright {
+    color: var(--foreground-special);
+    font-size: 0.8rem;
+}
 
 
 /* ANIMATION */

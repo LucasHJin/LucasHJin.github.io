@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         </header>
         <main>{children}</main>
         <footer>
-        <nav>
+          <nav>
             <ul>
               <li><Link href="/">webring</Link></li>
               <div className="socials">
@@ -51,6 +51,7 @@ export default function RootLayout({ children }) {
               </div>
             </ul>
           </nav>
+          <h6 className="copyright">Lucas Jin © 2025</h6>
         </footer>
       </body>
     </html>

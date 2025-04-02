@@ -1,4 +1,4 @@
-export default function Card() {
+export default function Zgraph() {
     return (
       <div>
         HI
