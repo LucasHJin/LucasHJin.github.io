@@ -3,7 +3,7 @@ import "./globals.css"; // Applies global css to everything
 import "./styling/layout.css"
 import Link from "next/link";
 
-// add a middle underline appear
+// add a middle underline appear (on selected)
 
 export default function RootLayout({ children }) {
   return (
@@ -12,11 +12,11 @@ export default function RootLayout({ children }) {
         <header>
           <nav className="header">
             <ul>
-              <li className="name"><Link href="/">lucas jin</Link></li>
+              <li className="name link-major"><Link href="/">lucas jin</Link></li>
               <div className="navs">
-                <li className="nav"><Link href="/">about</Link></li>
-                <li className="nav"><Link href="/projects">projects</Link></li>
-                <li className="nav"><Link href="/zettelkasten">zettelkasten</Link></li>
+                <li className="nav link-major"><Link href="/">about</Link></li>
+                <li className="nav link-major"><Link href="/projects">projects</Link></li>
+                <li className="nav link-major"><Link href="/zettelkasten">zettelkasten</Link></li>
               </div>
             </ul>
           </nav>

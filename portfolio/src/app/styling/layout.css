@@ -17,10 +17,41 @@ header .navs, footer .socials {
 }
 
 header .nav {
-    padding-left: 2vw;
+    margin-left: 2vw;
 }
 
 footer .nav {
-    padding-left: 0.5vw;
+    margin-left: 0.5vw;
 }
 
+nav a {
+    color: var(--foreground-special)
+}
+
+
+
+
+/* ANIMATION*/
+.link-major {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Create underline */
+.link-major::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0em; 
+    width: 0;
+    height: 0.1em;
+    background-color: var(--foreground-normal);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Expand on hover */
+.link-major:hover::after { 
+    width: 80%;
+    left: 10%;
+}
