@@ -33,6 +33,12 @@ footer .copyright {
     font-size: 0.8rem;
 }
 
+footer {
+    border-top: 1px solid var(--muted-accent);
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+}
+
 
 /* ANIMATION */
 .link-major {

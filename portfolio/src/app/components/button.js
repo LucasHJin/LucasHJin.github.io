@@ -1,7 +1,7 @@
 export default function Button() {
     return (
       <div>
-        HI
+        <button>Press me!</button>
       </div>
     );
   }
