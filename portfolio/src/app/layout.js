@@ -1,10 +1,12 @@
 'use client';
 import { useEffect } from "react";
 import { usePathname } from 'next/navigation'
-import { Geist, Geist_Mono } from "next/font/google";
+import { FaGithub, FaLinkedin, FaInstagram,  } from "react-icons/fa"; // React icons
+import { SiGmail } from "react-icons/si";
 import "./globals.css"; // Applies global css to everything
 import "./styling/layout.css"
 import Link from "next/link";
+
 
 // add a middle underline appear (on selected)
 
@@ -45,9 +47,18 @@ export default function RootLayout({ children }) {
             <ul>
               <li><Link href="/">webring</Link></li>
               <div className="socials">
-                <li><Link href="/" className="nav">insta</Link></li>
-                <li><Link href="/" className="nav">email</Link></li>
-                <li><Link href="/" className="nav">linkedin</Link></li>
+                <li><Link href="https://github.com/LucasHJin" target="_blank" rel="noopener noreferrer" className="nav">
+                  <FaGithub />
+                </Link></li>
+                <li><Link href="https://www.linkedin.com/in/lucas--jin/" target="_blank" rel="noopener noreferrer" className="nav">
+                  <FaLinkedin />
+                </Link></li>
+                <li><Link href="mailto:lucasjin.hh@gmail.com" target="_blank" rel="noopener noreferrer" className="nav">
+                  <SiGmail />
+                </Link></li>
+                <li><Link href="https://www.instagram.com/completely_fraudulent/" target="_blank" rel="noopener noreferrer" className="nav">
+                  <FaInstagram />
+                </Link></li>
               </div>
             </ul>
           </nav>

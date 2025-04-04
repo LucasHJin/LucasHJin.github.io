@@ -28,17 +28,25 @@ nav a {
     color: var(--foreground-special);
 }
 
-footer .copyright {
-    color: var(--foreground-special);
-    font-size: 0.8rem;
-}
-
 footer {
     border-top: 1px solid var(--muted-accent);
     margin-top: 1.5rem;
     padding-top: 0.75rem;
 }
 
+footer .copyright {
+    color: var(--foreground-special);
+    font-size: 0.8rem;
+}
+
+footer .socials a {
+    font-size: 1.75rem;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .socials a:hover {
+    color: var(--accent);
+}
 
 /* ANIMATION */
 .link-major {
