@@ -5,9 +5,10 @@ import Zgraph from "./components/zgraph";
 export default function Home() {
   return (
     <div>
+      <h1 className="sr-only">About Me</h1> {/* only for screen readers */}
       <div className="about">
         <div className="description">
-          <p>who am i?</p>
+          <h2>who am i?</h2>
           <ul>
             <li>
               ibdp student from merivale hs
@@ -19,7 +20,7 @@ export default function Home() {
               passionate about robotics (shoutout to frc 8729), hackathons, and web dev
             </li>
           </ul>
-          <p>what else?</p>
+          <h2>what else?</h2>
           <ul>
             <li>
               i love working out, manhwas, mangas, and light novels

@@ -5,6 +5,7 @@
 
 /* Following this: 
     https://gist.github.com/basham/2175a16ab7c60ce8e001
+    https://www.conductor.com/academy/headings/
 */
 
 /* Light mode */
@@ -40,6 +41,26 @@ body {
   line-height: 1.6;
   padding: 4% 12%; 
   box-sizing: border-box;
+}
+
+ul:not(.no-list) li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+ul:not(.no-list) li::before {
+  content: "◆"; 
+  position: absolute;
+  left: 0;
+  color: var(--muted-accent);
+  top: 0.3em;
+  font-size: 0.7rem; 
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.1rem;
+  font-style: italic;
 }
 
 .bold {

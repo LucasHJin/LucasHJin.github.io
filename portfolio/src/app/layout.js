@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <nav className="header">
-            <ul>
+            <ul className="no-list">
               <li className="name link-major"><Link href="/">lucas jin</Link></li>
               <div className="navs">
                 <li className="nav link-major"><Link href="/">about</Link></li>
