@@ -48,15 +48,21 @@ footer .socials a:hover {
     color: var(--accent); /* fix link height problem */
 }
 
+footer ul {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 /* ANIMATION */
-.link-major {
+.link-page {
     display: inline-block;
     position: relative;
     text-decoration: none;
 }
 
 /* Create underline */
-.link-major::after {
+.link-page::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -68,7 +74,7 @@ footer .socials a:hover {
 }
 
 /* Expand on hover */
-.link-major:hover::after { 
+.link-page:hover::after { 
     width: 80%;
     left: 10%;
 }

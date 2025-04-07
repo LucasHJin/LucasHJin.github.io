@@ -63,6 +63,12 @@ h2 {
   font-style: italic;
 }
 
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
 .bold {
   color: var(--foreground-rgb);
   font-weight: 450;

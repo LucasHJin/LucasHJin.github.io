@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     console.log('a');
-    const links = document.querySelectorAll(".link-major.nav a");
+    const links = document.querySelectorAll(".header .navs .link-page");
 
     links.forEach(link => link.classList.remove("current-page"));
 
@@ -32,34 +32,34 @@ export default function RootLayout({ children }) {
         <header>
           <nav className="header">
             <ul className="no-list">
-              <li className="name link-major"><Link href="/">lucas jin</Link></li>
-              <div className="navs">
-                <li className="nav link-major"><Link href="/">about</Link></li>
-                <li className="nav link-major"><Link href="/projects">projects</Link></li>
-                <li className="nav link-major"><Link href="/zettelkasten">zettelkasten</Link></li>
-              </div>
+              <li className="name link-page"><Link href="/">lucas jin</Link></li>
+              <li className="navs">
+                <Link href="/" className="nav link-page">about</Link>
+                <Link href="/projects" className="nav link-page">projects</Link>
+                <Link href="/zettelkasten" className="nav link-page">zettelkasten</Link>
+              </li>
             </ul>
           </nav>
         </header>
         <main>{children}</main>
         <footer>
           <nav>
-            <ul>
+            <ul className="no-list">
               <li><Link href="/">webring</Link></li>
-              <div className="socials">
-                <li><Link href="https://github.com/LucasHJin" target="_blank" rel="noopener noreferrer" className="nav">
+              <li className="socials">
+                <Link href="https://github.com/LucasHJin" target="_blank" rel="noopener noreferrer" className="nav">
                   <FaGithub />
-                </Link></li>
-                <li><Link href="https://www.linkedin.com/in/lucas--jin/" target="_blank" rel="noopener noreferrer" className="nav">
+                </Link>
+                <Link href="https://www.linkedin.com/in/lucas--jin/" target="_blank" rel="noopener noreferrer" className="nav">
                   <FaLinkedin />
-                </Link></li>
-                <li><Link href="mailto:lucasjin.hh@gmail.com" target="_blank" rel="noopener noreferrer" className="nav">
+                </Link>
+                <Link href="mailto:lucasjin.hh@gmail.com" target="_blank" rel="noopener noreferrer" className="nav">
                   <SiGmail />
-                </Link></li>
-                <li><Link href="https://www.instagram.com/completely_fraudulent/" target="_blank" rel="noopener noreferrer" className="nav">
+                </Link>
+                <Link href="https://www.instagram.com/completely_fraudulent/" target="_blank" rel="noopener noreferrer" className="nav">
                   <FaInstagram />
-                </Link></li>
-              </div>
+                </Link>
+              </li>
             </ul>
           </nav>
           <h6 className="copyright">Lucas Jin © 2025</h6>
