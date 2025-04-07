@@ -9,13 +9,13 @@
 
 /* Light mode */
 :root {
-  --background: rgb(255, 240, 253);
-  --background-darker: #dacdd8;
-  --background-darker-borders: rgba(202, 194, 201, 0.8);
-  --foreground-normal: rgba(71, 60, 68, 0.75);
-  --foreground-special: rgb(71, 60, 68);
-  --accent: rgb(219, 146, 209);
-  --muted-accent: rgba(255, 193, 247, 0.8);
+  --background: rgb(12, 11, 60);
+  --background-lighter: rgb(52, 33, 131);
+  --background-lighter-borders: rgb(52, 33, 131, 0.8);
+  --foreground-normal: rgba(225, 247, 255, 0.75);
+  --foreground-special: rgba(225, 247, 255);
+  --accent: rgb(226, 211, 74);
+  --muted-accent: rgb(74, 59, 169, 0.8);
 }
 
 /* Dark mode */

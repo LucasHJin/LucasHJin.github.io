@@ -29,7 +29,7 @@ nav a {
 }
 
 footer {
-    border-top: 1px solid var(--muted-accent);
+    border-top: 2px solid var(--muted-accent);
     margin-top: 1.5rem;
     padding-top: 0.75rem;
 }
@@ -41,11 +41,11 @@ footer .copyright {
 
 footer .socials a {
     font-size: 1.75rem;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 footer .socials a:hover {
-    color: var(--accent);
+    color: var(--accent); /* fix link height problem */
 }
 
 /* ANIMATION */
@@ -63,7 +63,7 @@ footer .socials a:hover {
     bottom: 0em; 
     width: 0;
     height: 0.1em;
-    background-color: var(--muted-accent);
+    background-color: var(--accent);
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -82,5 +82,5 @@ footer .socials a:hover {
     bottom: 0em;
     width: 80%;
     height: 0.1em;
-    background-color: var(--muted-accent);
+    background-color: var(--accent);
 }
