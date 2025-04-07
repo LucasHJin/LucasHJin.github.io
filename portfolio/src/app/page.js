@@ -9,41 +9,49 @@ export default function Home() {
       <div className="about">
         <div className="description">
           <h2>who am i?</h2>
-          <ul>
-            <li>
-              ibdp student from merivale hs
-            </li>
-            <li>
-              future cs @ ____
-            </li>
-            <li>
-              passionate about robotics (shoutout to frc 8729), hackathons, and web dev
-            </li>
-          </ul>
+            <ul className="text">
+              <li>
+                ibdp student from merivale hs
+              </li>
+              <li>
+                future cs @ ____
+              </li>
+              <li>
+                passionate about robotics (shoutout to frc 8729), hackathons, and web dev
+              </li>
+            </ul>
           <h2>what else?</h2>
-          <ul>
-            <li>
-              i love working out, manhwas, mangas, and light novels
-              <ul>
-                <li>
-                  fun fact: i've made a real life replica of the dragonslayer from berserk
-                </li>
-              </ul>
-            </li>
-            <li>
-              (league addict)
-            </li>
-          </ul>
-          <div>
-            <h3>my thoughts</h3>
-            <Zgraph></Zgraph>
-          </div>
+            <ul className="text">
+              <li>
+                i love working out, manhwas, mangas, and light novels
+                <ul>
+                  <li>
+                    fun fact: i've made a real life replica of the dragonslayer from berserk
+                  </li>
+                </ul>
+              </li>
+              <li>
+                (league addict)
+              </li>
+            </ul>
+          <h2>recent!</h2>
+            <ul className="text">
+              <li>
+                competed at dcmp, ranked #17/50 after quals (best result yet)
+              </li>
+            </ul>
         </div>
-        
+        <figure className="image">
+          <img src="../static/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025"></img>
+          <figcaption>part of frc 8729's drive team at dcmp!</figcaption>
+          </figure>
       </div>
       <div className="more">
         <Button></Button>
-        <img src="https://media.istockphoto.com/id/117996443/photo/giant-panda-ailuropoda-melanoleuca.jpg?s=1024x1024&w=is&k=20&c=pO14aLauzlEfnzsF327a39fQM5E0reo6Nh2ZEER6zGo="></img>
+        <div className="graph">
+            <h2>my thoughts</h2>
+            <Zgraph></Zgraph>
+        </div>
       </div>
     </div>
   );

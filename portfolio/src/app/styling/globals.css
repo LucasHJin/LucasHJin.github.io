@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import 'modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Following this: 
+    https://gist.github.com/basham/2175a16ab7c60ce8e001
+    https://www.conductor.com/academy/headings/
+*/
+
+/* Light mode */
+:root {
+  --background: rgb(12, 11, 60);
+  --background-lighter: rgb(52, 33, 131);
+  --background-lighter-borders: rgb(52, 33, 131, 0.8);
+  --foreground-normal: rgba(225, 247, 255, 0.75);
+  --foreground-special: rgba(225, 247, 255);
+  --accent: rgb(226, 211, 74);
+  --muted-accent: rgb(74, 59, 169, 0.8);
+}
+
+/* Dark mode */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #453e43;
+    --background-rgb: rgb(69,62,67);
+    --foreground: #fff9fe;
+    --foreground-rgb: rgb(255,249,254);
+    --foreground-rgb-text: rgba(255,249,254,0.7);
+  }
+}
+*/
+
+body {
+  background: var(--background);
+  color: var(--foreground-normal);
+  font-family: 'Inter','Poppins',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 350;
+  font-size: 110%;
+  line-height: 1.6;
+  padding: 4% 18%; 
+  box-sizing: border-box;
+}
+
+ul:not(.no-list) li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+ul:not(.no-list) li::before {
+  content: "◆"; 
+  position: absolute;
+  left: 0;
+  color: var(--muted-accent);
+  top: 0.3em;
+  font-size: 0.7em; 
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.1em;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.bold {
+  color: var(--foreground-rgb);
+  font-weight: 450;
+}
+
+.link {
+  color: var(--foreground-rgb);
+  font-style: italic;
+}

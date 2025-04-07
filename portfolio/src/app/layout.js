@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { usePathname } from 'next/navigation'
 import { FaGithub, FaLinkedin, FaInstagram,  } from "react-icons/fa"; // React icons
 import { SiGmail } from "react-icons/si";
-import "./globals.css"; // Applies global css to everything
+import "./styling/globals.css"; // Applies global css to everything
 import "./styling/layout.css"
 import Link from "next/link";
 
