@@ -80,12 +80,8 @@ li {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  list-style: none;
+header {
+  margin-bottom: 1rem;
 }
 
 .bold {
@@ -97,3 +93,4 @@ ul {
   color: var(--foreground-special);
   font-style: italic;
 }
+

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Card() {
     return (
-      <div className="outer-container">
+      <div className="outer-container card">
         <div className="container">
           <div className="item image">
             <img src="../static/frc_dcmp_2025.JPG"></img>
