@@ -1,0 +1,56 @@
+/* maybe just image and hover reveals text? */
+
+.outer-container {
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 1.5vw;
+    overflow: hidden;
+    background-color: var(--grey-background);
+}
+
+.other {
+    padding: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.container .top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.name h3 {
+    line-height: 1;
+}
+
+.image {
+    width: 40%;
+    object-fit: cover;
+    align-self: flex-start;
+}
+
+.links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.description p {
+    font-size: 0.9em;
+}
+
+.links a {
+    font-size: 1.3em;
+    line-height: 1;
+}
