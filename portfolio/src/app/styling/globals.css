@@ -8,6 +8,14 @@
     https://www.conductor.com/academy/headings/
 */
 
+/* 
+Background: #F8F9FA or #2B2D42 (depending on light/dark theme)
+Primary Text: #2B2D42 or #F8F9FA (contrasting the background)
+Accent Color: #FDCB6E or #FF6B81
+Buttons/Hover States: #6A4C93 with #FDCB6E text or vice versa
+Borders & Dividers: #C0B9DD
+*/
+
 /* Light mode */
 :root {
   --background: rgb(12, 11, 60);
