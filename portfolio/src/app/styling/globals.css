@@ -64,6 +64,7 @@ ul:not(.no-list) li::before {
   color: var(--muted-accent);
   top: 0.3em;
   font-size: 0.7em; 
+  font-style: normal;
 }
 
 h2 {
@@ -97,8 +98,11 @@ header {
   font-weight: 450;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .link {
   color: var(--foreground-special);
   font-style: italic;
 }
-

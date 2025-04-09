@@ -17,35 +17,37 @@ export default function Card( { title, description, image, links, tags } ) {
             <img src={image}></img>
           </div>
           <div className="other">
-            <div className="top">
-              <div className="item title">
-                <h3>{title}</h3>
+            <div className="other-padding">
+              <div className="top">
+                <div className="item title">
+                  <h3>{title}</h3>
+                </div>
+                <div className="item links">
+                  {links?.github && 
+                    <Link href={links.github} target="_blank" rel="noopener noreferrer" className="link">
+                      <FaGithub />
+                    </Link>
+                  }
+                  {links?.devpost && 
+                    <Link href={links.devpost} target="_blank" rel="noopener noreferrer" className="link">
+                      <SiDevpost />
+                    </Link>
+                  }
+                  {links?.published && 
+                    <Link href={links.published} target="_blank" rel="noopener noreferrer" className="link">
+                      <AiOutlineExport />
+                    </Link>
+                  }
+                </div>
               </div>
-              <div className="item links">
-                {links?.github && 
-                  <Link href={links.github} target="_blank" rel="noopener noreferrer" className="link">
-                    <FaGithub />
-                  </Link>
-                }
-                {links?.devpost && 
-                  <Link href={links.devpost} target="_blank" rel="noopener noreferrer" className="link">
-                    <SiDevpost />
-                  </Link>
-                }
-                {links?.published && 
-                  <Link href={links.published} target="_blank" rel="noopener noreferrer" className="link">
-                    <AiOutlineExport />
-                  </Link>
-                }
+              <div className="item description">
+                <p>{description}</p>
               </div>
-            </div>
-            <div className="item description">
-              <p>{description}</p>
-            </div>
-            <div className="item tags">
-              {tags !== undefined && tags.length > 0 && tags.map((tag, index) => (
-                <Tag key={index} tag={tag} />
-              ))}
+              <div className="item tags">
+                {tags !== undefined && tags.length > 0 && tags.map((tag, index) => (
+                  <Tag key={index} tag={tag} />
+                ))}
+              </div>
             </div>
           </div>
         </div>

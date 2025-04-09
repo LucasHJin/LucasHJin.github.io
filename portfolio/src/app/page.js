@@ -10,8 +10,11 @@ export default function Home() {
         <div className="description">
           <h2>who am i?</h2>
             <ul className="text">
+              <li className="italic">
+                aspiring web developer
+              </li>
               <li>
-                ibdp student from merivale hs
+                ibdp student from merivale hs (ottawa)
               </li>
               <li>
                 future cs @ ____
@@ -30,14 +33,14 @@ export default function Home() {
                   </li>
                 </ul>
               </li>
-              <li>
-                (league addict)
-              </li>
             </ul>
           <h2>recent!</h2>
             <ul className="text">
               <li>
                 competed at dcmp, ranked #17/50 after quals (best result yet)
+              </li>
+              <li>
+                working on a drama production manager for an ics4u project
               </li>
             </ul>
         </div>
