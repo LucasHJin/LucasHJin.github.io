@@ -1,3 +1,4 @@
+'use client';
 import Tag from "../components/tag"
 import "../styling/card.css"
 import { FaGithub } from "react-icons/fa";
@@ -10,9 +11,26 @@ import PropTypes from 'prop-types';
 // change the inside links to div and use javascript? or button
 
 export default function Card( { title, description, image, links, tags } ) {
+  const handleClick = (link) => {
+    if (link) {
+      window.open(link, '_blank');
+    }
+  };
+
+  const addHttps = (link) => {
+    if (!(link.includes("https://"))) {
+      let start = "https://";
+      let fullLink = start.concat(link);
+      console.log(fullLink);
+      console.log(link);
+      return fullLink
+    }
+  }
+
+  
     return (
       <div className="outer-container card">
-        <Link href={links?.github || "https://github.com/LucasHJin"} target="_blank" rel="noopener noreferrer">
+        <a href={addHttps(links?.github) || "https://github.com/LucasHJin"} target="_blank" rel="noopener noreferrer">
           <div className="container">
             <div className="item image">
               <img src={image}></img>
@@ -25,19 +43,19 @@ export default function Card( { title, description, image, links, tags } ) {
                   </div>
                   <div className="item links">
                     {links?.github && 
-                      <Link href={links.github} target="_blank" rel="noopener noreferrer" className="link">
+                      <span onClick={() => handleClick(addHttps(links.github))}>
                         <FaGithub />
-                      </Link>
-                    }
+                      </span>
+                    } 
                     {links?.devpost && 
-                      <Link href={links.devpost} target="_blank" rel="noopener noreferrer" className="link">
+                      <span onClick={() => handleClick(addHttps(links.devpost))}>
                         <SiDevpost />
-                      </Link>
+                      </span>
                     }
-                    {links?.published && 
-                      <Link href={links.published} target="_blank" rel="noopener noreferrer" className="link">
+                    {links?.livesite && 
+                      <span onClick={() => handleClick(addHttps(links.livesite))}>
                         <AiOutlineExport />
-                      </Link>
+                      </span>
                     }
                   </div>
                 </div>
@@ -52,7 +70,7 @@ export default function Card( { title, description, image, links, tags } ) {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
     );
   }
@@ -64,7 +82,7 @@ Card.propTypes = {
   links: PropTypes.shape({
     github: PropTypes.string,
     devpost: PropTypes.string,
-    published: PropTypes.string
+    livesite: PropTypes.string
   }),
   tags: PropTypes.arrayOf(PropTypes.string)
 };
@@ -76,7 +94,7 @@ Card.defaultProps = {
   links: {
     github: null,
     devpost: null,
-    published: null,
+    livesite: null,
   },
   tags: []
 };

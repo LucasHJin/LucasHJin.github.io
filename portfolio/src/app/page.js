@@ -39,9 +39,6 @@ export default function Home() {
               <li>
                 competed at dcmp, ranked #17/50 after quals (best result yet)
               </li>
-              <li>
-                working on a drama production manager for an ics4u project
-              </li>
             </ul>
         </div>
         <figure className="image">
