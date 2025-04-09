@@ -1,92 +1,74 @@
-/* maybe just image and hover reveals text? */
-/* add highlights */
-
 .outer-container {
-    width: 45%;
+    width: 55%;
+    border-radius: 1.5vw;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .container {
     display: flex;
-    flex-flow: column nowrap;
-    overflow: hidden;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
     border-top-left-radius: 1.5vw;
     border-top-right-radius: 1.5vw;
-    transition: border-radius 0.3s ease;
 }
 
-.card:hover .container {
-    max-height: 100%;
-    border-radius: 1.5vw;
-}
-
-.card .other {
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 1;
-    opacity: 0;
+/* hidden text */
+.other {
     max-height: 0;
-    transform: translateY(-100%);
     overflow: hidden;
-    transition: 
-        opacity 0.3s ease,
-        transform 0.3s ease,
-        max-height 0.3s ease;
+    transition: max-height 0.9s ease, padding 1.0s ease;
     background-color: var(--grey-background);
-    z-index: 1;
+    padding: 0 4%;
 }
 
-.card:hover .other {
-    opacity: 1;
-    max-height: 100%;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.card .other-padding {
+.outer-container:hover .other {
+    max-height: 1000px; /* large value (won't overflow) */
     padding: 2.5% 4%;
+}
+
+.other-padding {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .container .top {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 1%;
-}
-
-.title {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    align-items: center;
 }
 
 .title h3 {
-    line-height: 1;
-}
-
-.image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    align-self: flex-start;
-    z-index: 2;
-}
-
-.image img {
-    display: block;
+    margin: 0;
+    font-size: 1.2em;
+    word-break: break-word;
+    white-space: normal;
 }
 
 .links {
     display: flex;
-    flex-flow: row nowrap;
-}
-
-.description p {
-    font-size: 0.9em;
+    gap: 0.3em;
+    margin-left: 0.5em;
 }
 
 .links a {
-    font-size: 1.3em;
-    line-height: 1;
+    font-size: 1.25em;
+    transition: color 0.5s ease;
+}
+
+.links a:hover {
+    color: var(--accent);
+}
+
+.description p {
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .tags {
