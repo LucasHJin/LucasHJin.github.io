@@ -1,0 +1,6 @@
+.button {
+    width: auto;
+    padding: 3em 0;
+    background-color: var(--grey-background);
+    display: block;
+}

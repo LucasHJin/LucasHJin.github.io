@@ -14,7 +14,7 @@
     align-items: center;
     text-align: center;
     max-width: 45%;
-    margin-left: 4%;
+    margin-left: 5%;
   }
   
 
@@ -27,6 +27,6 @@
 
 .about .image img {
     width: 100%;
-    border: 3px solid var(--muted-accent);
+    /* border: 3px solid var(--muted-accent);*/
     border-radius: 5%;
 }

@@ -19,9 +19,6 @@ export default function Home() {
               <li>
                 future cs @ ____
               </li>
-              <li>
-                passionate about robotics (shoutout to frc 8729), hackathons, and web dev
-              </li>
             </ul>
           <h2>what else?</h2>
             <ul className="text">
@@ -45,7 +42,12 @@ export default function Home() {
           </figure>
       </div>
       <div className="more">
-        <Button></Button>
+        <div className="resume-github">
+          <h2>
+            see my...
+          </h2>
+          <Button></Button>
+        </div>
         <div className="graph">
             <h2>my thoughts</h2>
             <Zgraph></Zgraph>
