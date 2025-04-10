@@ -49,6 +49,11 @@
     font-size: 1.1em;
     word-break: break-word;
     white-space: normal;
+    transition: color 0.5s ease;
+}
+
+.title h3:hover {
+    color: var(--accent);
 }
 
 .links {
@@ -57,12 +62,12 @@
     margin-left: 0.5em;
 }
 
-.links a {
+.links .link {
     font-size: 1.25em;
     transition: color 0.5s ease;
 }
 
-.links a:hover {
+.links .link:hover {
     color: var(--accent);
 }
 

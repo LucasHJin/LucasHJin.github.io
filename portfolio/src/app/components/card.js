@@ -44,17 +44,17 @@ export default function Card( { title, description, image, links, tags } ) {
                   <div className="item links">
                     {links?.github && 
                       <span onClick={() => handleClick(addHttps(links.github))}>
-                        <FaGithub />
+                        <FaGithub className="link"/>
                       </span>
                     } 
                     {links?.devpost && 
                       <span onClick={() => handleClick(addHttps(links.devpost))}>
-                        <SiDevpost />
+                        <SiDevpost className="link" />
                       </span>
                     }
                     {links?.livesite && 
                       <span onClick={() => handleClick(addHttps(links.livesite))}>
-                        <AiOutlineExport />
+                        <AiOutlineExport className="link" />
                       </span>
                     }
                   </div>

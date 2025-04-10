@@ -11,7 +11,7 @@ export default function Home() {
           <h2>who am i?</h2>
             <ul className="text">
               <li className="italic">
-                aspiring web developer
+                aspiring software engineer
               </li>
               <li>
                 ibdp student from merivale hs (ottawa)
@@ -26,12 +26,10 @@ export default function Home() {
           <h2>what else?</h2>
             <ul className="text">
               <li>
-                i love working out, manhwas, mangas, and light novels
-                <ul>
-                  <li>
-                    fun fact: i've made a real life replica of the dragonslayer from berserk
-                  </li>
-                </ul>
+                passionate about robotics (shoutout to frc 8729), hackathons, and web dev
+              </li>
+              <li>
+                i love working out, manhwas, mangas, and light novels (nge and berserk are peak!!!)
               </li>
             </ul>
           <h2>recent!</h2>
