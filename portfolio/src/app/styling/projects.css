@@ -1,9 +1,10 @@
-.card {
-    margin: 2%
-}
-
 .projects {
     display: flex;
     flex-flow: row wrap;
+    gap: 2em;
     justify-content: center;
+  }
+
+.project {
+    display: inline-block;
 }
