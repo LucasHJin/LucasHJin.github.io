@@ -10,7 +10,7 @@
     border-radius: 0.55em;
     margin-top: 0.4em;
     border: 3px solid var(--muted-accent);
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
 }
 
 .button-layout {
@@ -27,9 +27,26 @@
 .refresh {
     margin-top: 0.4em;
     cursor: pointer;
+    font-size: 1.3em;
+    color: var(--foreground-normal);
+    transition: color 0.3s ease;
 }
 
-/* animation */
+.refresh:hover {
+    color: var(--foreground-special);
+    animation: spin 0.6s ease;
+}
+/* animation so that no spin on unhover */
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+}
+
+/* animation for text on button */
 .fade-enter {
     opacity: 0;
     transform: scale(0.9);
