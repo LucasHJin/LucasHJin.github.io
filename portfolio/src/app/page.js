@@ -32,7 +32,7 @@ export default function Home() {
           <h2>recent!</h2>
             <ul className="text">
               <li>
-                competed at dcmp, ranked #17/50 after quals (best result yet)
+                competed at dcmp, ranked #17/50 after quals
               </li>
             </ul>
         </div>
@@ -47,6 +47,7 @@ export default function Home() {
             see my...
           </h2>
           <Button></Button>
+          <img className="signature"></img>
         </div>
         <div className="graph">
             <h2>my thoughts</h2>

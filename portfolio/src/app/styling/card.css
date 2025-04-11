@@ -1,6 +1,6 @@
 .outer-container {
     width: 22em;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
     overflow: hidden;
     cursor: pointer;
 }
@@ -14,15 +14,15 @@
     width: 100%;
     display: block;
     object-fit: cover;
-    border-top-left-radius: 1.5vw;
-    border-top-right-radius: 1.5vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
 }
 
 /* hidden text */
 .other {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.9s ease, padding 1.0s ease;
+    transition: max-height 0.7s ease, padding 0.7s ease;
     background-color: var(--grey-background);
     padding: 0 4%;
 }

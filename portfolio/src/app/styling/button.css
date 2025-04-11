@@ -1,9 +1,16 @@
 .button {
     width: 100%;
-    padding: 3em 0;
+    padding: 1.2em 0;
     background-color: var(--grey-background);
     display: block;
     text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--foreground-special);
+    border-radius: 0.55em;
+    margin-top: 0.4em;
+    border: 3px solid var(--muted-accent);
+    transition: all 0.25s ease;
 }
 
 .button-layout {
@@ -12,16 +19,26 @@
     align-items: flex-end;
 }
 
+.button:hover {
+    transform: scale(1.03);
+    background-color: var(--muted-accent);
+}
+
+.refresh {
+    margin-top: 0.4em;
+    cursor: pointer;
+}
+
 /* animation */
 .fade-enter {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 .fade-enter-active {
     opacity: 1;
     transform: scale(1);
-    transition: opacity 300ms ease;
+    transition: opacity 0.3s ease;
 }
 
 .fade-exit {
@@ -31,7 +48,7 @@
 
 .fade-exit-active {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9);
     transition: opacity 300ms ease;
 }
   

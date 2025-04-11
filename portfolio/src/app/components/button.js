@@ -32,7 +32,7 @@ export default function Button() {
             </CSSTransition>
           </SwitchTransition>
         </a>
-        <button onClick={changeView}>
+        <button onClick={changeView} className="refresh">
           <TbRefresh />
         </button>
       </div>

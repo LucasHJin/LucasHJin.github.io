@@ -19,8 +19,6 @@ Borders & Dividers: #C0B9DD
 /* Light mode */
 :root {
   --background: rgb(12, 11, 60);
-  --background-lighter: rgb(52, 33, 131);
-  --background-lighter-borders: rgb(52, 33, 131, 0.8);
   --foreground-normal: rgba(225, 247, 255, 0.75);
   --foreground-special: rgba(225, 247, 255);
   --accent: rgb(226, 211, 74);
