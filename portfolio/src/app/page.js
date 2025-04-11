@@ -37,7 +37,7 @@ export default function Home() {
             </ul>
         </div>
         <figure className="image">
-          <img src="../static/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025"></img>
+          <img src="/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025"></img>
           <figcaption>part of frc 8729's drive team at dcmp!</figcaption>
           </figure>
       </div>

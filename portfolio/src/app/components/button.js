@@ -14,7 +14,7 @@ export default function Button() {
     }
 
     const returnView = () => {
-      return view === "resume" ? "../../static/Lucas_Resume.pdf" : "https://github.com/LucasHJin";
+      return view === "resume" ? "/Lucas_Resume.pdf" : "https://github.com/LucasHJin";
     }
     
 

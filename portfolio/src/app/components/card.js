@@ -90,7 +90,7 @@ Card.propTypes = {
 Card.defaultProps = {
   title: "Default",
   description: "Default",
-  image: "../../../static/frc_dcmp_2025.JPG",
+  image: "/frc_dcmp_2025.JPG",
   links: {
     github: null,
     devpost: null,
