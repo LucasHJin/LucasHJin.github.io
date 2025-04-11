@@ -22,8 +22,8 @@
 .other {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.7s ease, padding 0.7s ease;
-    background-color: var(--grey-background);
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    background-color: var(--lighter-background);
     padding: 0 4%;
 }
 

@@ -18,12 +18,13 @@ Borders & Dividers: #C0B9DD
 
 /* Light mode */
 :root {
-  --background: rgb(12, 11, 60);
-  --foreground-normal: rgba(225, 247, 255, 0.75);
-  --foreground-special: rgba(225, 247, 255);
-  --accent: rgb(226, 211, 74);
-  --muted-accent: rgb(74, 59, 169, 0.8);
-  --grey-background: rgb(4, 4, 31);
+  --background: rgb(32, 29, 48);
+  --foreground-normal: rgba(233, 255, 221, 0.75);
+  --foreground-special: rgba(233, 255, 221);
+  --accent: rgb(255, 152, 108);
+  --muted-accent: rgb(144, 93, 188);
+  --muted-accent-less: rgb(72, 61, 150);
+  --lighter-background: rgb(40, 33, 96);
 }
 
 /* Dark mode */

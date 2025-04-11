@@ -1,7 +1,7 @@
 .button {
     width: 100%;
     padding: 1.2em 0;
-    background-color: var(--grey-background);
+    background-color: var(--lighter-background);
     display: block;
     text-align: center;
     font-size: 1.4em;
@@ -21,7 +21,7 @@
 
 .button:hover {
     transform: scale(1.03);
-    background-color: var(--muted-accent);
+    background-color: var(--muted-accent-less);
 }
 
 .refresh {

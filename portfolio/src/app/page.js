@@ -26,7 +26,7 @@ export default function Home() {
                 passionate about robotics (shoutout to frc 8729), hackathons, and web dev
               </li>
               <li>
-                i love working out, manhwas, mangas, and light novels (nge and berserk are peak!!!)
+                i love working out, manhwa and anime (guess which anime inspired my color theme)
               </li>
             </ul>
           <h2>recent!</h2>
