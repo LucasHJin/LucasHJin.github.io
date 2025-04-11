@@ -30,3 +30,13 @@
     /* border: 3px solid var(--muted-accent);*/
     border-radius: 5%;
 }
+
+.more {
+    display: flex;
+    gap: 2rem;
+}
+  
+.resume-github {
+    flex: 1;
+    min-width: 0;
+}
