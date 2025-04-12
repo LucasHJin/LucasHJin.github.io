@@ -9,8 +9,8 @@
     color: var(--foreground-special);
     border-radius: 0.55em;
     margin-top: 0.4em;
-    border: 3px solid var(--muted-accent);
-    transition: all 0.3s ease;
+    border: 2px solid var(--muted-accent);
+    transition: all 0.5s ease;
 }
 
 .button-layout {
@@ -21,7 +21,7 @@
 
 .button:hover {
     transform: scale(1.03);
-    background-color: var(--muted-accent-less);
+    border: 2px solid var(--accent);
 }
 
 .refresh {

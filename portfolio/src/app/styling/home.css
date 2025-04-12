@@ -27,7 +27,7 @@
 
 .about .image img {
     width: 100%;
-    border: 2px solid var(--muted-accent);
+    border: 1px solid var(--muted-accent);
     border-radius: 0.5em;
 }
 
@@ -40,4 +40,23 @@
 .resume-github {
     flex: 1;
     min-width: 0;
+}
+
+.text li {
+    position: relative;
+    list-style-position: inside; 
+    transition: all 0.3s ease;
+}
+  
+.text li:hover {
+    transform: translateX(0.25em);
+}
+
+.text li::before {
+    transition: all 0.3s ease;
+}
+
+.text li:hover::before {
+    transform: rotate(45deg);
+    color: var(--accent);
 }

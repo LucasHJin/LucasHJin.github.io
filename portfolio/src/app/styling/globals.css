@@ -19,8 +19,8 @@ Borders & Dividers: #C0B9DD
 /* Light mode */
 :root {
   --background: rgb(32, 29, 48);
-  --foreground-normal: rgba(233, 255, 221, 0.75);
-  --foreground-special: rgba(233, 255, 221);
+  --foreground-normal: rgba(233, 255, 221, 0.8);
+  --foreground-special: rgb(238, 255, 228);
   --accent: rgb(255, 152, 108);
   --muted-accent: rgb(144, 93, 188);
   --muted-accent-less: rgb(72, 61, 150);
@@ -101,7 +101,28 @@ header {
   font-style: italic;
 }
 
-.link {
+.important {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
   color: var(--foreground-special);
-  font-style: italic;
+  cursor: pointer;
+  font-weight: 450;
+  
+}
+
+.important::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0em; 
+  width: 0;
+  height: 0.1em;
+  background-color: var(--accent);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.important:hover::after {
+  width: 80%;
+  left: 10%;
 }

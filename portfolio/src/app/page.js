@@ -14,25 +14,68 @@ export default function Home() {
                 aspiring software engineer
               </li>
               <li>
-                ibdp student from merivale hs (ottawa)
+                <a 
+                  href="https://www.ibo.org/programmes/diploma-programme/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  ibdp
+                </a>{' '} {/* for space */}
+                student from merivale hs (📍ottawa)
               </li>
               <li>
-                future cs @ ____
+                future cs @ {' '}
+                <a
+                  href="https://dictionary.cambridge.org/dictionary/english/tbd" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  ____
+                </a>
               </li>
             </ul>
           <h2>what else?</h2>
             <ul className="text">
               <li>
-                passionate about robotics (shoutout to frc 8729), hackathons, and web dev
+              ❤️ robotics (shoutout to {' '}
+                <a
+                  href="https://syrc.ca/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  frc 8729
+                </a>
+               ), hackathons, and web dev
               </li>
               <li>
-                i love working out, manhwa and anime (guess which anime inspired my color theme)
+                hobbies: working out, manhwa and anime (guess which {' '}
+                <a
+                  href="https://evangelion.fandom.com/wiki/Neon_Genesis_Evangelion" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  anime
+                </a> {' '}
+                inspired my color theme)
               </li>
             </ul>
           <h2>recent!</h2>
             <ul className="text">
               <li>
-                competed at dcmp, ranked #17/50 after quals
+                competed at {' '}
+                <a
+                  href="https://www.thebluealliance.com/event/2025oncmp2#rankings" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  dcmp
+                </a>
+                , ranked #18/50 after quals
               </li>
             </ul>
         </div>
