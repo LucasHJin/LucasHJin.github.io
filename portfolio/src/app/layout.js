@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
               <li className="name link-page"><Link href="/">lucas jin</Link></li>
               <li className="navs">
                 <Link href="/" className="nav link-page">about</Link>
-                <Link href="/projects" className="nav link-page">projects</Link>
+                <Link href="/portfolio" className="nav link-page">portfolio</Link>
                 <Link href="/zettelkasten" className="nav link-page">zettelkasten</Link>
               </li>
             </ul>
