@@ -24,26 +24,61 @@ const headers = {
 };
 
 
-// make separate between tags vs full notes
+async function extractLinksFromFile(downloadUrl) {
+    const response = await axios.get(downloadUrl);
+    const content = response.data;
+
+    const linkRegex = /\[\[([^\]]+)\]\]/g;
+    let match;
+    const links = [];
+
+    while ((match = linkRegex.exec(content)) !== null) {
+        const link = match[1];
+        if (
+            !link.toLowerCase().includes("screenshot") &&
+            !link.toLowerCase().includes("screenshots")
+        ) {
+            links.push(link);
+        }
+    }
+
+    return links;
+}
+
 async function getFilesRecursively(path = "") {
     const url = `https://api.github.com/repos/${GITHUB_REPO}/contents/${encodeURIComponent(path)}`;
     try {
         const response = await axios.get(url, { headers });
         const contents = response.data;
-        let files = [];
+
+        let result = {
+            tags: [],
+            notes: []
+        };
+
         for (const item of contents) {
             if (item.type === "file" && item.name.endsWith(".md")) {
-                files.push({
+                const fileData = {
                     name: item.name,
                     path: item.path,
-                    download_url: item.download_url
-                });
+                    download_url: item.download_url,
+                    links: await extractLinksFromFile(item.download_url)
+                };
+
+                if (item.path.includes("3 - Tags")) {
+                    result.tags.push(fileData);
+                } else if (item.path.includes("6 - Full Notes")) {
+                    result.notes.push(fileData);
+                }
+
             } else if (item.type === "dir") {
-                const subFiles = await getFilesRecursively(item.path); // recursively access all files
-                files = files.concat(subFiles);
+                const subFiles = await getFilesRecursively(item.path);
+                result.tags = result.tags.concat(subFiles.tags);
+                result.notes = result.notes.concat(subFiles.notes);
             }
         }
-        return files;
+
+        return result;
     } catch (err) {
         console.error('GitHub API request failed:', err.response?.status, err.response?.data || err.message);
         throw err;
