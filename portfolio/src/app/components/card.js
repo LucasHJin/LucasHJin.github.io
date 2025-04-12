@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import { AiOutlineExport } from "react-icons/ai";
 import Link from "next/link";
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 // change the inside links to div and use javascript? or button
@@ -18,15 +18,11 @@ export default function Card( { title, description, image, links, tags } ) {
   };
 
   const addHttps = (link) => {
-    if (!(link.includes("https://"))) {
-      let start = "https://";
-      let fullLink = start.concat(link);
-      console.log(fullLink);
-      console.log(link);
-      return fullLink
+    if (!link) {
+      return null;
     }
+    return link.startsWith("https://") ? link : `https://${link}`;
   }
-
   
     return (
       <div className="outer-container card">

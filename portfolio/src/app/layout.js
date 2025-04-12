@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
   const pathname = usePathname()
 
   useEffect(() => {
-    console.log('a');
     const links = document.querySelectorAll(".header .navs .link-page");
 
     links.forEach(link => link.classList.remove("current-page"));

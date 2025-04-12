@@ -6,7 +6,7 @@
       "links": {
         "github": "https://github.com/KaranChawlaD/lipslipsrevolution",
         "devpost": "https://devpost.com/software/lipslips-revolution",
-        "livesite": ""
+        "livesite": "https://lipslipsrevolution.vercel.app/challenge"
       },
       "tags": ["Next.js", "Tailwind CSS", "MongoDB", "OpenAI", "Symphonic Labs API"]
     },
