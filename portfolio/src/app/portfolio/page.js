@@ -4,8 +4,6 @@ import "../styling/projects.css"
 import { useEffect } from "react";
 import information from "../data/projectsData.json"
 
-// make a txt file with all the info and you can access that txt file with the info
-
 export default function Portfolio() {
 
     return (

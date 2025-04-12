@@ -1,92 +1,91 @@
 [
     {
       "title": "Lips Lips Revolution",
-      "description": "",
-      "image": "",
+      "description": "lipsyncing karaoke game. won 'best use of mongodb' and hr for 'best use of symphonic labs api' @HTN in <36 hours. 40+ in person users. reverse engineered api to reduce latency (30s → 7s).",
+      "image": "/revolution.png",
       "links": {
-        "github": "",
+        "github": "https://github.com/KaranChawlaD/lipslipsrevolution",
+        "devpost": "https://devpost.com/software/lipslips-revolution",
+        "livesite": ""
+      },
+      "tags": ["Next.js", "Tailwind CSS", "MongoDB", "OpenAI", "Symphonic Labs API"]
+    },
+    {
+        "title": "Merivale Drama Manager",
+        "description": "drama organization and scheduling manager for merivale hs. automated emailing to absentees with qr code attendance. 100+ estimated possible users.",
+        "image": "/merivale.png",
+        "links": {
+          "github": "https://github.com/sky46/mhs-drama-manager",
+          "devpost": "",
+          "livesite": ""
+        },
+        "tags": ["Next.js", "Express", "PostgresSQL"]
+    },
+    {
+      "title": "FRC 8729 Attendance Bot",
+      "description": "attendance bot to track commitment of robotics team. 90+ users.",
+      "image": "/syrc.png",
+      "links": {
+        "github": "https://github.com/Spark-Youth-Robotics-Club-8729/FRC8729_attendance_bot",
         "devpost": "",
         "livesite": ""
       },
-      "tags": []
+      "tags": ["Python", "SQLite", "Sheets API", "Discord API"]
     },
     {
-        "title": "Merivale Drama Manager (ongoing)",
-        "description": "",
-        "image": "",
-        "links": {
-          "github": "",
-          "devpost": "",
-          "livesite": ""
-        },
-        "tags": []
+      "title": "STEM-E Volunteer App",
+      "description": "platform to automate volunteering and support access to stem opportunities. 1000+ users.",
+      "image": "/steme.png",
+      "links": {
+        "github": "https://github.com/STEM-E-Youth-Career-Development-Program/volunteer-app",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["Next.js", "Express", "Firebase", "Sheets API"]
+    },
+    {
+      "title": "FRC 8729 Software",
+      "description": "code for the 2025 frc game 'reefscape'. slew rate limited swerve drive and photonvision april tag detection.",
+      "image": "/syrc.png",
+      "links": {
+        "github": "https://github.com/Spark-Youth-Robotics-Club-8729/2025-code",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["Java", "Photonvision"]
     },
     {
         "title": "ConvoAI",
-        "description": "",
-        "image": "",
+        "description": "ai assistant to help pass interviews. provides personalized answers to both technical and behavioral interview questions in real time. made @jamhacks8.",
+        "image": "/convo.png",
         "links": {
-          "github": "",
-          "devpost": "",
+          "github": "https://github.com/LucasHJin/ConvoAI",
+          "devpost": "https://dorahacks.io/buidl/13383",
           "livesite": ""
         },
-        "tags": []
-    },
-    {
-        "title": "FRC 8729 Attendance Bot",
-        "description": "",
-        "image": "",
-        "links": {
-          "github": "",
-          "devpost": "",
-          "livesite": ""
-        },
-        "tags": []
-    },
-    {
-        "title": "FRC 8729 Software",
-        "description": "",
-        "image": "",
-        "links": {
-          "github": "",
-          "devpost": "",
-          "livesite": ""
-        },
-        "tags": []
+        "tags": ["HTML/CSS", "JS", "Flask", "OpenAI"]
     },
     {
         "title": "Lazy Reps",
-        "description": "",
-        "image": "",
+        "description": "application to count your bicep curl reps for you. won solo in at-home track. idea to product in <12 hours @lazyhacks.",
+        "image": "/lazy_reps.png",
         "links": {
-          "github": "",
-          "devpost": "",
+          "github": "https://github.com/LucasHJin/LazyReps",
+          "devpost": "https://dorahacks.io/buidl/20521/",
           "livesite": ""
         },
-        "tags": []
+        "tags": ["React.js", "FastAPI", "Tensorflow"]
     },
     {
         "title": "Study Sphere",
-        "description": "",
-        "image": "",
+        "description": "web app for studying (similar to reddit) with features like posts, comments and tags. made @uottahack6.",
+        "image": "/study_sphere.jpeg",
         "links": {
-          "github": "",
-          "devpost": "",
+          "github": "https://github.com/LucasHJin/StudySphere",
+          "devpost": "https://devpost.com/software/studiessphere",
           "livesite": ""
         },
-        "tags": []
-    },
-    {
-        "title": "STEM-E Volunteer App",
-        "description": "",
-        "image": "",
-        "links": {
-          "github": "",
-          "devpost": "",
-          "livesite": ""
-        },
-        "tags": []
+        "tags": ["HTML/CSS", "JS", "Flask", "SQLAlchemy"]
     }
-
 ]
   

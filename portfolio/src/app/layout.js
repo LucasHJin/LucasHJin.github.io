@@ -7,7 +7,6 @@ import "./styling/globals.css"; // Applies global css to everything
 import "./styling/layout.css"
 import Link from "next/link";
 
-
 // add a middle underline appear (on selected)
 
 export default function RootLayout({ children }) {

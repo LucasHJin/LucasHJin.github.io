@@ -30,9 +30,13 @@ export default function Card( { title, description, image, links, tags } ) {
   
     return (
       <div className="outer-container card">
-        <a href={addHttps(links?.github) || "https://github.com/LucasHJin"} target="_blank" rel="noopener noreferrer">
+        <a href={
+          !links?.github || links.github.trim() === "" 
+          ? "https://github.com/LucasHJin" 
+          : addHttps(links.github)
+        } target="_blank" rel="noopener noreferrer">
           <div className="container">
-            <div className="item image">
+            <div className="item image-card">
               <img src={image}></img>
             </div>
             <div className="other">
