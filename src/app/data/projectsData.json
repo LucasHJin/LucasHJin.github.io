@@ -86,6 +86,28 @@
           "livesite": ""
         },
         "tags": ["HTML/CSS", "JS", "Flask", "SQLAlchemy"]
+    },
+    {
+      "title": "Competitive Programming Solutions",
+      "description": "exactly what the name suggests. my attempts and solutions to dmoj, cses, etc.",
+      "image": "/atcoder.png",
+      "links": {
+        "github": "https://github.com/LucasHJin/competitive-programming-solutions",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["C++"]
+    },
+    {
+      "title": "Merivale VEX Robotics",
+      "description": "code for the 2025 vex game 'high stakes'. pneumatics and conveyer belt intake.",
+      "image": "/merivale.png",
+      "links": {
+        "github": "https://github.com/LucasHJin/VEX_2025_A",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["C++"]
     }
 ]
   

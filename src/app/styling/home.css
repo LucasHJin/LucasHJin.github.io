@@ -36,11 +36,6 @@
     gap: 5%;
     align-items: flex-start;
 }
-  
-.resume-github {
-    flex: 1;
-    min-width: 0;
-}
 
 .text li {
     position: relative;
@@ -48,3 +43,21 @@
     transition: all 0.3s ease;
 }
   
+
+.resume-github {
+    flex: 1;
+    min-width: 0;
+}
+
+.skills {
+    width: 30%
+}
+
+.skills .grouped-skills {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skills .grouped-skills .skill {
+    font-size: 2.5em;
+}
