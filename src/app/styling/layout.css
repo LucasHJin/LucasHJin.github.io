@@ -39,13 +39,22 @@ footer .copyright {
     font-size: 0.8em;
 }
 
+footer .socials {
+    align-items: flex-end;
+
+}
+
 footer .socials a {
-    font-size: 1.8em;
     transition: all 0.4s ease-in-out;
 }
 
+footer .socials svg {
+    width: 1.8em;
+    aspect-ratio: 1/1;
+}
+
 footer .socials a:hover {
-    color: var(--accent); /* fix link height problem */
+    color: var(--accent); 
     transform: scale(1.1);
 }
 

@@ -50,14 +50,17 @@
 }
 
 .skills {
-    width: 30%
+    width: 30%;
+    margin-top: 0.4em;
 }
 
 .skills .grouped-skills {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.skills .grouped-skills .skill {
-    font-size: 2.5em;
+.skills .grouped-skills svg {
+    width: 2.5em;
+    height: auto;
 }

@@ -5,9 +5,8 @@ import PropTypes from 'prop-types';
 
 import Tag from "./tag"
 import "../styling/card.css"
-import { FaGithub } from "react-icons/fa";
-import { SiDevpost } from "react-icons/si";
-import { AiOutlineExport } from "react-icons/ai";
+
+import { GithubIcon, DevpostIcon, LiveIcon } from "./icons/icons"
 
 // change the inside links to div and use javascript? or button
 
@@ -45,17 +44,17 @@ export default function Card( { title, description, image, links, tags } ) {
                   <div className="item links">
                     {links?.github && 
                       <span onClick={() => handleClick(addHttps(links.github))}>
-                        <FaGithub className="link"/>
+                        <GithubIcon className="project-link"/>
                       </span>
                     } 
                     {links?.devpost && 
                       <span onClick={() => handleClick(addHttps(links.devpost))}>
-                        <SiDevpost className="link" />
+                        <DevpostIcon className="project-link" />
                       </span>
                     }
                     {links?.livesite && 
                       <span onClick={() => handleClick(addHttps(links.livesite))}>
-                        <AiOutlineExport className="link" />
+                        <LiveIcon className="project-link" />
                       </span>
                     }
                   </div>

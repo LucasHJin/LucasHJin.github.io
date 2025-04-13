@@ -1,12 +1,7 @@
 import "./styling/home.css"
 import Image from 'next/image';
-
 import Button from "./components/button";
-import { FaReact, FaNodeJs, FaHtml5, FaJs, FaPython } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { IoLogoFirebase } from "react-icons/io5";
-import { SiMongodb, SiCss3, SiCplusplus } from "react-icons/si";
-import { PiFileSql } from "react-icons/pi";
+import { ReactIcon, NodeIcon, HtmlIcon, JsIcon, PythonIcon, NextIcon, FirebaseIcon, MongodbIcon, CssIcon, CppIcon, SqlIcon} from "./components/icons/icons"
 
 export default function Home() {
   return (
@@ -100,17 +95,17 @@ export default function Home() {
         <div className="skills">
             <h2>my skills</h2>
             <div className="grouped-skills">
-              <FaReact className="skill"/>
-              <RiNextjsFill className="skill"/>
-              <FaNodeJs className="skill"/>
-              <IoLogoFirebase className="skill"/>
-              <SiMongodb className="skill"/>
-              <FaPython className="skill"/>
-              <SiCplusplus className="skill"/>
-              <PiFileSql className="skill"/>
-              <FaJs className="skill"/>
-              <FaHtml5 className="skill"/>
-              <SiCss3 className="skill"/>
+              <ReactIcon className="skill"/>
+              <NextIcon className="skill"/>
+              <NodeIcon className="skill"/>
+              <FirebaseIcon className="skill"/>
+              <MongodbIcon className="skill"/>
+              <PythonIcon className="skill"/>
+              <CppIcon className="skill"/>
+              <SqlIcon className="skill"/>
+              <JsIcon className="skill"/>
+              <HtmlIcon className="skill"/>
+              <CssIcon className="skill"/>
             </div>
         </div>
       </div>
