@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         <div className="skills">
             <h2>my skills</h2>
-            
+            <p>make link to projects with selected tag</p>
         </div>
       </div>
     </div>

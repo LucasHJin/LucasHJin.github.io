@@ -3,6 +3,7 @@ import path from "path";
 import Link from "next/link";
 
 import "@/app/styling/blog.css"
+import Tag from "../components/tag";
 
 // credit to martin sit (https://github.com/martin226/v2)
 
@@ -30,21 +31,30 @@ export default async function Blog() {
     <div className="blog">
       <h1 className="sr-only">My Blog</h1>
       <ul className="no-list">
-        {posts.map(({ title, date, slug }) => (
-          <li key={slug} className="post">
-            <span>
-              <Link href={`/blog/${slug}`} className="important">
-                {title}
-              </Link>
-            </span>
-            <time className="italic">
-              {new Date(date).toLocaleDateString("en-GB", {
-                day: "2-digit",
-                month: "2-digit",
-                year: "numeric",
-              })}
-            </time>
-          </li>
+        {posts.map(({ title, date, slug, tags }) => (
+          <div key={slug}>
+            <li className="post">
+              <span>
+                <Link href={`/blog/${slug}`} className="important">
+                  {title}
+                </Link>
+              </span>
+              <time className="italic">
+                {new Date(date).toLocaleDateString("en-GB", {
+                  day: "2-digit",
+                  month: "2-digit",
+                  year: "numeric",
+                })}
+              </time>
+            </li>
+            <div className="botInfo">
+              {
+                tags.map((tag, index) => (
+                  <Tag key={index} tag={tag}></Tag>
+                ))
+              }
+            </div>
+          </div>
         ))}
       </ul>
     </div>
