@@ -1,4 +1,6 @@
 import "./styling/home.css"
+import Image from 'next/image';
+
 import Button from "./components/button";
 import { FaReact, FaNodeJs, FaHtml5, FaJs, FaPython } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
@@ -84,8 +86,8 @@ export default function Home() {
             </ul>
         </div>
         <figure className="image">
-          <img src="/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025"></img>
-          <figcaption>part of frc 8729's drive team at dcmp!</figcaption>
+          <Image src="/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025" width={1200} height={800}></Image> {/* approx width and height for scaling */}
+          <figcaption>part of frc 8729&apos;s drive team at dcmp!</figcaption>
           </figure>
       </div>
       <div className="more">
@@ -94,7 +96,6 @@ export default function Home() {
             see my...
           </h2>
           <Button></Button>
-          <img className="signature"></img>
         </div>
         <div className="skills">
             <h2>my skills</h2>

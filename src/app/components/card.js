@@ -1,12 +1,13 @@
 'use client';
+import Image from 'next/image';
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import Tag from "./tag"
 import "../styling/card.css"
 import { FaGithub } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import { AiOutlineExport } from "react-icons/ai";
-import Link from "next/link";
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 
 // change the inside links to div and use javascript? or button
 
@@ -33,7 +34,7 @@ export default function Card( { title, description, image, links, tags } ) {
         } target="_blank" rel="noopener noreferrer">
           <div className="container">
             <div className="item image-card">
-              <img src={image}></img>
+              <Image src={image} alt="project image" width={500} height={500}></Image>
             </div>
             <div className="other">
               <div className="other-padding">

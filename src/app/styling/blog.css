@@ -6,4 +6,5 @@
 .blog .botInfo {
     display: flex;
     justify-self: flex-start;
+    gap: 0.25em
 }
