@@ -48,15 +48,3 @@
     transition: all 0.3s ease;
 }
   
-.text li:hover {
-    transform: translateX(0.25em);
-}
-
-.text li::before {
-    transition: all 0.3s ease;
-}
-
-.text li:hover::before {
-    transform: rotate(45deg);
-    color: var(--accent);
-}

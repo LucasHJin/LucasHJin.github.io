@@ -64,6 +64,16 @@ ul:not(.no-list) li::before {
   top: 0.3em;
   font-size: 0.7em; 
   font-style: normal;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul:not(.no-list) li:hover {
+  transform: translateX(0.3em);
+}
+
+ul:not(.no-list) li:hover::before {
+  transform: rotate(90deg);
+  color: var(--accent);
 }
 
 h2 {

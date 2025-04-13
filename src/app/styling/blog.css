@@ -1,0 +1,4 @@
+.blog .post {
+    display: flex;
+    justify-content: space-between;
+}
