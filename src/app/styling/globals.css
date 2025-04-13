@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @import 'modern-normalize/modern-normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 /* Following this: 
     https://gist.github.com/basham/2175a16ab7c60ce8e001
@@ -43,7 +41,6 @@ Borders & Dividers: #C0B9DD
 body {
   background: var(--background);
   color: var(--foreground-normal);
-  font-family: 'Inter','Poppins',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   font-weight: 350;
   font-size: 110%;
   line-height: 1.6;
