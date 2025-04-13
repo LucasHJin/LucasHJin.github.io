@@ -1,6 +1,5 @@
 import "./styling/home.css"
 import Button from "./components/button";
-import Zgraph from "./components/zgraph";
 
 export default function Home() {
   return (
@@ -92,9 +91,9 @@ export default function Home() {
           <Button></Button>
           <img className="signature"></img>
         </div>
-        <div className="graph">
-            <h2>my thoughts</h2>
-            <Zgraph></Zgraph>
+        <div className="skills">
+            <h2>my skills</h2>
+            
         </div>
       </div>
     </div>

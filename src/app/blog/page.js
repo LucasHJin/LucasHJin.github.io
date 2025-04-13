@@ -37,7 +37,7 @@ export default async function Blog() {
                 {title}
               </Link>
             </span>
-            <time>
+            <time className="italic">
               {new Date(date).toLocaleDateString("en-GB", {
                 day: "2-digit",
                 month: "2-digit",
