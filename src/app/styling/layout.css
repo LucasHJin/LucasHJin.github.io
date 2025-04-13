@@ -31,7 +31,24 @@ nav a {
 footer {
     border-top: 2px solid var(--muted-accent);
     margin-top: 1.5rem;
-    padding-top: 0.75rem;
+    padding-top: 0.45rem;
+}
+
+footer .webring {
+    display: flex;
+
+}
+
+footer .webring a, footer .socials a {
+    display: flex;
+    align-items: center;
+}
+
+
+footer .webring img {
+    width: 1.3em;
+    height: auto;
+    margin: 0 0.5em;
 }
 
 footer .copyright {
@@ -44,8 +61,16 @@ footer .socials {
 
 }
 
-footer .socials a {
+footer .socials a, footer .webring .arrow {
     transition: all 0.4s ease-in-out;
+}
+
+footer .socials a:hover, footer .webring .arrow:hover {
+    color: var(--accent); 
+}
+
+footer .socials a:hover {
+    transform: scale(1.1);
 }
 
 footer .socials svg {
@@ -53,10 +78,6 @@ footer .socials svg {
     aspect-ratio: 1/1;
 }
 
-footer .socials a:hover {
-    color: var(--accent); 
-    transform: scale(1.1);
-}
 
 footer ul {
     padding: 0;
