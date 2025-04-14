@@ -68,5 +68,29 @@
 
 .skills .grouped-skills svg:hover {
     color: var(--accent);
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 768px) {
+
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 425px) {
+
+}
+
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 375px) {
 
 }

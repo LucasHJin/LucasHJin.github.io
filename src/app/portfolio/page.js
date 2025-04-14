@@ -64,17 +64,17 @@ export default function Portfolio() {
       })
       .map(([tag]) => tag);
 
-      const filteredProjects = information.filter((item) => {
-        // filter for tags
-        const matchesTag = selectedTag
-          ? item.tags.map((t) => normalizeTag(t).toLowerCase()).includes(selectedTag) // normalized tag map includes query
-          : true; // true if nothing happens to pass filter
-        // filter for search
-        const matchesSearch = searchQuery
-          ? item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            item.description.toLowerCase().includes(searchQuery.toLowerCase()) // title or description includes wanted query
-          : true;
-        return matchesTag && matchesSearch;
+    const filteredProjects = information.filter((item) => {
+      // filter for tags
+      const matchesTag = selectedTag
+        ? item.tags.map((t) => normalizeTag(t).toLowerCase()).includes(selectedTag) // normalized tag map includes query
+        : true; // true if nothing happens to pass filter
+      // filter for search
+      const matchesSearch = searchQuery
+        ? item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.description.toLowerCase().includes(searchQuery.toLowerCase()) // title or description includes wanted query
+        : true;
+      return matchesTag && matchesSearch;
       });
 
     return (
