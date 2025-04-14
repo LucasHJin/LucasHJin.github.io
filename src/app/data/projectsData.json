@@ -19,7 +19,7 @@
           "devpost": "",
           "livesite": ""
         },
-        "tags": ["Next.js", "Express", "PostgresSQL"]
+        "tags": ["Next.js", "Express.js", "PostgresSQL"]
     },
     {
       "title": "FRC 8729 Attendance Bot",
@@ -41,7 +41,7 @@
         "devpost": "",
         "livesite": ""
       },
-      "tags": ["Next.js", "Express", "Firebase", "Sheets API"]
+      "tags": ["Next.js", "Express.js", "Firebase", "Sheets API"]
     },
     {
       "title": "FRC 8729 Software",

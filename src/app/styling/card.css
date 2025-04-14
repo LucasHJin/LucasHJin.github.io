@@ -1,6 +1,6 @@
 .outer-container {
     width: 22.5em;
-    border-radius: 1vw;
+    border-radius: 0.8rem;
     overflow: hidden;
     cursor: pointer;
     border: 2px solid transparent;
@@ -21,8 +21,8 @@
     aspect-ratio: 1 / 1;
     display: block;
     object-fit: cover;
-    border-top-left-radius: 1vw;
-    border-top-right-radius: 1vw;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
     background-color: white;
 }
 

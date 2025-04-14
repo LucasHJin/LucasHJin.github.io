@@ -28,7 +28,7 @@
 .about .image img {
     width: 100%;
     border: 1px solid var(--muted-accent);
-    border-radius: 0.5em;
+    border-radius: 0.4em;
 }
 
 .more {

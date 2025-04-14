@@ -1,6 +1,6 @@
 'use client';
 import Card from "../components/card";
-import "../styling/projects.css"
+import "../styling/portfolio.css"
 import { useEffect, useState } from "react";
 import information from "../data/projectsData.json"
 
@@ -57,7 +57,7 @@ export default function Portfolio() {
       <div>
         <h1 className="sr-only">My Portfolio</h1>
 
-        <div className="customize">
+        <div className="filter">
           <div className="searchbar">
             <input type="text" placeholder="search my projects..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
           </div>
