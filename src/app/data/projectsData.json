@@ -8,7 +8,7 @@
         "devpost": "https://devpost.com/software/lipslips-revolution",
         "livesite": "https://lipslipsrevolution.vercel.app/challenge"
       },
-      "tags": ["Next.js", "Tailwind CSS", "MongoDB", "OpenAI", "Symphonic Labs API"]
+      "tags": ["Next.js", "Tailwind CSS", "MongoDB", "OpenAI API", "Symphonic Labs API"]
     },
     {
         "title": "Merivale Drama Manager",
@@ -63,7 +63,7 @@
           "devpost": "https://dorahacks.io/buidl/13383",
           "livesite": ""
         },
-        "tags": ["HTML/CSS", "JS", "Flask", "OpenAI"]
+        "tags": ["HTML", "JS", "Tailwind CSS", "Flask", "OpenAI API"]
     },
     {
         "title": "Lazy Reps",
