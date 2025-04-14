@@ -2,17 +2,41 @@
 import Card from "../components/card";
 import "../styling/portfolio.css"
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import information from "../data/projectsData.json"
 
 export default function Portfolio() {
     const [selectedTag, setSelectedTag] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
 
+    const searchParams = useSearchParams();
+    const routerTag = searchParams.get("tag");
+
+    useEffect(() => {
+      if (routerTag) {
+        console.log("ROUTER", routerTag);
+        setSelectedTag(routerTag);
+      }
+    }, [routerTag]);
+
+    const reactExists = information.some(item =>
+      item.tags.some(tag => tag === "React.js")
+    );    
+
     // rules for normalizing tags (to be improved)
     const normalizeTag = (tag) => {
       if (["HTML", "CSS", "HTML/CSS"].includes(tag.toUpperCase())) {
         return "HTML/CSS";
       }
+
+      if (tag.toUpperCase() === "REACT.JS" && !reactExists) {
+        return "Next.js";
+      }
+
+      if (tag.toUpperCase().includes("SQL")) {
+        return "SQL";
+      }
+
       return tag;
     };
 
@@ -43,7 +67,7 @@ export default function Portfolio() {
       const filteredProjects = information.filter((item) => {
         // filter for tags
         const matchesTag = selectedTag
-          ? item.tags.map(normalizeTag).includes(selectedTag) // normalized tag map includes query
+          ? item.tags.map((t) => normalizeTag(t).toLowerCase()).includes(selectedTag) // normalized tag map includes query
           : true; // true if nothing happens to pass filter
         // filter for search
         const matchesSearch = searchQuery
@@ -62,14 +86,14 @@ export default function Portfolio() {
             <input type="text" placeholder="search my projects..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}/>
           </div>
           <div className="tag-filters">
-            <select onChange={(e) => setSelectedTag(e.target.value)}>
-              <option value=""></option>
-              {allTags.map((tag) => (
-                <option key={tag} value={tag}>
-                  {tag}
-                </option>
-              ))}
-            </select>
+          <select value={selectedTag} onChange={(e) => setSelectedTag(e.target.value)}>
+            <option value=""></option>
+            {allTags.map((tag) => (
+              <option key={tag.toLowerCase()} value={tag.toLowerCase()}>
+                {tag}
+              </option>
+            ))}
+          </select>
           </div>
         </div>
 

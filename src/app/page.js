@@ -1,7 +1,8 @@
 import "./styling/home.css"
 import Image from 'next/image';
 import Button from "./components/button";
-import { ReactIcon, NodeIcon, HtmlIcon, JsIcon, PythonIcon, NextIcon, FirebaseIcon, MongodbIcon, CssIcon, CppIcon, SqlIcon} from "./components/icons/icons"
+import Link from "next/link";
+import { skillsList } from "./components/skillsList"
 
 export default function Home() {
   return (
@@ -95,17 +96,13 @@ export default function Home() {
         <div className="skills">
             <h2>my skills</h2>
             <div className="grouped-skills">
-              <ReactIcon className="skill"/>
-              <NextIcon className="skill"/>
-              <NodeIcon className="skill"/>
-              <FirebaseIcon className="skill"/>
-              <MongodbIcon className="skill"/>
-              <PythonIcon className="skill"/>
-              <CppIcon className="skill"/>
-              <SqlIcon className="skill"/>
-              <JsIcon className="skill"/>
-              <HtmlIcon className="skill"/>
-              <CssIcon className="skill"/>
+            {
+              skillsList.map((item, index) => (
+                <Link key={index} href={`/portfolio?tag=${item.link.toLowerCase()}`}>
+                  {item.skill}
+                </Link>
+              ))
+            }
             </div>
         </div>
       </div>

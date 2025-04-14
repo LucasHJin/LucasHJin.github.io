@@ -33,7 +33,7 @@
 
 .more {
     display: flex;
-    gap: 5%;
+    gap: 4%;
     align-items: flex-start;
 }
 
@@ -50,17 +50,23 @@
 }
 
 .skills {
-    width: 30%;
-    margin-top: 0.4em;
+    width: 35%;
 }
 
 .skills .grouped-skills {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin-top: 0.7em;
 }
 
 .skills .grouped-skills svg {
     width: 2.5em;
     height: auto;
+    transition: color 0.5s ease;
+}
+
+.skills .grouped-skills svg:hover {
+    color: var(--accent);
+
 }

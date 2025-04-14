@@ -19,10 +19,14 @@
 
 .filter .searchbar {
   flex: 3;
+  background-color: var(--lighter-background);
+  color: var(--foreground-special);
 }
 
 .filter .tag-filters {
   flex: 1;
+  background-color: var(--lighter-background);
+  color: var(--foreground-special);
 }
 
 .filter .searchbar,
