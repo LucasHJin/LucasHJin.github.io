@@ -6,7 +6,7 @@ import { skillsList } from "./components/skillsList"
 
 export default function Home() {
   return (
-    <div>
+    <div className="original">
       <h1 className="sr-only">About Me</h1> {/* only for screen readers */}
       <div className="about">
         <div className="description">
@@ -81,7 +81,7 @@ export default function Home() {
               </li>
             </ul>
         </div>
-        <figure className="image">
+        <figure className="image-me">
           <Image src="/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025" width={1200} height={800}></Image> {/* approx width and height for scaling */}
           <figcaption>part of frc 8729&apos;s drive team at dcmp!</figcaption>
           </figure>

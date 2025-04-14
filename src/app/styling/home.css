@@ -8,7 +8,7 @@
     margin-bottom: 0.3em;
 }
 
-.about .image {
+.about .image-me {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,14 +18,14 @@
   }
   
 
-.about .image figcaption {
+.about .image-me figcaption {
     font-size: 0.8em;
     font-style: italic;
     text-align: center;
     margin-top: 0.3rem;
 }
 
-.about .image img {
+.about .image-me img {
     width: 100%;
     border: 1px solid var(--muted-accent);
     border-radius: 0.4em;
@@ -71,26 +71,26 @@
 }
 
 /* Laptop */
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
     
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 767px) {
 
 }
 
 /* Mobile M */
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 424px) {
 
 }
 
 /* Mobile S */
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 374px) {
 
 }
