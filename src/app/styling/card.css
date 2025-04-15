@@ -3,6 +3,7 @@
     border-radius: 0.8rem;
     overflow: hidden;
     cursor: pointer;
+    box-sizing: border-box;
     border: 2px solid transparent;
     transition: border 0.8s ease;
 }
@@ -114,7 +115,9 @@
 
 /* Mobile L */
 @media (min-width: 425px) and (max-width: 767px) {
-
+    .outer-container {
+        width: 100%;
+    }
 }
 
 /* Mobile M */

@@ -58,7 +58,6 @@ footer .copyright {
 
 footer .socials {
     align-items: flex-end;
-
 }
 
 footer .socials a, footer .webring .arrow {
@@ -134,6 +133,22 @@ footer ul {
 
 /* Mobile L */
 @media (min-width: 425px) and (max-width: 767px) {
+    header .nav {
+        margin-left: 4vw;
+    }
+
+    header .name a {
+        font-size: 1.5em;
+    }
+
+    footer .socials svg {
+        width: 2em;
+    }
+
+    footer .socials {
+        gap: 0.3em;
+    }
+
 
 }
 

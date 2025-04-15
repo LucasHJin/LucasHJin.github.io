@@ -61,7 +61,13 @@
 
 /* Mobile L */
 @media (min-width: 425px) and (max-width: 767px) {
+  .projects {
+    gap: 2.5em;
+  }
 
+  .filter .searchbar {
+    flex: 2;
+  }
 }
 
 /* Mobile M */

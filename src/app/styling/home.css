@@ -86,7 +86,53 @@
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
+    .about {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .image-me {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 0.4rem;
+    }
+    
+    .about .image-me figcaption {
+        font-size: 1em;
+        margin-bottom: 1.2rem;
+    }
+
+    .more {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume-github {
+        width: 100%;
+        margin-bottom: 0.75em;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills .grouped-skills {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-top: 0.75rem;
+    }
+
+    .resume-github h2, .skills h2 {
+        text-align: center;
+    }
+
+    .skills .grouped-skills svg {
+        width: 3.2em;
+    }
 
 }
 
