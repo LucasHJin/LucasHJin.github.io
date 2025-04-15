@@ -102,7 +102,7 @@
 }
 
 /* Laptop */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .outer-container {
         width: 23em;
     }
@@ -110,7 +110,9 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
-
+    .outer-container {
+        width: 20.5em;
+    }
 }
 
 /* Mobile L */

@@ -70,13 +70,17 @@
 }
 
 /* Laptop */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .about .image-me {
         margin-left: 2%;
     }
 
     .skills .grouped-skills {
         margin-top: 0.75rem;
+    }
+
+    .about .image-me figcaption {
+        margin-bottom: 1.5rem;
     }
 }
 

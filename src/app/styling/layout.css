@@ -128,7 +128,21 @@ footer ul {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+    footer .webring img { 
+        width: 1.7em;
+    }
 
+    footer .socials {
+        gap: 0.2em;
+    }
+
+    footer .socials svg {
+        width: 1.8em;
+    }
+
+    footer .copyright {
+        margin-top: 0.3em;
+    }
 }
 
 /* Mobile L */

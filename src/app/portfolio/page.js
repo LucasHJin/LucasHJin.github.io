@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import information from "../data/projectsData.json"
 
+// make clicking on tag filter as well
+
 export default function Portfolio() {
     const [selectedTag, setSelectedTag] = useState("");
     const [searchQuery, setSearchQuery] = useState("");
