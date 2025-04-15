@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Lucas Jin - Developer Portfolio',
+  title: 'Lucas Jin',
   description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
   keywords: ['Lucas Jin', 'Portfolio', 'Developer', 'Software Engineer', 'Web Development', 'Robotics'],
   author: 'Lucas Jin',

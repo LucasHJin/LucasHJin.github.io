@@ -19,18 +19,16 @@
 
 .filter .searchbar {
   flex: 3;
-  background-color: var(--lighter-background);
-  color: var(--foreground-special);
 }
 
 .filter .tag-filters {
   flex: 1;
-  background-color: var(--lighter-background);
-  color: var(--foreground-special);
 }
 
 .filter .searchbar,
 .filter .tag-filters {
+  background-color: var(--lighter-background);
+  color: var(--foreground-special);
   box-sizing: border-box;
   border: 2px solid var(--muted-accent);
   border-radius: 0.4em;
@@ -51,7 +49,9 @@
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    
+    .projects {
+      gap: 1.5em;
+    }
 }
 
 /* Tablet */

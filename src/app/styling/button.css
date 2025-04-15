@@ -72,7 +72,13 @@
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    
+    .button {
+        padding: 0.75em 0;
+        margin-top: 0.6rem;
+    }
+    .refresh {
+        margin-top: 0.2em;
+    }
 }
 
 /* Tablet */

@@ -129,13 +129,16 @@ header {
 }
 
 .important:hover::after {
-  width: 80%;
-  left: 10%;
+  width: 97%;
+  left: 1.5%;
 }
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
-    
+    body {
+      padding: 4% 12.5%;
+      font-size: 100%;
+    }
 }
 
 /* Tablet */

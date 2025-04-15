@@ -84,7 +84,7 @@ export default function Home() {
         <figure className="image-me">
           <Image src="/frc_dcmp_2025.JPG" alt="lucas as a part of the drive team at dcmp 2025" width={1200} height={800}></Image> {/* approx width and height for scaling */}
           <figcaption>part of frc 8729&apos;s drive team at dcmp!</figcaption>
-          </figure>
+        </figure>
       </div>
       <div className="more">
         <div className="resume-github">

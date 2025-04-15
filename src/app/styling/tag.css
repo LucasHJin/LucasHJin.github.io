@@ -1,7 +1,6 @@
 .tag {
     display: inline-block;
     font-size: 0.75em;
-    font-style: italic;
     background-color: var(--muted-accent);
     color: var(--foreground-special);
     line-height: 1;
