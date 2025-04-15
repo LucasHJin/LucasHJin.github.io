@@ -87,7 +87,7 @@
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
     .button {
         padding: 0.6em 0;
         margin-top: 0.55rem;

@@ -132,7 +132,7 @@ footer ul {
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
     header .nav {
         margin-left: 4vw;
     }
@@ -149,15 +149,23 @@ footer ul {
         gap: 0.3em;
     }
 
-
+    footer .webring img { 
+        width: 1.7em;
+    }
 }
 
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
-
+    
 }
 
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
+    header .name a {
+        font-size: 1.4em;
+    }
 
+    footer .webring img {
+        width: 1.8em;
+    }
 }

@@ -60,9 +60,9 @@
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .projects {
-    gap: 2.5em;
+    gap: 2.2em;
   }
 
   .filter .searchbar {
@@ -72,10 +72,20 @@
 
 /* Mobile M */
 @media (min-width: 375px) and (max-width: 424px) {
-
+  .filter {
+    gap: 0.75em;
+  }
+  .filter .searchbar {
+    flex: 1.75;
+  }
 }
 
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
-
+  .filter {
+    gap: 0.75em;
+  }
+  .filter .searchbar {
+    flex: 1.3;
+  }
 }

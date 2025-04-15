@@ -143,5 +143,7 @@
 
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
-
+    .skills .grouped-skills svg {
+        width: 3em;
+    }
 }
