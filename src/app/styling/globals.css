@@ -16,7 +16,7 @@ Borders & Dividers: #C0B9DD
 /* Light mode */
 :root {
   --background: rgb(32, 29, 48);
-  --foreground-normal: rgba(233, 255, 221, 0.8);
+  --foreground-normal: rgba(228, 255, 213, 0.8);
   --foreground-special: rgb(238, 255, 228);
   --accent: rgb(255, 152, 108);
   --muted-accent: rgb(144, 93, 188);
@@ -25,17 +25,18 @@ Borders & Dividers: #C0B9DD
 }
 
 /* Dark mode */
-/*
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: light) {
   :root {
-    --background: #453e43;
-    --background-rgb: rgb(69,62,67);
-    --foreground: #fff9fe;
-    --foreground-rgb: rgb(255,249,254);
-    --foreground-rgb-text: rgba(255,249,254,0.7);
+    --background: rgba(228, 255, 213);
+    --foreground-normal: rgba(49, 45, 70, 0.8);
+    --foreground-special: rgb(32, 29, 48);
+    --accent: rgb(255, 152, 108);
+    --muted-accent: rgb(144, 93, 188);
+    --muted-accent-less: rgb(72, 61, 150);
+    --lighter-background: rgb(177, 235, 146);
   }
-}
-*/
+} */
+
 
 body {
   background: var(--background);

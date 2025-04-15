@@ -8,9 +8,7 @@ import "../styling/card.css"
 
 import { GithubIcon, DevpostIcon, LiveIcon } from "./icons/icons"
 
-// change the inside links to div and use javascript? or button
-
-export default function Card( { title, description, image, links, tags } ) {
+export default function Card( { title, description, image, links, tags, onTagClick } ) {
   const handleClick = (link) => {
     if (link) {
       window.open(link, '_blank');
@@ -64,7 +62,15 @@ export default function Card( { title, description, image, links, tags } ) {
                 </div>
                 <div className="item tags">
                   {tags !== undefined && tags.length > 0 && tags.map((tag, index) => (
-                    <Tag key={index} tag={tag} />
+                    <Tag 
+                      key={index} 
+                      tag={tag} 
+                      onClick={(e) => {
+                        e.stopPropagation(); 
+                        e.preventDefault(); // stops link opening
+                        onTagClick && onTagClick(tag);
+                      }}
+                    /> // only if defined
                   ))}
                 </div>
               </div>
@@ -84,7 +90,8 @@ Card.propTypes = {
     devpost: PropTypes.string,
     livesite: PropTypes.string
   }),
-  tags: PropTypes.arrayOf(PropTypes.string)
+  tags: PropTypes.arrayOf(PropTypes.string),
+  onTagClick: PropTypes.func
 };
 
 Card.defaultProps = {
