@@ -22,6 +22,16 @@ export const metadata = {
     url: 'https://lucashjin.github.io', // REPLACE WITH ACTUAL SITE URL
     image: '/path/to/image.jpg', // REPLACE WITH ACTUAL LOGO/SITE IMAGE
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' }
+    ],
+    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon-32x32.png'
+  },
+  manifest: '/site.webmanifest'
 };
 
 export default function RootLayout({ children }) {
