@@ -1,0 +1,36 @@
+.blog .post {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.blog .botInfo {
+    display: flex;
+    justify-self: flex-start;
+    gap: 0.25em
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Mobile L */
+@media (min-width: 425px) and (max-width: 767px) {
+
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+
+}
+
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+
+}

@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/* Following this: 
+    https://gist.github.com/basham/2175a16ab7c60ce8e001
+    https://www.conductor.com/academy/headings/
+*/
+
+/* 
+Background: #F8F9FA or #2B2D42 (depending on light/dark theme)
+Primary Text: #2B2D42 or #F8F9FA (contrasting the background)
+Accent Color: #FDCB6E or #FF6B81
+Buttons/Hover States: #6A4C93 with #FDCB6E text or vice versa
+Borders & Dividers: #C0B9DD
+*/
+
+/* Light mode */
+:root {
+  --background: rgb(32, 29, 48);
+  --foreground-normal: rgba(228, 255, 213, 0.8);
+  --foreground-special: rgb(238, 255, 228);
+  --accent: rgb(255, 152, 108);
+  --muted-accent: rgb(144, 93, 188);
+  --muted-accent-less: rgb(72, 61, 150);
+  --lighter-background: rgb(40, 33, 96);
+}
+
+/* Dark mode */
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --background: rgba(228, 255, 213);
+    --foreground-normal: rgba(49, 45, 70, 0.8);
+    --foreground-special: rgb(32, 29, 48);
+    --accent: rgb(255, 152, 108);
+    --muted-accent: rgb(144, 93, 188);
+    --muted-accent-less: rgb(72, 61, 150);
+    --lighter-background: rgb(177, 235, 146);
+  }
+} */
+
+
+body {
+  background: var(--background);
+  color: var(--foreground-normal);
+  font-weight: 350;
+  font-size: 110%;
+  line-height: 1.6;
+  padding: 4% 22%; 
+  box-sizing: border-box;
+}
+
+ul:not(.no-list) li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+ul:not(.no-list) li::before {
+  content: "◆"; 
+  position: absolute;
+  left: 0;
+  color: var(--muted-accent);
+  top: 0.3em;
+  font-size: 0.7em; 
+  font-style: normal;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul:not(.no-list) li:hover {
+  transform: translateX(0.3em);
+}
+
+ul:not(.no-list) li:hover::before {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
+
+h2 {
+  font-weight: 450;
+  font-size: 1.1em;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.2em;
+  color: var(--foreground-special);
+}
+
+h3 {
+  font-weight: 450;
+  font-size: 1em;
+  color: var(--foreground-special);
+  line-height: 1;
+}
+
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+.bold {
+  color: var(--foreground-special);
+  font-weight: 450;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.important {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--foreground-special);
+  cursor: pointer;
+  font-weight: 450;
+  
+}
+
+.important::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0em; 
+  width: 0;
+  height: 0.1em;
+  background-color: var(--accent);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.important:hover::after {
+  width: 97%;
+  left: 1.5%;
+}
+
+/* Laptop */
+@media (min-width: 768px) and (max-width: 1439px) {
+  body {
+    padding: 4% 12.5%;
+    font-size: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    padding: 4% 5%;
+    font-size: 100%;
+  }
+}
+
+/* Mobile L */
+@media (min-width: 0px) and (max-width: 767px) {
+  body {
+    padding: 4% 6%;
+  }
+
+  header {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Mobile M */
+@media (min-width: 375px) and (max-width: 424px) {
+  body {
+    font-size: 97.5%;
+  }
+}
+
+/* Mobile S */
+@media (min-width: 320px) and (max-width: 374px) {
+  body {
+    font-size: 95%;
+  }
+}
