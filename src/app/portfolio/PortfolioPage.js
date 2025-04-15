@@ -39,6 +39,10 @@ export default function Portfolio() {
         return "SQL";
       }
 
+      if (tag.toUpperCase() === "C++") {
+        return "C++";
+      }
+
       return tag;
     };
 

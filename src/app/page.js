@@ -98,7 +98,7 @@ export default function Home() {
             <div className="grouped-skills">
             {
               skillsList.map((item, index) => (
-                <Link key={index} href={`/portfolio?tag=${item.link.toLowerCase()}`}>
+                <Link key={index} href={`/portfolio?tag=${encodeURIComponent(item.link.toLowerCase())}`}>
                   {item.skill}
                 </Link>
               ))
