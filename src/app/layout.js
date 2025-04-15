@@ -13,14 +13,14 @@ const inter = Inter({
 export const metadata = {
   title: 'Lucas Jin',
   description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
-  keywords: ['Lucas Jin', 'Portfolio', 'Developer', 'Software Engineer', 'Web Development', 'Robotics'],
+  keywords: ['Lucas Jin', 'Portfolio', 'Developer', 'Software Engineer', 'Web Development', 'Robotics', 'Ottawa', 'Hackathons', 'Ontario'],
   author: 'Lucas Jin',
   openGraph: {
     type: 'website',
     title: 'Lucas Jin - Developer Portfolio',
     description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
-    url: 'https://lucashjin.github.io', // REPLACE WITH ACTUAL SITE URL
-    image: '/path/to/image.jpg', // REPLACE WITH ACTUAL LOGO/SITE IMAGE
+    url: 'https://lucasjin.biz', 
+    image: '/LUCAS_PERSONAL_LOGO_NGE.png',
   },
   icons: {
     icon: [
