@@ -17,7 +17,7 @@ export const metadata = {
   author: 'Lucas Jin',
   openGraph: {
     type: 'website',
-    title: 'Lucas Jin - Developer Portfolio',
+    title: 'Lucas Jin',
     description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
     url: 'https://lucasjin.biz', 
     image: '/LUCAS_PERSONAL_LOGO_NGE.png',
