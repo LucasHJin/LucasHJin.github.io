@@ -8,8 +8,8 @@ export default function Footer() {
         <nav>
             <ul className="no-list">
                 <li className="webring">
-                    <a href='https://cs.uwatering.com/#your-site-here?nav=prev' className="arrow">←</a> {/* fill in actual site info*/}
-                    <a href='https://cs.uwatering.com/#your-site-here' target='_blank'>
+                    <a href='https://cs.uwatering.com/www.lucasjin.biz?nav=prev' className="arrow">←</a> {/* fill in actual site info*/}
+                    <a href='https://cs.uwatering.com/www.lucasjin.biz' target='_blank'>
                         <Image
                             src='https://cs.uwatering.com/icon.white.svg'
                             alt='CS Webring'
@@ -17,7 +17,7 @@ export default function Footer() {
                             height={10}
                         />
                     </a>
-                    <a href='https://cs.uwatering.com/#your-site-here?nav=next' className="arrow">→</a>
+                    <a href='https://cs.uwatering.com/www.lucasjin.biz?nav=next' className="arrow">→</a>
                 </li>
                 <li className="socials">
                     <Link href="https://github.com/LucasHJin" target="_blank" rel="noopener noreferrer" className="nav">
