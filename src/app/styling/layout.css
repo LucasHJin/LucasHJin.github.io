@@ -105,8 +105,8 @@ footer ul {
 
 /* Expand on hover */
 .link-page:hover::after { 
-    width: 97%;
-    left: 1.5%;
+    width: 100%;
+    left: 0%;
 }
 
 
@@ -114,9 +114,9 @@ footer ul {
 .current-page::after {
     content: "";
     position: absolute;
-    left: 1.5%; 
     bottom: 0em;
-    width: 97%;
+    width: 100%;
+    left: 0%;
     height: 0.1em;
     background-color: var(--accent);
 }

@@ -124,14 +124,14 @@ header {
   left: 50%;
   bottom: 0em; 
   width: 0;
-  height: 0.1em;
+  height: 0.1rem;
   background-color: var(--accent);
   transition: width 0.3s ease, left 0.3s ease;
 }
 
 .important:hover::after {
-  width: 97%;
-  left: 1.5%;
+  width: 100%;
+  left: 0%;
 }
 
 /* Laptop */
