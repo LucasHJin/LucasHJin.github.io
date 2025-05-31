@@ -45,10 +45,11 @@ footer .webring a, footer .socials a {
 }
 
 
-footer .webring img {
+footer .webring .wricon {
     width: 1.3em;
     height: auto;
     margin: 0 0.5em;
+    transition: all 0.4s ease-in-out;
 }
 
 footer .copyright {
@@ -64,7 +65,7 @@ footer .socials a, footer .webring .arrow {
     transition: all 0.4s ease-in-out;
 }
 
-footer .socials a:hover, footer .webring .arrow:hover {
+footer .socials a:hover, footer .webring .arrow:hover, footer .webring .wricon:hover {
     color: var(--accent); 
 }
 

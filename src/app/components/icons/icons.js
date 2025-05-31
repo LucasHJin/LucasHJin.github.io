@@ -15,5 +15,6 @@ import NodeIcon from './nodeIcon';
 import PythonIcon from './pythonIcon';
 import ReactIcon from './reactIcon';
 import SqlIcon from './sqlIcon';
+import WebringIcon from './webringIcon';
 
-export { CppIcon, CssIcon, DevpostIcon, EmailIcon, FirebaseIcon, GithubIcon, HtmlIcon, InstaIcon, JsIcon, LinkedinIcon, LiveIcon, MongodbIcon, NextIcon, NodeIcon, PythonIcon, ReactIcon, SqlIcon };
+export { CppIcon, CssIcon, DevpostIcon, EmailIcon, FirebaseIcon, GithubIcon, HtmlIcon, InstaIcon, JsIcon, LinkedinIcon, LiveIcon, MongodbIcon, NextIcon, NodeIcon, PythonIcon, ReactIcon, SqlIcon, WebringIcon };

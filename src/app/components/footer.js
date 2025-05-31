@@ -1,6 +1,5 @@
-import { GithubIcon, LinkedinIcon, InstaIcon, EmailIcon } from "./icons/icons"
+import { GithubIcon, LinkedinIcon, InstaIcon, EmailIcon, WebringIcon } from "./icons/icons"
 import Link from "next/link";
-import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,14 +8,9 @@ export default function Footer() {
             <ul className="no-list">
                 <li className="webring">
                     <a href='https://cs.uwatering.com/www.lucasjin.biz?nav=prev' className="arrow">←</a> {/* fill in actual site info*/}
-                    <a href='https://cs.uwatering.com/www.lucasjin.biz' target='_blank'>
-                        <Image
-                            src='https://cs.uwatering.com/icon.white.svg'
-                            alt='CS Webring'
-                            width={10}
-                            height={10}
-                        />
-                    </a>
+                    <Link href='https://cs.uwatering.com/www.lucasjin.biz' target='_blank' className="wricon">
+                        <WebringIcon />
+                    </Link>
                     <a href='https://cs.uwatering.com/www.lucasjin.biz?nav=next' className="arrow">→</a>
                 </li>
                 <li className="socials">
