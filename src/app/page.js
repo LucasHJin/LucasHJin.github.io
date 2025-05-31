@@ -24,17 +24,17 @@ export default function Home() {
                 >
                   ibdp
                 </a>{' '} {/* for space */}
-                student from merivale hs (📍ottawa)
+                student in the ib program (📍ottawa)
               </li>
               <li>
-                future cs @ {' '}
+                incoming {' '}
                 <a
-                  href="https://dictionary.cambridge.org/dictionary/english/tbd" 
+                  href="https://cs.uwaterloo.ca/" 
                   className="important" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  ____
+                  cs @ University of Waterloo
                 </a>
               </li>
             </ul>
