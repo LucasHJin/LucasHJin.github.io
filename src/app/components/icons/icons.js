@@ -1,20 +1,3 @@
-import CppIcon from './cppIcon';
-import CssIcon from './cssIcon';
-import DevpostIcon from './devpostIcon';
-import EmailIcon from './emailIcon';
-import FirebaseIcon from './firebaseIcon';
-import GithubIcon from './githubIcon';
-import HtmlIcon from './htmlIcon';
-import InstaIcon from './instaIcon';
-import JsIcon from './jsIcon';
-import LinkedinIcon from './linkedinIcon';
-import LiveIcon from './liveIcon';
-import MongodbIcon from './mongodbIcon';
-import NextIcon from './nextIcon';
-import NodeIcon from './nodeIcon';
-import PythonIcon from './pythonIcon';
-import ReactIcon from './reactIcon';
-import SqlIcon from './sqlIcon';
 import WebringIcon from './webringIcon';
 
-export { CppIcon, CssIcon, DevpostIcon, EmailIcon, FirebaseIcon, GithubIcon, HtmlIcon, InstaIcon, JsIcon, LinkedinIcon, LiveIcon, MongodbIcon, NextIcon, NodeIcon, PythonIcon, ReactIcon, SqlIcon, WebringIcon };
+export { WebringIcon };

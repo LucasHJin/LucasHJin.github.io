@@ -33,15 +33,15 @@
       "tags": ["Python", "SQLite", "Sheets API", "Discord API"]
     },
     {
-      "title": "STEM-E Volunteer App",
-      "description": "platform to automate volunteering and support access to stem opportunities. 1000+ future users.",
-      "image": "/steme.png",
+      "title": "VocalizeVC",
+      "description": "discord bot to provide more functionality to discord calls. includes captions, individual meeting stats, meeting summaries.",
+      "image": "/VVC.png",
       "links": {
-        "github": "https://github.com/STEM-E-Youth-Career-Development-Program/volunteer-app",
+        "github": "https://github.com/LucasHJin/VocalizeVC",
         "devpost": "",
         "livesite": ""
       },
-      "tags": ["Next.js", "Express.js", "Firebase", "Sheets API"]
+      "tags": ["Python", "HTML/CSS", "Discord API", "Whisper Model"]
     },
     {
       "title": "FRC 8729 Software",
@@ -53,6 +53,17 @@
         "livesite": ""
       },
       "tags": ["Java", "Photonvision"]
+    },
+    {
+      "title": "STEM-E Volunteer App",
+      "description": "platform to automate volunteering and support access to stem opportunities. 1000+ future users.",
+      "image": "/steme.png",
+      "links": {
+        "github": "https://github.com/STEM-E-Youth-Career-Development-Program/volunteer-app",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["Next.js", "Express.js", "Firebase", "Sheets API"]
     },
     {
         "title": "ConvoAI",
