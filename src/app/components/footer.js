@@ -1,4 +1,5 @@
-import { GithubIcon, LinkedinIcon, InstaIcon, EmailIcon, WebringIcon } from "./icons/icons"
+import { WebringIcon } from "./icons/icons"
+import { Github, Linkedin, Instagram, Mail, MoveRight, MoveLeft } from 'lucide-react';
 import Link from "next/link";
 
 export default function Footer() {
@@ -7,24 +8,28 @@ export default function Footer() {
         <nav>
             <ul className="no-list">
                 <li className="webring">
-                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=prev' className="arrow">←</a> {/* fill in actual site info*/}
+                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=prev' className="arrow">
+                        <MoveLeft />
+                    </a> {/* fill in actual site info*/}
                     <Link href='https://cs.uwatering.com/#www.lucasjin.biz' target='_blank' className="wricon">
                         <WebringIcon />
                     </Link>
-                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=next' className="arrow">→</a>
+                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=next' className="arrow">
+                        <MoveRight />
+                    </a>
                 </li>
                 <li className="socials">
                     <Link href="https://github.com/LucasHJin" target="_blank" rel="noopener noreferrer" className="nav">
-                        <GithubIcon />
+                        <Github />
                     </Link>
                     <Link href="https://www.linkedin.com/in/lucas--jin/" target="_blank" rel="noopener noreferrer" className="nav">
-                        <LinkedinIcon />
+                        <Linkedin />
                     </Link>
                     <Link href="mailto:lucasjin.hh@gmail.com" target="_blank" rel="noopener noreferrer" className="nav">
-                        <EmailIcon />
+                        <Mail />
                     </Link>
                     <Link href="https://www.instagram.com/completely_fraudulent/" target="_blank" rel="noopener noreferrer" className="nav">
-                        <InstaIcon />
+                        <Instagram />
                     </Link>
                 </li>
             </ul>

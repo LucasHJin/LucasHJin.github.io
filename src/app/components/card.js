@@ -2,11 +2,10 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-
 import Tag from "./tag"
 import "../styling/card.css"
+import { Github, SquareArrowUpRight, BookOpen } from 'lucide-react';
 
-import { GithubIcon, DevpostIcon, LiveIcon } from "./icons/icons"
 
 export default function Card( { title, description, image, links, tags, onTagClick } ) {
   const handleClick = (link) => {
@@ -25,9 +24,11 @@ export default function Card( { title, description, image, links, tags, onTagCli
     return (
       <div className="outer-container card">
         <a href={
-          !links?.github || links.github.trim() === "" 
-          ? "https://github.com/LucasHJin" 
-          : addHttps(links.github)
+          !links?.livesite || links.livesite.trim() === ""
+            ? (!links?.github || links.github.trim() === ""
+                ? "https://github.com/LucasHJin"
+                : addHttps(links.github))
+            : addHttps(links.livesite)
         } target="_blank" rel="noopener noreferrer">
           <div className="container">
             <div className="item image-card">
@@ -42,17 +43,17 @@ export default function Card( { title, description, image, links, tags, onTagCli
                   <div className="item links">
                     {links?.github && 
                       <span onClick={() => handleClick(addHttps(links.github))}>
-                        <GithubIcon className="project-link"/>
+                        <Github className="project-link"/>
                       </span>
                     } 
                     {links?.devpost && 
                       <span onClick={() => handleClick(addHttps(links.devpost))}>
-                        <DevpostIcon className="project-link" />
+                        <BookOpen className="project-link" />
                       </span>
                     }
                     {links?.livesite && 
                       <span onClick={() => handleClick(addHttps(links.livesite))}>
-                        <LiveIcon className="project-link" />
+                        <SquareArrowUpRight className="project-link" />
                       </span>
                     }
                   </div>

@@ -24,6 +24,10 @@ footer .nav {
     margin-left: 0.5vw;
 }
 
+footer nav {
+    margin: 0.45rem 0;
+}
+
 nav a {
     color: var(--foreground-special);
 }
@@ -46,7 +50,7 @@ footer .webring a, footer .socials a {
 
 
 footer .webring .wricon {
-    width: 1.3em;
+    width: 1.5rem;
     height: auto;
     margin: 0 0.5em;
     transition: all 0.4s ease-in-out;
@@ -74,7 +78,7 @@ footer .socials a:hover {
 }
 
 footer .socials svg {
-    width: 1.8em;
+    width: 1.8rem;
     aspect-ratio: 1/1;
 }
 
