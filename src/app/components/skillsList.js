@@ -1,48 +1,52 @@
-import { ReactIcon, NodeIcon, HtmlIcon, JsIcon, PythonIcon, NextIcon, FirebaseIcon, MongodbIcon, CssIcon, CppIcon, SqlIcon} from "./icons/icons"
+import { FaReact, FaNodeJs, FaHtml5, FaCss3, FaPython,  } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
+import { SiNextdotjs, SiMongodb } from "react-icons/si";
+import { PiFileCpp, PiFileSql } from "react-icons/pi";
+
 
 export const skillsList = [
     { 
-      "skill": <NextIcon className="skill"/>,
+      "skill": <SiNextdotjs className="skill"/>,
       "link": "Next.js"
     },
     { 
-      "skill": <NodeIcon className="skill"/>,
+      "skill": <FaNodeJs className="skill"/>,
       "link": "Express.js"
     },
     { 
-      "skill": <ReactIcon className="skill"/>,
+      "skill": <FaReact className="skill"/>,
       "link": "React.js",
     },
     { 
-      "skill": <FirebaseIcon className="skill"/>,
+      "skill": <IoLogoFirebase className="skill"/>,
       "link": "Firebase"
     },
     { 
-      "skill": <MongodbIcon className="skill"/>,
+      "skill": <SiMongodb className="skill"/>,
       "link": "MongoDB"
     },
     { 
-      "skill": <PythonIcon className="skill"/>,
+      "skill": <FaPython className="skill"/>,
       "link": "Python"
     },
     { 
-      "skill": <CppIcon className="skill"/>,
+      "skill": <PiFileCpp className="skill"/>,
       "link": "C++"
     },
     { 
-      "skill": <SqlIcon className="skill"/>,
+      "skill": <PiFileSql className="skill"/>,
       "link": "SQL"
     },
     { 
-      "skill": <JsIcon className="skill"/>,
+      "skill": <IoLogoJavascript className="skill"/>,
       "link": "JS"
     },
     { 
-      "skill": <HtmlIcon className="skill"/>,
+      "skill": <FaHtml5 className="skill"/>,
       "link": "HTML/CSS"
     },
     { 
-      "skill": <CssIcon className="skill"/>,
+      "skill": <FaCss3 className="skill"/>,
       "link": "HTML/CSS"
     },
 ];
