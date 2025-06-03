@@ -54,6 +54,13 @@ footer .webring .wricon {
     height: auto;
     margin: 0 0.5em;
     transition: all 0.4s ease-in-out;
+    color: var(--foreground-special);
+}
+
+/* For safari */
+footer .webring .wricon svg {
+  width: 1.5rem;
+  height: auto;
 }
 
 footer .copyright {
@@ -134,7 +141,13 @@ footer ul {
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     footer .webring img { 
-        width: 1.7em;
+        width: 1.7rem;
+    }
+
+    /* For safari */
+    footer .webring .wricon svg {
+        width: 1.7rem;
+        height: auto;
     }
 
     footer .socials {
@@ -171,6 +184,12 @@ footer ul {
     footer .webring .wricon { 
         width: 1.7rem;
     }
+
+    /* For safari */
+    footer .webring .wricon svg {
+        width: 1.7rem;
+        height: auto;
+    }
 }
 
 /* Mobile M */
@@ -186,5 +205,11 @@ footer ul {
 
     footer .webring .wricon {
         width: 1.4rem;
+    }
+
+    /* For safari */
+    footer .webring .wricon svg {
+        width: 1.4rem;
+        height: auto;
     }
 }
