@@ -169,7 +169,7 @@ footer ul {
     }
 
     footer .webring img { 
-        width: 1.7em;
+        width: 1.7rem;
     }
 }
 
@@ -179,12 +179,12 @@ footer ul {
 }
 
 /* Mobile S */
-@media (min-width: 320px) and (max-width: 374px) {
+@media (min-width: 0px) and (max-width: 374px) {
     header .name a {
         font-size: 1.4em;
     }
 
-    footer .webring img {
-        width: 1.8em;
+    footer .webring .wricon {
+        width: 1.4rem;
     }
 }
