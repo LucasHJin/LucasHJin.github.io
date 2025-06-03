@@ -168,7 +168,7 @@ footer ul {
         gap: 0.3em;
     }
 
-    footer .webring img { 
+    footer .webring .wricon { 
         width: 1.7rem;
     }
 }
