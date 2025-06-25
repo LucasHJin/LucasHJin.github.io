@@ -8,13 +8,13 @@ export default function Footer() {
         <nav>
             <ul className="no-list">
                 <li className="webring">
-                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=prev' className="arrow">
+                    <a href='https://cs.uwatering.com/#www.lucasjin.co?nav=prev' className="arrow">
                         <MoveLeft />
                     </a> {/* fill in actual site info*/}
-                    <Link href='https://cs.uwatering.com/#www.lucasjin.biz' target='_blank' className="wricon">
+                    <Link href='https://cs.uwatering.com/#www.lucasjin.co' target='_blank' className="wricon">
                         <WebringIcon />
                     </Link>
-                    <a href='https://cs.uwatering.com/#www.lucasjin.biz?nav=next' className="arrow">
+                    <a href='https://cs.uwatering.com/#www.lucasjin.co?nav=next' className="arrow">
                         <MoveRight />
                     </a>
                 </li>

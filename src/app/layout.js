@@ -19,7 +19,7 @@ export const metadata = {
     type: 'website',
     title: 'Lucas Jin',
     description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
-    url: 'https://lucasjin.biz', 
+    url: 'https://lucasjin.co', 
     image: '/LUCAS_PERSONAL_LOGO_NGE.png',
   },
   icons: {
