@@ -58,7 +58,7 @@ export default function Home() {
           <h2>recent!</h2>
             <ul className="text">
               <li>
-                won 🥇 + $1000K at {' '}
+                won 🥇 + $1K at {' '}
                 <a
                   href="https://www.hack404.dev/" 
                   className="important" 
