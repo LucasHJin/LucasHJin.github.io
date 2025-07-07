@@ -2,11 +2,18 @@ import Header from './components/header.js'
 import Footer from './components/footer.js';
 import "./styling/globals.css"; // Applies global css to everything
 import "./styling/layout.css"
-import { Inter, Poppins } from 'next/font/google';
+import { Inter, Poppins, EB_Garamond } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
+  display: 'swap',
+});
+
+const garamond = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-garamond',
   display: 'swap',
 });
 
@@ -37,7 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className} ${garamond.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />

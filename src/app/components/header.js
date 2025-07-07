@@ -22,11 +22,11 @@ export default function Header() {
     <header>
         <nav className="header">
             <ul className="no-list">
-                <li className="name link-page"><Link href="/">lucas jin</Link></li>
+                <li className="name link-page garamond"><Link href="/">lucas jin</Link></li>
                 <li className="navs">
-                <Link href="/" className="nav link-page">about</Link>
-                <Link href="/portfolio" className="nav link-page">portfolio</Link>
-                <Link href="/blog" className="nav link-page">blog</Link>
+                  <Link href="/" className="nav link-page">about</Link>
+                  <Link href="/portfolio" className="nav link-page">portfolio</Link>
+                  <Link href="/blog" className="nav link-page">blog</Link>
                 </li>
             </ul>
         </nav>
