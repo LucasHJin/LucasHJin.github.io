@@ -16,17 +16,6 @@ export default function Home() {
                 aspiring software engineer
               </li>
               <li>
-                <a 
-                  href="https://www.ibo.org/programmes/diploma-programme/" 
-                  className="important" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  ibdp
-                </a>{' '} {/* for space */}
-                student in the ib program (📍ottawa)
-              </li>
-              <li>
                 incoming {' '}
                 <a
                   href="https://cs.uwaterloo.ca/" 
@@ -36,6 +25,7 @@ export default function Home() {
                 >
                   cs @ University of Waterloo
                 </a>
+                {' '} (📍ottawa)
               </li>
             </ul>
           <h2>what else?</h2>
@@ -50,7 +40,7 @@ export default function Home() {
                 >
                   frc 8729
                 </a>
-               ), hackathons, and web dev
+               ), hackathons, and building things
               </li>
               <li>
                 hobbies: working out, manhwa and anime (guess which {' '}
@@ -68,16 +58,26 @@ export default function Home() {
           <h2>recent!</h2>
             <ul className="text">
               <li>
-                competed at {' '}
+                won 🥇 + $1000K at {' '}
                 <a
-                  href="https://www.thebluealliance.com/event/2025oncmp2#rankings" 
+                  href="https://www.hack404.dev/" 
                   className="important" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  dcmp
+                  Hack404
                 </a>
-                , ranked #18/50 after quals
+              </li>
+              <li>
+                42/45 in the {' '}
+                <a
+                  href="https://www.ibo.org/programmes/diploma-programme/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  IBDP
+                </a>
               </li>
             </ul>
         </div>

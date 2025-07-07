@@ -1,5 +1,5 @@
 import { WebringIcon } from "./icons/icons"
-import { Github, Linkedin, Instagram, Mail, MoveRight, MoveLeft } from 'lucide-react';
+import { Github, Linkedin, Instagram, Mail, MoveRight, MoveLeft, Twitter } from 'lucide-react';
 import Link from "next/link";
 
 export default function Footer() {
@@ -24,6 +24,9 @@ export default function Footer() {
                     </Link>
                     <Link href="https://www.linkedin.com/in/lucas--jin/" target="_blank" rel="noopener noreferrer" className="nav">
                         <Linkedin />
+                    </Link>
+                    <Link href="https://x.com/lucashjin" target="_blank" rel="noopener noreferrer" className="nav">
+                        <Twitter />
                     </Link>
                     <Link href="mailto:lucasjin.hh@gmail.com" target="_blank" rel="noopener noreferrer" className="nav">
                         <Mail />
