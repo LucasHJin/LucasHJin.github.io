@@ -26,7 +26,7 @@
       "description": "mobile app to keep protesting safe. won overall first place ($1000) @Hack404 in <24 hours. realtime updating with firebase. dynamic routing using an a* algorithm.",
       "image": "/proteful.png",
       "links": {
-        "github": "https://github.com/austinjiann/Proteful",
+        "github": "https://github.com/LucasHJin/Proteful",
         "devpost": "https://devpost.com/software/temp-3m7t0b",
         "livesite": ""
       },
