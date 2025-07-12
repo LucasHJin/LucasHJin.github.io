@@ -1,0 +1,14 @@
+.cat {
+  position: absolute;
+  bottom: 100%; /* positions cat just above the footer */
+  left: 0;
+  width: var(--cat-size);
+  height: var(--cat-size);
+  transform: scaleX(var(--scale-x));
+  background-image: var(--sprite-url);
+  background-size: var(--sprite-size);
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 10;
+}
