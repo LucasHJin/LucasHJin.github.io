@@ -32,7 +32,20 @@ export default function Card( { title, description, image, links, tags, onTagCli
         } target="_blank" rel="noopener noreferrer">
           <div className="container">
             <div className="item image-card">
-              <Image src={image} alt="project image" width={500} height={500}></Image>
+              {image.endsWith('.mp4') || image.endsWith('.webm') ? (
+                <video
+                  src={image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  width={500}
+                  height={500}
+                  className="card-video"
+                />
+              ) : (
+                <Image src={image} alt="project image" width={500} height={500} />
+              )}
             </div>
             <div className="other">
               <div className="other-padding">

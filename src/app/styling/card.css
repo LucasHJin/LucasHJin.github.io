@@ -17,7 +17,8 @@
     flex-direction: column;
 }
 
-.image-card img {
+.image-card img,
+.image-card video {
     width: 100%;
     aspect-ratio: 1 / 1;
     display: block;
@@ -25,6 +26,10 @@
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     background-color: white;
+}
+
+.image-card video {
+    object-position: left center;
 }
 
 /* hidden text */

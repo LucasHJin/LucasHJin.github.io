@@ -11,6 +11,17 @@
       "tags": ["Next.js", "Tailwind CSS", "MongoDB", "OpenAI API", "Symphonic Labs API"]
     },
     {
+      "title": "Pixel Pets",
+      "description": "obsidian plugin to add virtual pets to your obsidian dom. 150+ downloads and counting. still actively maintained and updated.",
+      "image": "/pixel-pets.mp4",
+      "links": {
+        "github": "https://github.com/LucasHJin/obsidian-pets",
+        "devpost": "",
+        "livesite": "https://obsidian.md/plugins?id=pixel-pets"
+      },
+      "tags": ["Typescript", "Obsidian Plugin API", "Esbuild"]
+    },
+    {
         "title": "Merivale Drama Manager",
         "description": "drama organization and scheduling manager for merivale hs. automated emailing to absentees with qr code attendance. 100+ estimated possible users.",
         "image": "/merivale.png",
@@ -20,6 +31,17 @@
           "livesite": ""
         },
         "tags": ["Next.js", "Express.js", "PostgresSQL"]
+    },
+    {
+      "title": "BeProud",
+      "description": "platform to combat body dysmporphia. won best solo pitch @Terrahacks in 36 hours with 20+ real users.",
+      "image": "/be-proud.png",
+      "links": {
+        "github": "https://github.com/LucasHJin/terrahacks",
+        "devpost": "https://devpost.com/software/beproud",
+        "livesite": "https://beproud.vercel.app/"
+      },
+      "tags": ["Next.js", "Tailwind CSS", "Firebase", "Gemini API"]
     },
     {
       "title": "Proteful",
