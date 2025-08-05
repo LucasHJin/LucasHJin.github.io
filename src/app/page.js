@@ -43,22 +43,13 @@ export default function Home() {
                ), hackathons, and building things
               </li>
               <li>
-                hobbies: working out, manhwa and anime (guess which {' '}
-                <a
-                  href="https://evangelion.fandom.com/wiki/Neon_Genesis_Evangelion" 
-                  className="important" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  anime
-                </a> {' '}
-                inspired my color theme)
+                hobbies: working out, manhwa and anime
               </li>
             </ul>
           <h2>recent!</h2>
             <ul className="text">
               <li>
-                won 🥇 + $1K at {' '}
+                won 🥇 + $1K @ {' '}
                 <a
                   href="https://www.hack404.dev/" 
                   className="important" 
@@ -69,15 +60,27 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                42/45 in the {' '}
+                solo best pitch @ {' '}
                 <a
-                  href="https://www.ibo.org/programmes/diploma-programme/" 
+                  href="https://www.terrahacks.ca/" 
                   className="important" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  IBDP
+                  Terrahacks
                 </a>
+              </li>
+              <li>
+                released {' '}
+                <a
+                  href="https://obsidian.md/plugins?id=pixel-pets" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  pixel pets
+                </a>
+                {' '} - 150+ downloads
               </li>
             </ul>
         </div>

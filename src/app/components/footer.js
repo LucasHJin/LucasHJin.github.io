@@ -17,7 +17,7 @@ import { useRef, useState, useEffect } from "react";
 const ANIMATIONS = {
   idle: {
     name: "idle",
-    spriteUrl: "/white-cat/idle-cat.png",
+    spriteUrl: "/xmas-cat/idle-cat.png",
     frameCount: 7,
     frameWidth: 32,
     frameHeight: 32,
@@ -25,7 +25,7 @@ const ANIMATIONS = {
   },
   idle2: {
     name: "idle2",
-    spriteUrl: "/white-cat/idle2-cat.png",
+    spriteUrl: "/xmas-cat/idle2-cat.png",
     frameCount: 14,
     frameWidth: 32,
     frameHeight: 32,
@@ -33,7 +33,7 @@ const ANIMATIONS = {
   },
   jump: {
     name: "jump",
-    spriteUrl: "/white-cat/jump-cat.png",
+    spriteUrl: "/xmas-cat/jump-cat.png",
     frameCount: 13,
     frameWidth: 32,
     frameHeight: 32,
@@ -41,7 +41,7 @@ const ANIMATIONS = {
   },
   run: {
     name: "run",
-    spriteUrl: "/white-cat/run-cat.png",
+    spriteUrl: "/xmas-cat/run-cat.png",
     frameCount: 7,
     frameWidth: 32,
     frameHeight: 32,
@@ -49,7 +49,7 @@ const ANIMATIONS = {
   },
   sit: {
     name: "sit",
-    spriteUrl: "/white-cat/sitting-cat.png",
+    spriteUrl: "/xmas-cat/sitting-cat.png",
     frameCount: 3,
     frameWidth: 32,
     frameHeight: 32,
@@ -57,7 +57,7 @@ const ANIMATIONS = {
   },
   sleep: {
     name: "sleep",
-    spriteUrl: "/white-cat/sleep-cat.png",
+    spriteUrl: "/xmas-cat/sleep-cat.png",
     frameCount: 3,
     frameWidth: 32,
     frameHeight: 32,
@@ -65,7 +65,7 @@ const ANIMATIONS = {
   },
   die: {
     name: "die",
-    spriteUrl: "/white-cat/die-cat.png",
+    spriteUrl: "/xmas-cat/die-cat.png",
     frameCount: 15,
     frameWidth: 32,
     frameHeight: 32,
@@ -105,7 +105,7 @@ export default function Footer() {
           leftBound={bounds.leftBound}
           rightBound={bounds.rightBound}
           moveDist={50}
-          catType="white-cat"
+          catType="xmas-cat"
           animations={ANIMATIONS}
         />
       )}

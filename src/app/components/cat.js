@@ -56,8 +56,8 @@ export default function Cat({
     if (currentAnimation.current === name) return;
     currentAnimation.current = name;
 
-    el.style.animation = "none";
-    el.offsetHeight; // Force reflow
+    // el.style.animation = "none";
+    // el.offsetHeight; // Force reflow
 
     updateCatElementStyle(el, animations[name]);
 
