@@ -80,7 +80,7 @@ export default function Home() {
                 >
                   pixel pets
                 </a>
-                {' '} - 150+ downloads
+                {' '} - 300+ downloads in &lt;1 week
               </li>
             </ul>
         </div>
