@@ -152,14 +152,6 @@ export default function Footer() {
               <Linkedin />
             </Link>
             <Link
-              href="https://x.com/lucashjin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="nav"
-            >
-              <Twitter />
-            </Link>
-            <Link
               href="mailto:lucasjin.hh@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
