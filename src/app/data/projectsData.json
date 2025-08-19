@@ -22,15 +22,26 @@
       "tags": ["Typescript", "Obsidian Plugin API", "Esbuild"]
     },
     {
+      "title": "Cigym",
+      "description": "cursor for cinematic gym videos. python script + gui to automate editing gym videos (reduce time spent by 3x). still actively maintained.",
+      "image": "/cigym.jpeg",
+      "links": {
+        "github": "https://github.com/LucasHJin/cigym",
+        "devpost": "",
+        "livesite": ""
+      },
+      "tags": ["Python", "Ffmpeg", "Whisper", "Pyside6", "OpenCV"]
+    },
+    {
         "title": "Merivale Drama Manager",
-        "description": "drama organization and scheduling manager for merivale hs. automated emailing to absentees with qr code attendance. 100+ estimated possible users.",
+        "description": "drama organization and scheduling manager for merivale hs. automated emailing to absentees with qr code attendance. containerized development with docker.",
         "image": "/merivale.png",
         "links": {
           "github": "https://github.com/sky46/mhs-drama-manager",
           "devpost": "",
           "livesite": ""
         },
-        "tags": ["Next.js", "Express.js", "PostgresSQL"]
+        "tags": ["Next.js", "Express.js", "PostgresSQL", "Docker"]
     },
     {
       "title": "BeProud",
@@ -74,7 +85,7 @@
         "devpost": "",
         "livesite": ""
       },
-      "tags": ["Python", "HTML/CSS", "Discord API", "Whisper Model"]
+      "tags": ["Python", "HTML/CSS", "Discord API", "Whisper"]
     },
     {
       "title": "FRC 8729 Software",
