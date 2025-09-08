@@ -16,7 +16,6 @@ export default function Home() {
                 aspiring software engineer
               </li>
               <li>
-                incoming {' '}
                 <a
                   href="https://cs.uwaterloo.ca/" 
                   className="important" 
@@ -25,7 +24,6 @@ export default function Home() {
                 >
                   cs @ University of Waterloo
                 </a>
-                {' '} (📍ottawa)
               </li>
             </ul>
           <h2>what else?</h2>
@@ -80,7 +78,7 @@ export default function Home() {
                 >
                   pixel pets
                 </a>
-                {' '} - 300+ downloads in &lt;1 week
+                {' '} - 800+ downloads
               </li>
             </ul>
         </div>
