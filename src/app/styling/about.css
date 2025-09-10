@@ -2,3 +2,36 @@
     display: flex;
     flex-flow: row nowrap;
 }
+
+ul:not(.no-list) {
+  list-style: none; 
+  padding-left: 1rem;
+}
+
+ul:not(.no-list) li {
+  position: relative;
+  padding-left: 1.3rem;
+  list-style-position: inside; 
+  transition: all 0.3s ease;
+  display: table;
+}
+
+ul:not(.no-list) li::before {
+  content: "◆"; 
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: var(--primary);
+  font-style: normal;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul:not(.no-list) li:hover {
+  transform: translateX(0.5rem);
+}
+
+ul:not(.no-list) li:hover::before {
+  transform: rotate(90deg);
+  color: var(--accent);
+}

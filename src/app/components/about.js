@@ -1,4 +1,5 @@
 import Image from "next/image";
+import '../styling/about.css';
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <div className="description">
         <h3>who am i?</h3>
         <ul className="text">
-          <li className="italic">aspiring software engineer</li>
+          <li>aspiring software engineer</li>
           <li>
             <a
               href="https://cs.uwaterloo.ca/"
