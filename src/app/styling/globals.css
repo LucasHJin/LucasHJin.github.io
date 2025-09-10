@@ -1,19 +1,87 @@
 @import 'modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Light mode */
 :root {
   --background: rgb(247, 255, 255);
-  --primary: rgb(19, 49, 113);
+  --primary: rgb(0, 0, 0);
   --secondary: rgb(25, 100, 169);
   --accent: rgb(205, 92, 245);
 }
 
 /* Dark mode */
 .dark {
-  --background: rgb(19, 49, 113);
+  --background: rgb(0, 0, 0);
   --primary: rgb(247, 255, 255);
   --secondary: rgb(60, 119, 70);
   --accent: rgb(103, 255, 127);
+}
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none; 
+}
+
+h3 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+ul {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.important {
+  position: relative;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.important::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(247, 255, 255, 0.7);
+  z-index: 0;
+}
+
+.important::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  height: 2px;
+  width: 100%;
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.important:hover::after {
+  transform: scaleX(1);
 }
 
 /* Home Page */
