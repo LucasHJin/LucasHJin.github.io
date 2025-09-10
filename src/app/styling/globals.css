@@ -1,1 +1,93 @@
-@import "tailwindcss";
+@import 'modern-normalize/modern-normalize.css';
+
+/* Light mode */
+:root {
+  --background: rgb(247, 255, 255);
+  --primary: rgb(19, 49, 113);
+  --secondary: rgb(25, 100, 169);
+  --accent: rgb(205, 92, 245);
+}
+
+/* Dark mode */
+.dark {
+  --background: rgb(19, 49, 113);
+  --primary: rgb(247, 255, 255);
+  --secondary: rgb(60, 119, 70);
+  --accent: rgb(103, 255, 127);
+}
+
+/* Home Page */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.5s ease-in-out;
+  background-color: var(--background);
+  color: var(--primary);
+  border: 5px solid var(--primary);
+  margin-left: -5px; /* overlaps previous section */
+  box-sizing: border-box;
+}
+
+.section:first-child {
+  margin-left: 0; /* keep first section aligned */
+}
+
+.section.active {
+  flex: 6;
+}
+
+.section.inactive {
+  flex: 0.5;
+}
+
+.section.default {
+  flex: 1;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.content {
+  text-align: center;
+  padding: 0 5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Dynamic fading in/out */
+.section.active .vertical-text {
+  opacity: 0;
+  transition: opacity 0.4s ease 0s; 
+}
+
+.section.active .content {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.4s; 
+}
+
+.section:not(.active) .vertical-text {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.4s; 
+}
+
+.section:not(.active) .content {
+  opacity: 0;
+  transition: opacity 0.4s ease 0s; 
+}
