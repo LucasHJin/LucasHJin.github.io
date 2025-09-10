@@ -3,12 +3,11 @@
     flex-flow: row nowrap;
 }
 
-ul {
-  list-style: none; 
+.about ul {
   padding-left: 1rem;
 }
 
-ul li {
+.about ul li {
   position: relative;
   padding-left: 1.3rem;
   list-style-position: inside; 
@@ -16,7 +15,7 @@ ul li {
   display: table;
 }
 
-ul li::before {
+.about ul li::before {
   content: "◆"; 
   position: absolute;
   left: 0;
@@ -27,16 +26,16 @@ ul li::before {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-ul li:hover {
+.about ul li:hover {
   transform: translateX(0.5rem);
 }
 
-ul li:hover::before {
+.about ul li:hover::before {
   transform: rotate(90deg);
   color: var(--accent);
 }
 
-.description ul {
+.about .description ul {
   margin-top: 0.2rem;
   margin-bottom: 1.6rem;
 }

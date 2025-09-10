@@ -4,6 +4,7 @@ import About from "./components/about";
 import Portfolio from "./components/portfolio";
 import Experiences from "./components/experiences";
 import Other from "./components/other";
+import './styling/home.css'
 
 export default function Home() {
   const [active, setActive] = useState(null);
@@ -41,7 +42,7 @@ export default function Home() {
             onMouseEnter={() => setActive(i)}
             onMouseLeave={() => setActive(null)}
           >
-            <h2 className="vertical-text">{section.title}</h2>
+            <h2 className={`vertical-text ${section.title === "LUCAS JIN" ? "name" : "normal-title"}`}>{section.title}</h2>
             <div className="content">
               <section.content />
             </div>

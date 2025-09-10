@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import WebringIcon from "./webringicon";
 import Link from "next/link";
+import '../styling/footer.css';
 
 export default function Footer() {
   return (

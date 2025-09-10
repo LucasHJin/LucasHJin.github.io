@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body
         className={`dark`}
       >
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
