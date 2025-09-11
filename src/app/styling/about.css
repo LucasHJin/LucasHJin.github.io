@@ -1,10 +1,18 @@
 .about {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about .description {
+  width: fit-content;
 }
 
 .about ul {
   padding-left: 1rem;
+}
+
+.about h3 {
+  display: inline-block
 }
 
 .about ul li {
@@ -13,6 +21,10 @@
   list-style-position: inside; 
   transition: all 0.3s ease;
   display: table;
+}
+
+.about ul.text {
+  width: max-content;
 }
 
 .about ul li::before {
@@ -38,4 +50,49 @@
 .about .description ul {
   margin-top: 0.2rem;
   margin-bottom: 1.6rem;
+}
+
+.about .see {
+  margin-top: 0.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.about img {
+  display: block;
+  width: 10vw;
+  height: auto;
+}
+
+.about .resume {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.4rem;
+  padding-right: 0.05em;
+}
+
+.shiny-text {
+  color: var(--secondary);
+  background: linear-gradient(
+    120deg,
+    var(--secondary) 0%,
+    var(--secondary) 40%,
+    rgba(var(--accent-rgb), 0.8) 50%,
+    var(--secondary) 60%,
+    var(--secondary) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
 }

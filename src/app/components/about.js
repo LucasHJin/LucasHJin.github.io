@@ -72,22 +72,17 @@ export default function About() {
             - 800+ downloads
           </li>
         </ul>
+        <h3 className="see">see my...</h3>
+        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume shiny-text important">
+          Resume
+        </a>
       </div>
-      <div className="more">
-        <div className="resume-github">
-          <h3>see my...</h3>
-        </div>
-        <figure className="image-me">
-          <Image
-            src="/frc_dcmp_2025.JPG"
-            alt="lucas as a part of the drive team at dcmp 2025"
-            width={100}
-            height={100}
-          ></Image>{" "}
-          {/* approx width and height for scaling */}
-          <figcaption>part of frc 8729&apos;s drive team at dcmp!</figcaption>
-        </figure>
-      </div>
+      <Image
+          src="/frc_dcmp_2025.JPG"
+          alt="lucas as a part of the drive team at dcmp 2025"
+          width={100}
+          height={100}
+      ></Image>
     </div>
   );
 }

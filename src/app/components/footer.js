@@ -17,7 +17,7 @@ export default function Footer() {
       <nav>
         <ul className="no-list">
           <li>
-            <h6>© 2025 Lucas Jin</h6>
+            <h6>Lucas Jin © 2025</h6>
           </li>
           <li className="webring">
             <a

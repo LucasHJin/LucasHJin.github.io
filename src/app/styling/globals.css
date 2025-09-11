@@ -7,6 +7,7 @@
   --primary: rgb(0, 0, 0);
   --secondary: rgb(25, 100, 169);
   --accent: rgb(205, 92, 245);
+  --accent-rgb: 205, 92, 245;
 }
 
 /* Dark mode */
@@ -15,6 +16,7 @@
   --primary: rgb(247, 255, 255);
   --secondary: rgb(60, 119, 70);
   --accent: rgb(103, 255, 127);
+  --accent-rgb: 103, 255, 127;
 }
 
 /* Global Styles */
@@ -28,7 +30,6 @@ html, body {
   padding: 0;
   font-weight: 300;
   height: 100%;
-  margin: 0;
 }
 
 body {
@@ -53,7 +54,7 @@ a {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
   font-size: 1.4rem;
 }
@@ -62,6 +63,15 @@ ul {
   list-style: none; 
   font-size: 1.2rem;
   line-height: 1.4;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--secondary);
+  cursor: pointer;
 }
 
 .important {
