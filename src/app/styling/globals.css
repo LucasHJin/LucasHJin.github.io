@@ -14,9 +14,9 @@
 .dark {
   --background: rgb(0, 0, 0);
   --primary: rgb(247, 255, 255);
-  --secondary: rgb(60, 119, 70);
-  --accent: rgb(103, 255, 127);
-  --accent-rgb: 103, 255, 127;
+  --secondary: rgb(37, 202, 241);
+  --accent: rgb(249, 243, 0);
+  --accent-rgb: 249, 243, 0;
 }
 
 /* Global Styles */
