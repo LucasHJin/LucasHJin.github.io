@@ -1,10 +1,8 @@
 .about {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.about .description {
-  width: fit-content;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
 }
 
 .about ul {
@@ -24,7 +22,8 @@
 }
 
 .about ul.text {
-  width: max-content;
+  width: 100%;
+  max-width: 100%; 
 }
 
 .about ul li::before {
@@ -54,45 +53,35 @@
 
 .about .see {
   margin-top: 0.2rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
-.about img {
-  display: block;
-  width: 10vw;
+.about .profile-pic {
+  width: 15vw;
   height: auto;
+  border-radius: 0.8vw;
+  object-fit: cover;
+  display: block;
+}
+
+.about .resume-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .about .resume {
   font-weight: 700;
-  font-style: italic;
-  font-size: 1.4rem;
+  font-size: 7rem;
   padding-right: 0.05em;
 }
 
-.shiny-text {
-  color: var(--secondary);
-  background: linear-gradient(
-    120deg,
-    var(--secondary) 0%,
-    var(--secondary) 40%,
-    rgba(var(--accent-rgb), 0.8) 50%,
-    var(--secondary) 60%,
-    var(--secondary) 100%
-  );
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
+.flashlight-text {
+  position: relative;
+  color: transparent;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  animation: shine 2s linear infinite;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 100%;
-  }
-  100% {
-    background-position: -100%;
-  }
+  -webkit-background-clip: text; /* Highlights the text itself */
+  -webkit-text-fill-color: transparent; /* Gradient only shows through letters */
+  cursor: pointer;
+  transition: background 0.1s ease;
 }

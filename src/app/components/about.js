@@ -1,7 +1,47 @@
+"use client";
+
 import Image from "next/image";
-import '../styling/about.css';
+import { useEffect, useRef } from "react";
+import "../styling/about.css";
 
 export default function About() {
+  const resumeRef = useRef(null);
+
+  // Effect to handle mouse movement for flashlight effect
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (!resumeRef.current) return;
+
+      const rect = resumeRef.current.getBoundingClientRect();
+      // Clamp cursor to the element rectangle
+      const closestX = Math.max(rect.left, Math.min(e.clientX, rect.right));
+      const closestY = Math.max(rect.top, Math.min(e.clientY, rect.bottom));
+
+      const dx = e.clientX - closestX;
+      const dy = e.clientY - closestY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      const radius = 300;
+      const opacity = Math.max(0, 1 - dist / radius);
+
+      // Calculate relative position inside element for gradient
+      const x = ((e.clientX - rect.left) / rect.width) * 100 + "%";
+      const y = ((e.clientY - rect.top) / rect.height) * 100 + "%";
+
+      resumeRef.current.style.background = `radial-gradient(
+      circle at ${x} ${y},
+      rgba(var(--accent-rgb), ${0.3 + 0.5 * opacity}) 0%,
+      rgba(var(--accent-rgb), ${0.2 + 0.4 * opacity}) 40%,
+      rgba(var(--accent-rgb), 0) 100%
+    )`;
+      resumeRef.current.style.webkitBackgroundClip = "text";
+      resumeRef.current.style.webkitTextFillColor = "transparent";
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
     <div className="about">
       <div className="description">
@@ -72,16 +112,25 @@ export default function About() {
             - 800+ downloads
           </li>
         </ul>
-        <h3 className="see">see my...</h3>
-        <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume shiny-text important">
-          Resume
-        </a>
+        <div className="resume-wrapper">
+          <h3 className="see">see my...</h3>
+          <a
+            href="/Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume flashlight-text"
+            ref={resumeRef}
+          >
+            R E S U M E
+          </a>
+        </div>
       </div>
       <Image
-          src="/frc_dcmp_2025.JPG"
-          alt="lucas as a part of the drive team at dcmp 2025"
-          width={100}
-          height={100}
+        src="/me.tiff"
+        alt="A profile picture of Lucas in China."
+        width={100}
+        height={100}
+        className="profile-pic"
       ></Image>
     </div>
   );

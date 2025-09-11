@@ -76,12 +76,12 @@
 
 .section:not(.active) .vertical-text {
   opacity: 1;
-  transition: opacity 0.2s ease 0.4s; 
+  transition: opacity 0.2s ease 0.3s; 
 }
 
 .section:not(.active) .content {
   opacity: 0;
-  transition: opacity 0.4s ease 0s; 
+  transition: opacity 0.3s ease 0s; 
 }
 
 .container .name {
