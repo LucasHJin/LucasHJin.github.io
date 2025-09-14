@@ -4,17 +4,17 @@ import "../styling/card.css";
 
 import Tag from "./tag";
 
-export default function Card({ title, description, imageUrl, tags, links }) {
+export default function Card({ title, description, image, tags, links }) {
   return (
     <div className="card">
       <div className="img-wrapper">
-        {imageUrl.includes(".mp4") ? (
+        {image.includes(".mp4") ? (
           <video autoPlay loop muted className="card-img">
-            <source src={imageUrl} type="video/mp4" />
+            <source src={image} type="video/mp4" />
           </video>
         ) : (
           <Image
-            src={imageUrl}
+            src={image}
             alt={`Image for ${title}`}
             fill
             className="card-img"
