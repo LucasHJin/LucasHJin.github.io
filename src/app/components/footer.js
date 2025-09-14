@@ -3,10 +3,9 @@ import {
   Linkedin,
   Instagram,
   Mail,
-  MoveRight,
-  MoveLeft,
   Twitter,
 } from "lucide-react";
+import { LiaArrowLeftSolid, LiaArrowRightSolid } from "react-icons/lia";
 import WebringIcon from "./webringicon";
 import Link from "next/link";
 import '../styling/footer.css';
@@ -24,7 +23,7 @@ export default function Footer() {
               href="https://cs.uwatering.com/#www.lucasjin.co?nav=prev"
               className="arrow"
             >
-              <MoveLeft />
+              <LiaArrowLeftSolid />
             </a>{" "}
             {/* fill in actual site info*/}
             <Link
@@ -38,7 +37,7 @@ export default function Footer() {
               href="https://cs.uwatering.com/#www.lucasjin.co?nav=next"
               className="arrow"
             >
-              <MoveRight />
+              <LiaArrowRightSolid />
             </a>
           </li>
           <li className="socials">
