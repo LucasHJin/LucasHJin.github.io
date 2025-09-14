@@ -63,9 +63,9 @@
 .about .profile-pic {
   width: 20vw;
   height: auto;
-  border-radius: 0.8vw;
   object-fit: cover;
   display: block;
+  border: 2px solid var(--primary);
 }
 
 .about .resume-wrapper {
