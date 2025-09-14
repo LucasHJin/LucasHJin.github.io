@@ -21,7 +21,7 @@ export default function About() {
       const dy = e.clientY - closestY;
       const dist = Math.sqrt(dx * dx + dy * dy);
 
-      const radius = 300;
+      const radius = 200;
       const opacity = Math.max(0, 1 - dist / radius);
 
       // Calculate relative position inside element for gradient
@@ -128,8 +128,8 @@ export default function About() {
       <Image
         src="/me.tiff"
         alt="A profile picture of Lucas in China."
-        width={100}
-        height={100}
+        width={2368}
+        height={4210}
         className="profile-pic"
       ></Image>
     </div>

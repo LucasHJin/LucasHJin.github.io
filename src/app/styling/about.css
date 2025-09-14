@@ -46,6 +46,10 @@
   color: var(--accent);
 }
 
+.about .description {
+  margin-right: 2rem;
+}
+
 .about .description ul {
   margin-top: 0.2rem;
   margin-bottom: 1.6rem;
@@ -57,7 +61,7 @@
 }
 
 .about .profile-pic {
-  width: 15vw;
+  width: 20vw;
   height: auto;
   border-radius: 0.8vw;
   object-fit: cover;
