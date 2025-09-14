@@ -115,7 +115,7 @@ export default function About() {
         <div className="resume-wrapper">
           <h3 className="see">see my...</h3>
           <a
-            href="/Resume.pdf"
+            href="/Lucas_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="resume flashlight-text"
