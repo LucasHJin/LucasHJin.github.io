@@ -22,36 +22,37 @@ export default function Card({ title, description, image, tags, links }) {
         )}
       </div>
       <div className="card-content">
-          <div className="card-upper">
-            <h4>{title}</h4>
-            <div className="links">
-              {links.map((link, index) => (
-                <a
-                  href={link}
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.includes("github.com") ? (
+        <div className="card-upper">
+          <h4>{title}</h4>
+          <div className="links">
+            {links.map((link, index) => (
+              <a
+                href={link}
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link &&
+                  (link.includes("github.com") ? (
                     <Github />
                   ) : link.includes("devpost.com") ? (
                     <BookOpenText />
                   ) : (
                     <SquareArrowOutUpRight />
-                  )}
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="card-desc">
-            <p>{description}</p>
-          </div>
-          <div className="card-tags">
-            {tags.map((tag, index) => (
-              <Tag key={index} text={tag} />
+                  ))}
+              </a>
             ))}
           </div>
         </div>
+        <div className="card-desc">
+          <p>{description}</p>
+        </div>
+        <div className="card-tags">
+          {tags.map((tag, index) => (
+            <Tag key={index} text={tag} />
+          ))}
+        </div>
       </div>
+    </div>
   );
 }
