@@ -106,19 +106,17 @@ export default function Portfolio() {
         <div className="projects">
           {
             filteredProjects.map((item, index) => (
-              <div className="project" key={index}>
-                <Card 
-                  {...item}
-                  onTagClick={(tag) => {
-                    const normalizedTag = normalizeTag(tag).toLowerCase(); // check if same tag clicked
-                    if (selectedTag == normalizedTag) {
-                      setSelectedTag("");
-                    } else {
-                      setSelectedTag(normalizedTag); 
-                    }
-                  }}
-                 /> 
-              </div>
+              <Card key={index}
+                {...item}
+                onTagClick={(tag) => {
+                  const normalizedTag = normalizeTag(tag).toLowerCase(); // check if same tag clicked
+                  if (selectedTag == normalizedTag) {
+                    setSelectedTag("");
+                  } else {
+                    setSelectedTag(normalizedTag); 
+                  }
+                }}
+                /> 
             ))
           }
         </div>

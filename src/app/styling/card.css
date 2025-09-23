@@ -1,5 +1,5 @@
 .outer-container {
-    width: 22.5em;
+    width: 70%;
     border-radius: 0.8rem;
     overflow: hidden;
     cursor: pointer;
@@ -20,7 +20,7 @@
 .image-card img,
 .image-card video {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 9;
     display: block;
     object-fit: cover;
     border-top-left-radius: 0.8rem;
@@ -34,16 +34,10 @@
 
 /* hidden text */
 .other {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.7s ease, padding 0.7s ease;
     background-color: var(--lighter-background);
-    padding: 0 4%;
-}
-
-.outer-container:hover .other {
-    max-height: 1000px; /* large value (won't overflow) */
     padding: 2.5% 4%;
+    max-height: none;
+    overflow: visible;
 }
 
 .other-padding {
@@ -108,15 +102,13 @@
 
 /* Laptop */
 @media (min-width: 768px) and (max-width: 1439px) {
-    .outer-container {
-        width: 23em;
-    }
+
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .outer-container {
-        width: 20.5em;
+        width: 100%;
     }
 }
 

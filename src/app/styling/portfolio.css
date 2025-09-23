@@ -2,13 +2,10 @@
     display: flex;
     flex-flow: row wrap;
     gap: 2em;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
-
-.project {
-    display: inline-block;
-}
-
+  
 .filter {
   display: flex;
   flex-flow: row nowrap;
