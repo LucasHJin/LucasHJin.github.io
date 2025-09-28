@@ -12,9 +12,6 @@ export default function Home() {
         <div className="description">
           <h2>who am i?</h2>
             <ul className="text">
-              <li className="italic">
-                aspiring software engineer
-              </li>
               <li>
                 <a
                   href="https://cs.uwaterloo.ca/" 
@@ -23,6 +20,28 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   cs @ University of Waterloo
+                </a>
+              </li>
+              <li>
+                MLE @ {' '}
+                <a
+                  href="https://watai.ca/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  WAT.ai FlockRL
+                </a>
+              </li>
+              <li>
+                SW Lead @ {' '}
+                <a
+                  href="https://uwbiotron.netlify.app/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  UW Biomechatronics
                 </a>
               </li>
             </ul>
@@ -58,17 +77,6 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                solo best pitch @ {' '}
-                <a
-                  href="https://www.terrahacks.ca/" 
-                  className="important" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Terrahacks
-                </a>
-              </li>
-              <li>
                 released {' '}
                 <a
                   href="https://obsidian.md/plugins?id=pixel-pets" 
@@ -78,7 +86,18 @@ export default function Home() {
                 >
                   pixel pets
                 </a>
-                {' '} - 800+ downloads
+                {' '} - 1200+ downloads
+              </li>
+              <li>
+                solo best pitch @ {' '}
+                <a
+                  href="https://www.terrahacks.ca/" 
+                  className="important" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Terrahacks
+                </a>
               </li>
             </ul>
         </div>
