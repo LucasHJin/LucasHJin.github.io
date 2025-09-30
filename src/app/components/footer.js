@@ -9,6 +9,7 @@ import {
   MoveRight,
   MoveLeft,
   Twitter,
+  Bookmark
 } from "lucide-react";
 import Link from "next/link";
 import Cat from "./cat";
@@ -140,6 +141,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="nav"
+              title="Github"
             >
               <Github />
             </Link>
@@ -148,6 +150,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="nav"
+              title="Linkedin"
             >
               <Linkedin />
             </Link>
@@ -156,14 +159,25 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="nav"
+              title="Mail"
             >
               <Mail />
+            </Link>
+            <Link
+              href="https://substack.com/@lucashjin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav"
+              title="Substack"
+            >
+              <Bookmark />
             </Link>
             <Link
               href="https://www.instagram.com/completely_fraudulent/"
               target="_blank"
               rel="noopener noreferrer"
               className="nav"
+              title="Instagram"
             >
               <Instagram />
             </Link>
