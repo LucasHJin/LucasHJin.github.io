@@ -1,4 +1,17 @@
+.more-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+}
 
+.more-page h1 {
+    font-weight: 300;
+    font-size: 5em;
+    color: var(--foreground-special);
+}
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -11,12 +24,16 @@
 }
 
 /* Mobile L */
-@media (min-width: 425px) and (max-width: 767px) {
-
+@media (min-width: 0px) and (max-width: 767px) {
+    .more-page h1 {
+        font-weight: 300;
+        font-size: 2em;
+        color: var(--foreground-special);
+    }
 }
 
 /* Mobile M */
-@media (min-width: 375px) and (max-width: 424px) {
+@media (min-width: 0px) and (max-width: 424px) {
 
 }
 

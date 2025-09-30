@@ -1,8 +1,9 @@
+import "../styling/more.css";
 
 export default async function Blog() {
   return (
-    <div className="more">
-      <h1>Some more random stuff about me!</h1>
+    <div className="more-page">
+      <h1>INCOMING</h1>
     </div>
   );
 }
