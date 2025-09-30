@@ -1,14 +1,4 @@
-.blog .post {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-}
 
-.blog .botInfo {
-    display: flex;
-    justify-self: flex-start;
-    gap: 0.25em
-}
 
 /* Laptop */
 @media (min-width: 1024px) and (max-width: 1439px) {

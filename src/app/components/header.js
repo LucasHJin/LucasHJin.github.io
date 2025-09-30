@@ -26,7 +26,7 @@ export default function Header() {
                 <li className="navs">
                   <Link href="/" className="nav link-page">about</Link>
                   <Link href="/portfolio" className="nav link-page">portfolio</Link>
-                  <Link href="/blog" className="nav link-page">blog</Link>
+                  <Link href="/more" className="nav link-page">more</Link>
                 </li>
             </ul>
         </nav>
