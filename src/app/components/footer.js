@@ -164,7 +164,7 @@ export default function Footer() {
               <Mail />
             </Link>
             <Link
-              href="https://substack.com/@lucashjin"
+              href="https://lucasjin.substack.com/?r=6ecjb4&utm_campaign=pub-share-checklist"
               target="_blank"
               rel="noopener noreferrer"
               className="nav"
