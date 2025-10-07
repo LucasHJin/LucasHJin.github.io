@@ -19,13 +19,13 @@ const garamond = EB_Garamond({
 
 export const metadata = {
   title: 'Lucas Jin',
-  description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
-  keywords: ['Lucas Jin', 'Portfolio', 'Developer', 'Software Engineer', 'Web Development', 'Robotics', 'Ottawa', 'Hackathons', 'Ontario'],
+  description: 'Portfolio of Lucas Jin, an aspiring software engineer at the University of Waterloo focused on building high-performance applications.',
+  keywords: ['Lucas Jin', 'Portfolio', 'Developer', 'Software Engineer', 'Web Development', 'Robotics', 'Ottawa', 'Hackathons', 'Ontario', 'AI', "Waterloo", "Computer Science", "Startup"],
   author: 'Lucas Jin',
   openGraph: {
     type: 'website',
     title: 'Lucas Jin',
-    description: 'Portfolio of Lucas Jin, an aspiring software developer focused on building high-performance applications.',
+    description: 'Portfolio of Lucas Jin, an aspiring software engineer at the University of Waterloo focused on building high-performance applications.',
     url: 'https://lucasjin.co', 
     image: '/LUCAS_PERSONAL_LOGO_NGE.png',
   },
