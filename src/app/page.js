@@ -84,19 +84,19 @@ export default function Home() {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  pixel pets
+                  Pixel Pets
                 </a>
-                {' '} - 1200+ downloads
+                {' '} - 1400+ downloads
               </li>
               <li>
-                solo best pitch @ {' '}
+                started writing on {' '}
                 <a
-                  href="https://www.terrahacks.ca/" 
+                  href="https://lucasjin.substack.com/p/on-bodybuilding" 
                   className="important" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  Terrahacks
+                  Substack
                 </a>
               </li>
             </ul>
@@ -112,18 +112,6 @@ export default function Home() {
             see my...
           </h2>
           <Button></Button>
-        </div>
-        <div className="skills">
-            <h2>my skills</h2>
-            <div className="grouped-skills">
-            {
-              skillsList.map((item, index) => (
-                <Link key={index} href={`/portfolio?tag=${encodeURIComponent(item.link.toLowerCase())}`}>
-                  {item.skill}
-                </Link>
-              ))
-            }
-            </div>
         </div>
       </div>
     </div>

@@ -48,36 +48,10 @@
     min-width: 0;
 }
 
-.skills {
-    width: 35%;
-}
-
-.skills .grouped-skills {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin-top: 0.9rem;
-    row-gap: 0.5rem;
-}
-
-.skills .grouped-skills svg {
-    width: 2.5em;
-    height: auto;
-    transition: color 0.5s ease;
-}
-
-.skills .grouped-skills svg:hover {
-    color: var(--accent);
-}
-
 /* Laptop */
 @media (min-width: 768px) and (max-width: 1439px) {
     .about .image-me {
         margin-left: 2%;
-    }
-
-    .skills .grouped-skills {
-        margin-top: 0.75rem;
     }
 
     .about .image-me figcaption {
@@ -120,25 +94,6 @@
         margin-bottom: 0.75em;
     }
 
-    .skills {
-        width: 100%;
-    }
-
-    .skills .grouped-skills {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin-top: 0.75rem;
-    }
-
-    .resume-github h2, .skills h2 {
-        text-align: center;
-    }
-
-    .skills .grouped-skills svg {
-        width: 3.2em;
-    }
-
 }
 
 /* Mobile M */
@@ -148,7 +103,4 @@
 
 /* Mobile S */
 @media (min-width: 320px) and (max-width: 374px) {
-    .skills .grouped-skills svg {
-        width: 3em;
-    }
 }
